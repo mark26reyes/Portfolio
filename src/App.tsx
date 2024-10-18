@@ -6,8 +6,14 @@ import Image from "./Image";
 const App = () => {
   return (
     <>
-      <h1 className="text-center bold bg-black text-white m-4">Portfolio</h1>
-      <Image />
+      <div className="">
+        <h1 className="bold bg-primary text-white p-4 text-center">
+          Portfolio
+        </h1>
+        <section className="text-center">
+          <Image />
+        </section>
+      </div>
     </>
   );
 };
