@@ -8,7 +8,7 @@ const App = () => {
     <>
       <div className="">
         <h1 className="bold bg-primary text-white p-4 text-center">
-          Portfolio
+          Min portefølje
         </h1>
         <section className="text-center">
           <Image />
