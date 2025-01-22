@@ -7,10 +7,36 @@ const App = () => {
   return (
     <>
       <div className="">
-        <h1 className="bold bg-primary text-white p-4 text-center">
-          Min portefølje
-        </h1>
-        <section className="text-center">
+        <section>
+          <h1 className="fixed-top bold text-dark p-4 text-start">
+            Min portefølje
+          </h1>
+          <nav>
+            <ul className="nav justify-content-end fixed-top p-4">
+              <li className="nav-item">
+                <a className="text-dark nav-link active" href="#">
+                  Hjem
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="text-dark nav-link" href="#">
+                  Om meg
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="text-dark nav-link" href="#">
+                  Prosjekter
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="text-dark nav-link" href="#">
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section className="text-center p-5">
           <Image />
         </section>
       </div>
