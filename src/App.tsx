@@ -5,42 +5,109 @@ import Image from "./Image";
 
 const App = () => {
   return (
-    <>
-      <div className="bg-dark">
-        <section>
-          <h1 className="fixed-top bold text-light p-4 text-start">
-            Min portefølje
-          </h1>
-          <nav>
-            <ul className="nav justify-content-end fixed-top p-4">
-              <li className="nav-item">
-                <a className="text-light nav-link active" href="#">
-                  Hjem
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="text-light nav-link" href="#">
-                  Om meg
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="text-light nav-link" href="#">
-                  Prosjekter
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="text-light nav-link" href="#">
-                  Kontakt
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-        <section className="text-center p-5">
-          <Image />
-        </section>
+    <div className="bg-black min-vh-100 d-flex flex-column position-relative">
+      {/* Logo øverst til venstre */}
+      <header style={{ position: "absolute", top: "5%", left: "5%" }}>
+        <div
+          className="border border-light p-2 text-light fw-bold text-uppercase"
+          style={{ padding: "8px 16px", fontSize: "14px" }}
+        >
+          MARK DANIEL REYES
+        </div>
+      </header>
+
+      {/* Navigasjonsmeny */}
+      <nav style={{ position: "absolute", top: "5%", right: "5%" }}>
+        <ul className="nav">
+          <li className="nav-item">
+            <a className="text-light nav-link" href="#">
+              HJEM
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="text-light nav-link" href="#">
+              OM MEG
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="text-light nav-link" href="#">
+              ARBEID
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="text-light nav-link" href="#">
+              ERFARING
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="btn btn-light text-black px-4"
+              href="#"
+              style={{ borderRadius: "0px", fontWeight: "bold" }}
+            >
+              KONTAKT
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Bakgrunnsdetalj */}
+      <div
+        className="position-absolute"
+        style={{
+          top: "42%",
+          left: "46%",
+          transform: "translate(-50%, -50%)",
+          width: "300px",
+          height: "400px",
+          backgroundColor: "orange",
+          filter: "blur(20px)",
+          borderRadius: "50%",
+          zIndex: 0,
+        }}
+      ></div>
+
+      {/* Hovedinnhold */}
+      <div
+        className="position-absolute"
+        style={{ left: "5%", top: "65%", zIndex: 2, textAlign: "left" }}
+      >
+        <h1
+          className="text-light fw-bold"
+          style={{
+            fontSize: "4rem",
+            textTransform: "uppercase",
+            fontWeight: "900",
+            lineHeight: "0.9",
+          }}
+        >
+          <span
+            className="text-white d-block"
+            style={{ textShadow: "-4px 4px 4px rgba(190, 190, 190, 4)" }}
+          >
+            MIN
+          </span>
+          <span
+            className="text-white opacity-75 d-block"
+            style={{ fontSize: "6rem", fontWeight: "bold" }}
+          >
+            PORTEFØLJE
+          </span>
+        </h1>
       </div>
-    </>
+
+      <div
+        className="position-absolute"
+        style={{
+          left: "50%",
+          top: "17%",
+          transform: "translateX(-50%)",
+          zIndex: 1,
+        }}
+      >
+        <Image />
+      </div>
+    </div>
   );
 };
 

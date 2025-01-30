@@ -3,10 +3,9 @@ const Image = () => {
   return (
     <div>
       <img
-        src="/Portfolio/mark.jpeg"
+        src="/Portfolio/mark_sorthvitt.jpg"
         alt="Mark"
-        className="rounded-circle"
-        style={{ width: "550px", height: "700px" }}
+        style={{ width: "380px", zIndex: 2 }}
       />
     </div>
   );
