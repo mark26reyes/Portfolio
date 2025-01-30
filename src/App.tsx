@@ -55,13 +55,13 @@ const App = () => {
       <div
         className="position-absolute"
         style={{
-          top: "42%",
+          top: "39%",
           left: "46%",
           transform: "translate(-50%, -50%)",
-          width: "300px",
-          height: "400px",
-          backgroundColor: "orange",
-          filter: "blur(20px)",
+          width: "320px",
+          height: "420px",
+          backgroundColor: "rgb(255, 132, 0)",
+          filter: "blur(5px)",
           borderRadius: "50%",
           zIndex: 0,
         }}
@@ -100,7 +100,7 @@ const App = () => {
         className="position-absolute"
         style={{
           left: "50%",
-          top: "17%",
+          top: "15%",
           transform: "translateX(-50%)",
           zIndex: 1,
         }}
