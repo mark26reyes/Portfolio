@@ -56,9 +56,11 @@ const Home = () => {
       <nav
         style={{
           position: "absolute",
-          top: "5%",
+          top: "7%",
           right: "5%",
           fontFamily: "Helvetica",
+          fontWeight: "lighter",
+          fontSize: "0.7rem",
         }}
       >
         <ul className="nav">
@@ -86,7 +88,11 @@ const Home = () => {
             <a
               className="btn btn-light text-black px-4"
               href="#"
-              style={{ borderRadius: "0px", fontWeight: "bold" }}
+              style={{
+                borderRadius: "0px",
+                fontWeight: "regular",
+                fontSize: "0.7rem",
+              }}
             >
               KONTAKT
             </a>
@@ -98,7 +104,7 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          top: "39%",
+          top: "40%",
           left: "46%",
           transform: "translate(-50%, -50%)",
           width: "320px",
@@ -113,7 +119,33 @@ const Home = () => {
       {/* Hovedinnhold */}
       <div
         className="position-absolute"
-        style={{ left: "14%", top: "65%", zIndex: 2, textAlign: "left" }}
+        style={{
+          left: "5.5%",
+          top: "28%",
+          zIndex: 2,
+          textAlign: "left",
+          width: "18%",
+          fontFamily: "Helvetica",
+          fontWeight: "lighter",
+          fontSize: "0.9rem",
+          color: "white",
+        }}
+      >
+        <p>
+          Mark Daniel Reyes, 23 år.
+          <span style={{ fontWeight: "Bold" }}>
+            {" "}
+            Bachelorgrad i Interaktivt Design{" "}
+          </span>
+          fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling
+          hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine
+          ferdigheter og bidra til brukervennlige og innovative digitale
+          løsninger.
+        </p>
+      </div>
+      <div
+        className="position-absolute"
+        style={{ left: "10.5%", top: "65%", zIndex: 2, textAlign: "left" }}
       >
         <h1
           className="text-light fw-bold"
@@ -127,9 +159,8 @@ const Home = () => {
           <span
             className="text-white d-block"
             style={{
-              fontSize: "3.5rem",
-              fontWeight: "bold",
-              fontFamily: "Helvetica",
+              textShadow: "-4px 4px 4px rgba(190, 190, 190, 4)",
+              fontWeight: "1000",
             }}
           >
             MIN
@@ -162,7 +193,7 @@ const Home = () => {
         className="position-absolute"
         style={{
           left: "50%",
-          top: "15%",
+          top: "0%",
           transform: "translateX(-50%)",
           zIndex: 1,
         }}
@@ -174,16 +205,26 @@ const Home = () => {
       {/* Om Meg-knapp */}
       <div
         className="position-absolute"
-        style={{ bottom: "5%", right: "5%", zIndex: 3 }}
+        style={{ bottom: "5%", right: "4%", zIndex: 3 }}
       >
         <a
           className="text-light"
           href="#"
           style={{
             fontFamily: "Helvetica",
+            fontWeight: "regular",
+            display: "inline-block",
+            color: "white",
+            textDecoration: "none",
           }}
         >
-          [ OM MEG ]
+          <span style={{ fontSize: "1.6rem", color: "rgb(0, 247, 255)" }}>
+            [
+          </span>
+          <span style={{ padding: "25px" }}>OM MEG</span>
+          <span style={{ fontSize: "1.6rem", color: "rgb(0, 247, 255)" }}>
+            ]
+          </span>
         </a>
       </div>
     </div>
