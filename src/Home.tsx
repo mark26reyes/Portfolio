@@ -2,18 +2,37 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Image from "./Image";
+import { Button } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 const Home = () => {
+  const text = "MARK DANIEL REYES".split("");
+
   return (
     <div className="bg-black min-vh-100 d-flex flex-column position-relative">
-      {/* Logo øverst til venstre */}
+      {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
-        <div
+        <motion.div
           className="border border-light p-2 text-light fw-bold text-uppercase"
-          style={{ padding: "8px 16px", fontSize: "14px" }}
+          style={{ padding: "8px 16px", fontSize: "14px", display: "flex" }}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: { transition: { staggerChildren: 0.08 } },
+          }}
         >
-          MARK DANIEL REYES
-        </div>
+          {text.map((char, index) => (
+            <motion.span
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+              }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </motion.div>
       </header>
 
       {/* Navigasjonsmeny */}
