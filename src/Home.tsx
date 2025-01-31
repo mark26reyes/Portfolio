@@ -105,7 +105,7 @@ const Home = () => {
         className="position-absolute"
         style={{
           top: "40%",
-          left: "46%",
+          left: "43%",
           transform: "translate(-50%, -50%)",
           width: "320px",
           height: "420px",
