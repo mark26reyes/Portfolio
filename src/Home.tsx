@@ -2,19 +2,35 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Image from "./Image";
-import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { Autograf } from "./Image";
 
 const Home = () => {
-  const text = "MARK DANIEL REYES".split("");
+  const text = "MARK     DANIEL     REYES".split("");
 
   return (
     <div className="bg-black min-vh-100 d-flex flex-column position-relative">
       {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
-          className="border border-light p-2 text-light fw-bold text-uppercase"
-          style={{ padding: "8px 16px", fontSize: "14px", display: "flex" }}
+          className="position-absolute"
+          style={{
+            top: "5px",
+            left: "5px",
+            width: "calc(100% + 5px)",
+            height: "calc(100% + 5px)",
+            border: "2px solid white",
+          }}
+        ></motion.div>
+        <motion.div
+          className="text-light fw-bold text-uppercase position-relative"
+          style={{
+            padding: "10px 10px",
+            fontSize: "14px",
+            display: "flex",
+            border: "2px solid white",
+            backgroundColor: "black",
+          }}
           initial="hidden"
           animate="visible"
           variants={{
@@ -24,6 +40,7 @@ const Home = () => {
           {text.map((char, index) => (
             <motion.span
               key={index}
+              style={{ marginRight: "1.5px", fontFamily: "Helvetica" }}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
@@ -36,7 +53,14 @@ const Home = () => {
       </header>
 
       {/* Navigasjonsmeny */}
-      <nav style={{ position: "absolute", top: "5%", right: "5%" }}>
+      <nav
+        style={{
+          position: "absolute",
+          top: "5%",
+          right: "5%",
+          fontFamily: "Helvetica",
+        }}
+      >
         <ul className="nav">
           <li className="nav-item">
             <a className="text-light nav-link" href="#">
@@ -80,7 +104,7 @@ const Home = () => {
           width: "320px",
           height: "420px",
           backgroundColor: "rgb(0, 247, 255)",
-          filter: "blur(5px)",
+          filter: "blur(2px)",
           borderRadius: "50%",
           zIndex: 0,
         }}
@@ -89,7 +113,7 @@ const Home = () => {
       {/* Hovedinnhold */}
       <div
         className="position-absolute"
-        style={{ left: "15%", top: "65%", zIndex: 2, textAlign: "left" }}
+        style={{ left: "14%", top: "65%", zIndex: 2, textAlign: "left" }}
       >
         <h1
           className="text-light fw-bold"
@@ -102,25 +126,38 @@ const Home = () => {
         >
           <span
             className="text-white d-block"
-            style={{ textShadow: "-4px 4px 4px rgba(190, 190, 190, 4)" }}
+            style={{
+              fontSize: "3.5rem",
+              fontWeight: "bold",
+              fontFamily: "Helvetica",
+            }}
           >
             MIN
           </span>
           <span
             className="text-white"
-            style={{ fontSize: "6rem", fontWeight: "bold" }}
+            style={{
+              fontSize: "6rem",
+              fontWeight: "bold",
+              fontFamily: "Helvetica",
+            }}
           >
             PORTE
           </span>
           <span
             className="text-white opacity-50"
-            style={{ fontSize: "6rem", fontWeight: "bold" }}
+            style={{
+              fontSize: "6rem",
+              fontWeight: "bold",
+              fontFamily: "Helvetica",
+            }}
           >
             FØLJE
           </span>
         </h1>
       </div>
 
+      {/* Bilde og autograf */}
       <div
         className="position-absolute"
         style={{
@@ -131,6 +168,23 @@ const Home = () => {
         }}
       >
         <Image />
+        <Autograf />
+      </div>
+
+      {/* Om Meg-knapp */}
+      <div
+        className="position-absolute"
+        style={{ bottom: "5%", right: "5%", zIndex: 3 }}
+      >
+        <a
+          className="text-light"
+          href="#"
+          style={{
+            fontFamily: "Helvetica",
+          }}
+        >
+          [ OM MEG ]
+        </a>
       </div>
     </div>
   );
