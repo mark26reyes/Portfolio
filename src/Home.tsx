@@ -157,10 +157,10 @@ const Home = () => {
           }}
         >
           <span
-            className="text-white d-block"
+            className="text-white d-block position-relative"
             style={{
-              textShadow: "-4px 4px 4px rgba(190, 190, 190, 4)",
               fontWeight: "1000",
+              left: "0.7%",
             }}
           >
             MIN
