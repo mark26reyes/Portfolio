@@ -9,9 +9,9 @@ const Image = () => {
         style={{ width: "500px", height: "5px", backgroundColor: "white" }}
       ></div> */}
       <img
-        src="/Portfolio/mark_sorthvitt.jpg"
+        src="/Portfolio/mark_hvit.jpeg"
         alt="Mark"
-        style={{ width: "470px", zIndex: 2 }}
+        style={{ width: "375px", zIndex: 2 }}
       />
     </div>
   );
@@ -21,13 +21,13 @@ const Autograf = () => {
   return (
     <div>
       <motion.img
-        src="/Portfolio/autograf.png"
+        src="/Portfolio/autograf_oransje.png"
         alt="Autograf"
         className="position-absolute"
         style={{
-          width: "300px",
-          top: "30%",
-          left: "65%",
+          width: "200px",
+          top: "40%",
+          left: "73%",
           transform: "translate(-50%, -50%)",
         }}
         initial={{ y: -10, opacity: 0 }} // Starter litt høyere og usynlig

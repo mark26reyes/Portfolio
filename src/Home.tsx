@@ -56,11 +56,11 @@ const Home = () => {
       <nav
         style={{
           position: "absolute",
-          top: "7%",
-          right: "5%",
+          top: "6%",
+          right: "4%",
           fontFamily: "Helvetica",
           fontWeight: "lighter",
-          fontSize: "0.7rem",
+          fontSize: "0.9rem",
         }}
       >
         <ul className="nav">
@@ -84,14 +84,16 @@ const Home = () => {
               ERFARING
             </a>
           </li>
-          <li className="nav-item">
+          <li>
+            {" "}
             <a
-              className="btn btn-light text-black px-4"
+              className="btn text-black px-4"
               href="#"
               style={{
                 borderRadius: "0px",
                 fontWeight: "regular",
-                fontSize: "0.7rem",
+                fontSize: "0.9rem",
+                backgroundColor: "rgb(255, 135, 0)",
               }}
             >
               KONTAKT
@@ -104,14 +106,14 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          top: "40%",
+          top: "45%",
           left: "43%",
           transform: "translate(-50%, -50%)",
-          width: "320px",
-          height: "420px",
-          backgroundColor: "rgb(0, 247, 255)",
-          filter: "blur(2px)",
-          borderRadius: "50%",
+          width: "300px",
+          height: "350px",
+          backgroundColor: "rgb(255, 135, 0)",
+          borderRadius: "40%",
+          rotate: "12deg",
           zIndex: 0,
         }}
       ></div>
@@ -124,7 +126,7 @@ const Home = () => {
           top: "28%",
           zIndex: 2,
           textAlign: "left",
-          width: "18%",
+          width: "17%",
           fontFamily: "Helvetica",
           fontWeight: "lighter",
           fontSize: "0.9rem",
@@ -137,15 +139,12 @@ const Home = () => {
             {" "}
             Bachelorgrad i Interaktivt Design{" "}
           </span>
-          fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling
-          hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine
-          ferdigheter og bidra til brukervennlige og innovative digitale
-          løsninger.
+          fra Høyskole Kristiania.
         </p>
       </div>
       <div
         className="position-absolute"
-        style={{ left: "10.5%", top: "65%", zIndex: 2, textAlign: "left" }}
+        style={{ left: "13.5%", top: "66%", zIndex: 2, textAlign: "left" }}
       >
         <h1
           className="text-light fw-bold"
@@ -193,7 +192,7 @@ const Home = () => {
         className="position-absolute"
         style={{
           left: "50%",
-          top: "0%",
+          top: "13%",
           transform: "translateX(-50%)",
           zIndex: 1,
         }}
@@ -218,11 +217,11 @@ const Home = () => {
             textDecoration: "none",
           }}
         >
-          <span style={{ fontSize: "1.6rem", color: "rgb(0, 247, 255)" }}>
+          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
             [
           </span>
           <span style={{ padding: "25px" }}>OM MEG</span>
-          <span style={{ fontSize: "1.6rem", color: "rgb(0, 247, 255)" }}>
+          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
             ]
           </span>
         </a>
