@@ -9,7 +9,7 @@ const Image = () => {
         alt="Mark"
         style={{
           width: "770px",
-          opacity: 0.3,
+          opacity: 0.4,
           zIndex: 2,
           position: "relative",
         }}
@@ -22,19 +22,20 @@ const Autograf = () => {
   return (
     <div>
       <motion.img
-        src="/Portfolio/autograf_oransje.png"
+        src="/Portfolio/autograf_hvit.png"
         alt="Autograf"
         className="position-absolute"
         style={{
-          width: "200px",
-          top: "40%",
+          width: "250px",
+          top: "50%",
           left: "73%",
           transform: "translate(-50%, -50%)",
+          zIndex: 3,
         }}
         initial={{ y: -10, opacity: 0 }} // Starter litt høyere og usynlig
         animate={{
           x: [-200, 0, 0], // Drift-effekt (opp og ned)
-          opacity: 1,
+          opacity: 0.6, // Gjør bildet synlig
           transition: { duration: 3 },
         }}
       />

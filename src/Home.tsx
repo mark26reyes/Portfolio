@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Image from "./Image";
-import { motion } from "framer-motion";
+import { hover, motion } from "framer-motion";
 import { Autograf } from "./Image";
 
 const Home = () => {
@@ -89,21 +89,22 @@ const Home = () => {
         <div
           style={{
             position: "absolute",
+            top: "-20%",
             right: "-185%",
-            top: "0%",
           }}
         >
           <a
-            className="btn text-white px-4"
+            className="btn text-center text-white px-4"
             href="#"
             style={{
               borderRadius: "0px",
               fontWeight: "lighter",
               fontSize: "0.9rem",
               border: "1px solid rgb(255, 255, 255)",
+              padding: "15px 20px",
             }}
           >
-            KONTAKT
+            TA KONTAKT
           </a>
         </div>
       </nav>
@@ -112,15 +113,15 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          left: "5.5%",
-          top: "28%",
+          left: "5%",
+          top: "75%",
           zIndex: 2,
           textAlign: "left",
-          width: "17%",
+          width: "50%",
           fontFamily: "Helvetica",
           fontWeight: "lighter",
           fontSize: "0.9rem",
-          color: "white",
+          color: "gray",
         }}
       >
         <p>
@@ -129,50 +130,41 @@ const Home = () => {
             {" "}
             Bachelorgrad i Interaktivt Design{" "}
           </span>
-          fra Høyskole Kristiania.
+          fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling
+          hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine
+          ferdigheter og bidra til brukervennlige og innovative digitale
+          løsninger.
         </p>
       </div>
       <div
         className="position-absolute"
-        style={{ left: "13.5%", top: "66%", zIndex: 2, textAlign: "left" }}
+        style={{ left: "4%", top: "27%", zIndex: 2, textAlign: "left" }}
       >
         <h1
-          className="text-light fw-bold"
           style={{
-            fontSize: "4rem",
-            textTransform: "uppercase",
-            fontWeight: "900",
             lineHeight: "0.9",
           }}
         >
           <span
             className="text-white d-block position-relative"
             style={{
-              fontWeight: "1000",
-              left: "0.7%",
+              fontSize: "12rem",
+              fontWeight: "100",
+              fontFamily: "neue-haas-grotesk-display, sans-serif",
             }}
           >
-            MIN
+            Min
           </span>
           <span
             className="text-white"
             style={{
-              fontSize: "6rem",
-              fontWeight: "bold",
-              fontFamily: "Helvetica",
+              fontSize: "12rem",
+              fontWeight: "100",
+              fontFamily: "neue-haas-grotesk-display, sans-serif",
+              opacity: 0.6,
             }}
           >
-            PORTE
-          </span>
-          <span
-            className="text-white opacity-50"
-            style={{
-              fontSize: "6rem",
-              fontWeight: "bold",
-              fontFamily: "Helvetica",
-            }}
-          >
-            FØLJE
+            Portefølje
           </span>
         </h1>
       </div>
@@ -181,7 +173,7 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          left: "70%",
+          left: "68%",
           top: "-11%",
           transform: "translateX(-50%)",
           zIndex: 1,
@@ -191,7 +183,7 @@ const Home = () => {
         <Autograf />
       </div>
 
-      {/* Om Meg-knapp */}
+      {/* Om Meg-knapp 
       <div
         className="position-absolute"
         style={{ bottom: "5%", right: "4%", zIndex: 3 }}
@@ -216,6 +208,7 @@ const Home = () => {
           </span>
         </a>
       </div>
+      */}
     </div>
   );
 };
