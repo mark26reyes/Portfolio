@@ -9,7 +9,7 @@ const Home = () => {
   const text = "MARK     DANIEL     REYES".split("");
 
   return (
-    <div className="bg-black min-vh-100 d-flex flex-column position-relative">
+    <div className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden">
       {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
@@ -57,9 +57,9 @@ const Home = () => {
         style={{
           position: "absolute",
           top: "6%",
-          right: "4%",
+          right: "50%",
           fontFamily: "Helvetica",
-          fontWeight: "lighter",
+          fontWeight: "regular",
           fontSize: "0.9rem",
         }}
       >
@@ -84,39 +84,29 @@ const Home = () => {
               ERFARING
             </a>
           </li>
-          <li>
-            {" "}
-            <a
-              className="btn text-black px-4"
-              href="#"
-              style={{
-                borderRadius: "0px",
-                fontWeight: "regular",
-                fontSize: "0.9rem",
-                backgroundColor: "rgb(255, 135, 0)",
-              }}
-            >
-              KONTAKT
-            </a>
-          </li>
+          <li></li>
         </ul>
+        <div
+          style={{
+            position: "absolute",
+            right: "-185%",
+            top: "0%",
+          }}
+        >
+          <a
+            className="btn text-white px-4"
+            href="#"
+            style={{
+              borderRadius: "0px",
+              fontWeight: "regular",
+              fontSize: "0.9rem",
+              border: "1px solid rgb(255, 255, 255)",
+            }}
+          >
+            KONTAKT
+          </a>
+        </div>
       </nav>
-
-      {/* Bakgrunnsdetalj */}
-      <div
-        className="position-absolute"
-        style={{
-          top: "45%",
-          left: "43%",
-          transform: "translate(-50%, -50%)",
-          width: "300px",
-          height: "350px",
-          backgroundColor: "rgb(255, 135, 0)",
-          borderRadius: "40%",
-          rotate: "12deg",
-          zIndex: 0,
-        }}
-      ></div>
 
       {/* Hovedinnhold */}
       <div
@@ -191,8 +181,8 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          left: "50%",
-          top: "13%",
+          left: "70%",
+          top: "-11%",
           transform: "translateX(-50%)",
           zIndex: 1,
         }}
