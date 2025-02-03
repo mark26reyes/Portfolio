@@ -173,7 +173,7 @@ const Home = () => {
       <div
         className="position-absolute"
         style={{
-          left: "68%",
+          left: "66%",
           top: "-11%",
           transform: "translateX(-50%)",
           zIndex: 1,
