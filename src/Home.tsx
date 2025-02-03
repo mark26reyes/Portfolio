@@ -59,7 +59,7 @@ const Home = () => {
           top: "6%",
           right: "50%",
           fontFamily: "Helvetica",
-          fontWeight: "regular",
+          fontWeight: "lighter",
           fontSize: "0.9rem",
         }}
       >
@@ -98,7 +98,7 @@ const Home = () => {
             href="#"
             style={{
               borderRadius: "0px",
-              fontWeight: "regular",
+              fontWeight: "lighter",
               fontSize: "0.9rem",
               border: "1px solid rgb(255, 255, 255)",
             }}
