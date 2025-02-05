@@ -9,7 +9,7 @@ const Image = () => {
         alt="Mark"
         style={{
           width: "770px",
-          opacity: 0.3,
+          opacity: 0.4,
           zIndex: 2,
           position: "relative",
         }}
