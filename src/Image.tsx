@@ -63,10 +63,26 @@ const Table = () => {
   return (
     <div style={{ display: "flex", overflow: "hidden" }}>
       <img
-        src="/Portfolio/mark_table.jpeg"
+        src="/Portfolio/mark_table.png"
         alt="Table"
         style={{
-          width: "200px",
+          width: "285px",
+          zIndex: 2,
+          position: "relative",
+        }}
+      />
+    </div>
+  );
+};
+
+const Sunset = () => {
+  return (
+    <div style={{ display: "flex", overflow: "hidden" }}>
+      <img
+        src="/Portfolio/mark_sunset.png"
+        alt="Sunset"
+        style={{
+          width: "325px",
           zIndex: 2,
           position: "relative",
         }}
@@ -76,6 +92,4 @@ const Table = () => {
 };
 
 export default Image;
-export { Autograf };
-export { SideProfile };
-export { Table };
+export { Autograf, SideProfile, Table, Sunset };

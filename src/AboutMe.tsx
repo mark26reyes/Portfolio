@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
-import { SideProfile } from "./Image";
+import { SideProfile, Sunset } from "./Image";
 import { Table } from "./Image";
 
 const AboutMe = () => {
@@ -108,7 +108,7 @@ const AboutMe = () => {
         style={{
           position: "absolute",
           top: "13%",
-          left: "40%",
+          left: "45%",
           transform: "translateX(-50%)",
           textAlign: "left",
           fontFamily: "Helvetica",
@@ -189,12 +189,24 @@ const AboutMe = () => {
       <div
         className="position-absolute"
         style={{
-          right: "10%",
-          top: "30%",
-          opacity: 0.5,
+          right: "6%",
+          top: "32%",
+          opacity: 0.2,
+          filter: "grayscale(100%)",
         }}
       >
         <Table />
+      </div>
+      <div
+        className="position-absolute"
+        style={{
+          left: "-12%",
+          top: "28%",
+          opacity: 0.2,
+          filter: "grayscale(100%)",
+        }}
+      >
+        <Sunset />
       </div>
     </div>
   );
