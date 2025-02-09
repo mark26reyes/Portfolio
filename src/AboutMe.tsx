@@ -107,26 +107,30 @@ const AboutMe = () => {
       <div
         style={{
           position: "absolute",
-          top: "20%",
-          left: "30%",
+          top: "13%",
+          left: "40%",
           transform: "translateX(-50%)",
           textAlign: "left",
           fontFamily: "Helvetica",
         }}
       >
-        <h1 style={{ fontSize: "5rem", fontWeight: "bold" }}>UX/UI</h1>
+        <h1 style={{ fontSize: "5rem", fontWeight: "regular", opacity: 0.7 }}>
+          UX/UI
+        </h1>
       </div>
 
       {/* Tekstblokk */}
       <div
         style={{
           position: "absolute",
-          top: "35%",
-          left: "50%",
-          width: "40%",
+          top: "25%",
+          left: "53%",
+          width: "30%",
           transform: "translateX(-50%)",
-          fontSize: "1rem",
+          fontSize: "0.9rem",
           lineHeight: "1.5",
+          fontFamily: "Helvetica",
+          fontWeight: "lighter",
         }}
       >
         <p>
@@ -156,7 +160,6 @@ const AboutMe = () => {
           streber jeg etter å skape løsninger som ikke bare ser bra ut, men som
           også fungerer sømløst for brukeren.
         </p>
-        <p>Ønsker du å samarbeide eller komme i kontakt med meg?</p>
       </div>
 
       {/* Profilbilde */}
@@ -164,7 +167,7 @@ const AboutMe = () => {
         className="position-absolute"
         style={{
           left: "13%",
-          top: "20%",
+          top: "22%",
           padding: "10px",
           backgroundColor: "white",
         }}
@@ -172,7 +175,11 @@ const AboutMe = () => {
         <SideProfile />
         <p
           className="text-dark mt-2"
-          style={{ fontWeight: "bold", fontSize: "1.5rem" }}
+          style={{
+            fontWeight: "regular",
+            fontSize: "1.5rem",
+            fontFamily: "Helvetica",
+          }}
         >
           Mark Daniel Reyes
         </p>

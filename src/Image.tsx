@@ -50,7 +50,7 @@ const SideProfile = () => {
         src="/Portfolio/mark_side.jpeg"
         alt="Mark"
         style={{
-          width: "350px",
+          width: "325px",
           zIndex: 2,
           position: "relative",
         }}
@@ -63,7 +63,7 @@ const Table = () => {
   return (
     <div style={{ display: "flex", overflow: "hidden" }}>
       <img
-        src="/Portfolio/mark_croatia.jpeg"
+        src="/Portfolio/mark_table.jpeg"
         alt="Table"
         style={{
           width: "200px",
