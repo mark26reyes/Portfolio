@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
+import { Link } from "react-router-dom";
 import Image from "./Image";
 import { motion } from "framer-motion";
 import { Autograf } from "./Image";
@@ -62,6 +62,7 @@ const Home = () => {
           fontFamily: "Helvetica",
           fontWeight: "lighter",
           fontSize: "0.9rem",
+          zIndex: 9999, // Legg til denne
         }}
       >
         <ul className="nav">
@@ -76,16 +77,15 @@ const Home = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-light nav-link" to="#">
+            <Link className="text-light nav-link" to="/Work">
               ARBEID
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-light nav-link" to="#">
+            <Link className="text-light nav-link" to="/Experience">
               ERFARING
             </Link>
           </li>
-          <li></li>
         </ul>
         <div
           style={{
@@ -183,6 +183,33 @@ const Home = () => {
         <Image />
         <Autograf />
       </div>
+
+      {/* Om Meg-knapp 
+      <div
+        className="position-absolute"
+        style={{ bottom: "5%", right: "4%", zIndex: 3 }}
+      >
+        <a
+          className="text-light"
+          href="#"
+          style={{
+            fontFamily: "Helvetica",
+            fontWeight: "regular",
+            display: "inline-block",
+            color: "white",
+            textDecoration: "none",
+          }}
+        >
+          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
+            [
+          </span>
+          <span style={{ padding: "25px" }}>OM MEG</span>
+          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
+            ]
+          </span>
+        </a>
+      </div>
+      */}
     </div>
   );
 };

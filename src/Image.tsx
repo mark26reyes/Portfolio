@@ -43,5 +43,39 @@ const Autograf = () => {
   );
 };
 
+const SideProfile = () => {
+  return (
+    <div style={{ display: "flex", overflow: "hidden" }}>
+      <img
+        src="/Portfolio/mark_side.jpeg"
+        alt="Mark"
+        style={{
+          width: "350px",
+          zIndex: 2,
+          position: "relative",
+        }}
+      />
+    </div>
+  );
+};
+
+const Table = () => {
+  return (
+    <div style={{ display: "flex", overflow: "hidden" }}>
+      <img
+        src="/Portfolio/mark_croatia.jpeg"
+        alt="Table"
+        style={{
+          width: "200px",
+          zIndex: 2,
+          position: "relative",
+        }}
+      />
+    </div>
+  );
+};
+
 export default Image;
 export { Autograf };
+export { SideProfile };
+export { Table };
