@@ -8,7 +8,13 @@ const Experience = () => {
   const text = "MARK     DANIEL     REYES".split("");
 
   return (
-    <div className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden">
+    <div
+      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden"
+      style={{
+        backgroundImage: "url('/Portfolio/sky.png')",
+        backgroundSize: "cover",
+      }}
+    >
       {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
