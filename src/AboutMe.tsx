@@ -173,14 +173,14 @@ const AboutMe = () => {
         className="position-absolute"
         style={{
           left: "13%",
-          top: "22%",
+          top: "24%",
           padding: "10px",
           backgroundColor: "white",
         }}
       >
         <SideProfile />
         <p
-          className="text-dark mt-2"
+          className="text-dark mt-2 mb-0"
           style={{
             fontWeight: "regular",
             fontSize: "1.5rem",
