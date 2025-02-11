@@ -13,8 +13,11 @@ const AboutMe = () => {
     <div
       className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
       style={{
-        backgroundImage: "url('/Portfolio/sky.png')",
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Logo med animasjon */}
@@ -197,8 +200,7 @@ const AboutMe = () => {
         style={{
           right: "6%",
           top: "32%",
-          opacity: 0.2,
-          filter: "grayscale(100%)",
+          filter: "grayscale(100%) brightness(30%)", // Gjør bildet mørkere
         }}
       >
         <Table />
@@ -208,8 +210,7 @@ const AboutMe = () => {
         style={{
           left: "-12%",
           top: "28%",
-          opacity: 0.2,
-          filter: "grayscale(100%)",
+          filter: "grayscale(100%) brightness(30%)",
         }}
       >
         <Sunset />

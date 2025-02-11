@@ -3,13 +3,20 @@ import { motion } from "framer-motion";
 
 const Image = () => {
   return (
-    <div style={{ display: "flex", overflow: "hidden" }}>
+    <div
+      style={{
+        display: "flex",
+        overflow: "hidden",
+        position: "relative",
+        filter: "brightness(27%)", // Gjør bakgrunnen mørkere
+      }}
+    >
       <img
         src="/Portfolio/mark4k.png"
         alt="Mark"
         style={{
           width: "770px",
-          opacity: 0.3,
+          opacity: 1,
           zIndex: 2,
           position: "relative",
         }}

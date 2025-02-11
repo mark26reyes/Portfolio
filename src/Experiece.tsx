@@ -9,10 +9,13 @@ const Experience = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden"
+      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
       style={{
-        backgroundImage: "url('/Portfolio/sky.png')",
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Logo med animasjon */}

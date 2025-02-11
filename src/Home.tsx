@@ -10,7 +10,16 @@ const Home = () => {
   const text = "MARK     DANIEL     REYES".split("");
 
   return (
-    <div className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden">
+    <div
+      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
@@ -183,33 +192,6 @@ const Home = () => {
         <Image />
         <Autograf />
       </div>
-
-      {/* Om Meg-knapp 
-      <div
-        className="position-absolute"
-        style={{ bottom: "5%", right: "4%", zIndex: 3 }}
-      >
-        <a
-          className="text-light"
-          href="#"
-          style={{
-            fontFamily: "Helvetica",
-            fontWeight: "regular",
-            display: "inline-block",
-            color: "white",
-            textDecoration: "none",
-          }}
-        >
-          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
-            [
-          </span>
-          <span style={{ padding: "25px" }}>OM MEG</span>
-          <span style={{ fontSize: "1.6rem", color: "rgb(255, 135, 0)" }}>
-            ]
-          </span>
-        </a>
-      </div>
-      */}
     </div>
   );
 };
