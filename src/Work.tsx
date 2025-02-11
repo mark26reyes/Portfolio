@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
@@ -6,6 +6,33 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   const text = "MARK     DANIEL     REYES".split("");
+
+  const projects = [
+    {
+      name: "MatSpar",
+      img: "/Portfolio/matspar.png",
+      description:
+        "En app designet for studenter og familier som ønsker å planlegge måltider økonomisk og bærekraftig. Den hjelper med budsjettstyring, optimalisering av ingredienser og redusering av matsvinn.",
+    },
+    {
+      name: "OneHub",
+      img: "/Portfolio/onehub.png",
+      description:
+        "En plattform som samler strømmetjenester og hjelper brukere med å oppdage nytt innhold. Med en rullbar trailer-feed inspirert av TikTok blir oppdagelsen av filmer og serier engasjerende og enkel.",
+    },
+    {
+      name: "Harmoni",
+      img: "/Portfolio/harmoni.png",
+      description:
+        "En app som fungerer som en virtuell støttespiller for bedre psykisk helse. Den tilbyr ressurser og verktøy for å håndtere mental helse i hverdagen, som et supplement til profesjonell behandling.",
+    },
+    {
+      name: "Fristil",
+      img: "/Portfolio/fristil.png",
+      description:
+        "Fristil er et plateselskap som lar russegrupper velge artister, produsenter og vokalister for å lage sin russelåt. Nettsiden, utviklet i WIX Studio, viser artister, tidligere verk og nyheter og generelt om Fristil.",
+    },
+  ];
 
   return (
     <div
@@ -115,7 +142,78 @@ const Work = () => {
           </a>
         </div>
       </nav>
-      <div></div>
+
+      {/* Arbeid-seksjonen */}
+      <section className="container" style={{ marginTop: "13%", zIndex: 2 }}>
+        <h1
+          className="display-4 text-white"
+          style={{ fontFamily: "Helvetica", fontSize: "4.5rem" }}
+        >
+          MITT ARBEID
+        </h1>
+        <p
+          className="text-white-50"
+          style={{ fontSize: "0.9rem", width: "75%" }}
+        >
+          Velkommen til mitt kreative univers! Her kan du utforske hvordan idéer
+          og innovasjon blir forvandlet til intuitive prototyper og funksjonelle
+          løsninger. Jeg brenner for å skape digitale produkter som ikke bare
+          ser bra ut, men som også gir en sømløs og meningsfull opplevelse for
+          brukeren. Fra smarte apper til unike designkonsepter – dette er et
+          innblikk i mitt arbeid, hvor teknologi og estetikk møtes for å skape
+          noe inspirerende.
+        </p>
+
+        {/* Prosjektkort */}
+        <div className="row justify-content-center mt-5">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              className="col-md-3 col-sm-6 mb-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div
+                className="p-4 d-flex align-items-center justify-content-center position-relative"
+                style={{
+                  backgroundColor: "#101010",
+
+                  minHeight: "300px",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Bilde */}
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  className="img-fluid position-absolute"
+                  style={{
+                    maxWidth: "80%",
+                    transition: "opacity 0.3s ease-in-out",
+                  }}
+                />
+
+                {/* Hover-overlay med beskrivelse */}
+                <div
+                  className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
+                    width: "100%",
+                    height: "100%",
+                    opacity: 0,
+                    transition: "opacity 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
+                >
+                  <p className="m-0">{project.description}</p>
+                </div>
+              </div>
+              <p className="mt-3 text-white">{project.name}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
