@@ -183,45 +183,43 @@ const Work = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <div
-                  className="p-4 d-flex align-items-center justify-content-center position-relative"
+              <div
+                className="p-4 d-flex align-items-center justify-content-center position-relative"
+                style={{
+                  backgroundColor: "#101010",
+
+                  minHeight: "300px",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Bilde */}
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  className="img-fluid position-absolute"
                   style={{
-                    backgroundColor: "#101010",
-
-                    minHeight: "300px",
-                    overflow: "hidden",
+                    maxWidth: "80%",
+                    transition: "opacity 0.3s ease-in-out",
                   }}
-                >
-                  {/* Bilde */}
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="img-fluid position-absolute"
-                    style={{
-                      maxWidth: "80%",
-                      transition: "opacity 0.3s ease-in-out",
-                    }}
-                  />
+                />
 
-                  {/* Hover-overlay med beskrivelse */}
-                  <div
-                    className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
-                    style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.8)",
-                      width: "100%",
-                      height: "100%",
-                      opacity: 0,
-                      transition: "opacity 0.3s ease-in-out",
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
-                  >
-                    <p className="m-0">{project.description}</p>
-                  </div>
+                {/* Hover-overlay med beskrivelse */}
+                <div
+                  className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
+                    width: "100%",
+                    height: "100%",
+                    opacity: 0,
+                    transition: "opacity 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
+                >
+                  <p className="m-0">{project.description}</p>
                 </div>
-                <p className="mt-3 text-white">{project.name}</p>
-              </a>
+              </div>
+              <p className="mt-3 text-white">{project.name}</p>
             </motion.div>
           ))}
         </div>
