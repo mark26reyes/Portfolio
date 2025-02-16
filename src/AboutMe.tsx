@@ -112,19 +112,25 @@ const AboutMe = () => {
         </div>
       </nav>
 
-      {/* UX/UI Overskrift */}
+      {/* OM MEG Overskrift */}
       <div
         style={{
           position: "absolute",
-          top: "13%",
-          left: "45%",
+          top: "20%",
+          left: "16.5%",
           transform: "translateX(-50%)",
           textAlign: "left",
-          fontFamily: "Helvetica",
         }}
       >
-        <h1 style={{ fontSize: "5rem", fontWeight: "regular", opacity: 0.7 }}>
-          UX/UI
+        {/* Tekst med skygge */}
+        <h1
+          style={{
+            fontSize: "5rem",
+            fontWeight: "regular",
+            fontFamily: "Helvetica",
+          }}
+        >
+          OM MEG
         </h1>
       </div>
 
@@ -132,11 +138,11 @@ const AboutMe = () => {
       <div
         style={{
           position: "absolute",
-          top: "25%",
-          left: "53%",
-          width: "30%",
+          top: "35%",
+          left: "27.5%",
+          width: "45%",
           transform: "translateX(-50%)",
-          fontSize: "0.9rem",
+          fontSize: "1rem",
           lineHeight: "1.5",
           fontFamily: "Helvetica",
           fontWeight: "lighter",
@@ -175,10 +181,11 @@ const AboutMe = () => {
       <div
         className="position-absolute"
         style={{
-          left: "13%",
-          top: "24%",
+          right: "23%",
+          top: "21%",
           padding: "10px",
           backgroundColor: "white",
+          zIndex: 2,
         }}
       >
         <SideProfile />
@@ -199,8 +206,9 @@ const AboutMe = () => {
         className="position-absolute"
         style={{
           right: "6%",
-          top: "32%",
+          top: "15%",
           filter: "grayscale(100%) brightness(30%)", // Gjør bildet mørkere
+          zIndex: 1,
         }}
       >
         <Table />
@@ -208,8 +216,8 @@ const AboutMe = () => {
       <div
         className="position-absolute"
         style={{
-          left: "-12%",
-          top: "28%",
+          right: "4%",
+          top: "45%",
           filter: "grayscale(100%) brightness(30%)",
         }}
       >

@@ -7,6 +7,14 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const text = "MARK     DANIEL     REYES".split("");
 
+  const skills = [
+    { name: "Figma", level: "100%", logo: "/Portfolio/figma.png" },
+    { name: "UX (Brukertesting)", level: "80%", logo: "/Portfolio/ux.png" },
+    { name: "HTML & CSS", level: "75%", logo: "/Portfolio/htmlcss.png" },
+    { name: "React", level: "70%", logo: "/Portfolio/react.png" },
+    { name: "JavaScript", level: "70%", logo: "/Portfolio/javascript.png" },
+  ];
+
   return (
     <div
       className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
@@ -115,7 +123,81 @@ const Experience = () => {
           </a>
         </div>
       </nav>
-      <div></div>
+      <div className="container">
+        <div
+          style={{
+            position: "absolute",
+            top: "20%",
+            left: "19%",
+            transform: "translateX(-50%)",
+            textAlign: "left",
+          }}
+        >
+          {/* Tekst med skygge */}
+          <h1
+            style={{
+              fontSize: "5rem",
+              fontWeight: "regular",
+              fontFamily: "Helvetica",
+            }}
+          >
+            ERFARING
+          </h1>
+        </div>
+        <div className="row" style={{ marginTop: "20%" }}>
+          {/* Erfaringsseksjon */}
+          <div className="col-md-6">
+            <p style={{ fontSize: "1rem", width: "90%" }}>
+              Gjennom tre år har jeg utviklet ferdigheter innen webutvikling,
+              interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS,
+              React, JavaScript og TypeScript for å skape dynamiske og
+              brukervennlige løsninger. Design og brukeropplevelse har vært en
+              stor del av mitt arbeid, der jeg har brukt verktøy som Figma og
+              Adobe Illustrator for å skape intuitive grensesnitt. I tillegg har
+              jeg lært viktige designprinsipper og gjennomført brukertesting for
+              å sikre at løsningene fungerer optimalt for brukerne.
+            </p>
+            <h4 className="mt-5">Sertifikater</h4>
+
+            <img
+              src="/Portfolio/htmlcss_certificate.png"
+              alt="HTML & CSS Certificate"
+              style={{ width: "175px", marginRight: "20px" }}
+            />
+            <img
+              src="/Portfolio/react_certificate.png"
+              alt="React Certificate"
+              style={{ width: "200px" }}
+            />
+          </div>
+
+          {/* Ferdighetsseksjon */}
+          <div className="col-md-6">
+            {skills.map((skill, index) => (
+              <div key={index} className="mb-5">
+                <div className="d-flex align-items-center mb-1">
+                  <img
+                    src={skill.logo}
+                    alt={skill.name}
+                    style={{ width: "30px", marginRight: "10px" }}
+                  />
+                  <span>{skill.name}</span>
+                </div>
+                <div className="progress" style={{ height: "8px" }}>
+                  <div
+                    className="progress-bar bg-info"
+                    role="progressbar"
+                    style={{ width: skill.level }}
+                    aria-valuenow={parseInt(skill.level)}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

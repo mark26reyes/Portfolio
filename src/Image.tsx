@@ -73,7 +73,7 @@ const Table = () => {
         src="/Portfolio/mark_table.png"
         alt="Table"
         style={{
-          width: "285px",
+          width: "265px",
           zIndex: 2,
           position: "relative",
         }}
@@ -89,7 +89,7 @@ const Sunset = () => {
         src="/Portfolio/mark_sunset.png"
         alt="Sunset"
         style={{
-          width: "325px",
+          width: "275px",
           zIndex: 2,
           position: "relative",
         }}

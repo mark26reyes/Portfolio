@@ -13,24 +13,28 @@ const Work = () => {
       img: "/Portfolio/matspar.png",
       description:
         "En app designet for studenter og familier som ønsker å planlegge måltider økonomisk og bærekraftig. Den hjelper med budsjettstyring, optimalisering av ingredienser og redusering av matsvinn.",
+      url: "https://www.figma.com/design/ObFSRwwNMJGFbuidoVTQcM/Eksamen-Int.-Design-H23?node-id=420-3691&t=ZVwTNP9kWrQR4nbR-1",
     },
     {
       name: "OneHub",
       img: "/Portfolio/onehub.png",
       description:
         "En plattform som samler strømmetjenester og hjelper brukere med å oppdage nytt innhold. Med en rullbar trailer-feed inspirert av TikTok blir oppdagelsen av filmer og serier engasjerende og enkel.",
+      url: "https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=F0JbR9q81tT1orOz-1",
     },
     {
       name: "Harmoni",
       img: "/Portfolio/harmoni.png",
       description:
         "En app som fungerer som en virtuell støttespiller for bedre psykisk helse. Den tilbyr ressurser og verktøy for å håndtere mental helse i hverdagen, som et supplement til profesjonell behandling.",
+      url: "https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Design-Prosjekt?node-id=770-1244&t=E7nKcxjfZsVGWHIo-1",
     },
     {
       name: "Fristil",
       img: "/Portfolio/fristil.png",
       description:
         "Fristil er et plateselskap som lar russegrupper velge artister, produsenter og vokalister for å lage sin russelåt. Nettsiden, utviklet i WIX Studio, viser artister, tidligere verk og nyheter og generelt om Fristil.",
+      url: "https://adrian43124.wixstudio.com/my-site-3",
     },
   ];
 
@@ -144,10 +148,14 @@ const Work = () => {
       </nav>
 
       {/* Arbeid-seksjonen */}
-      <section className="container" style={{ marginTop: "13%", zIndex: 2 }}>
+      <section className="container" style={{ marginTop: "11%", zIndex: 2 }}>
         <h1
-          className="display-4 text-white"
-          style={{ fontFamily: "Helvetica", fontSize: "4.5rem" }}
+          className="text-white"
+          style={{
+            fontFamily: "Helvetica",
+            fontSize: "5rem",
+            fontWeight: "regular",
+          }}
         >
           MITT ARBEID
         </h1>
@@ -155,13 +163,15 @@ const Work = () => {
           className="text-white-50"
           style={{ fontSize: "0.9rem", width: "75%" }}
         >
-          Velkommen til mitt kreative univers! Her kan du utforske hvordan idéer
-          og innovasjon blir forvandlet til intuitive prototyper og funksjonelle
-          løsninger. Jeg brenner for å skape digitale produkter som ikke bare
-          ser bra ut, men som også gir en sømløs og meningsfull opplevelse for
-          brukeren. Fra smarte apper til unike designkonsepter – dette er et
-          innblikk i mitt arbeid, hvor teknologi og estetikk møtes for å skape
-          noe inspirerende.
+          Velkommen til mitt kreative univers! Jeg tror på design som ikke bare
+          ser bra ut, men som også løser reelle utfordringer og skaper verdi for
+          brukeren. Her kan du utforske hvordan idéer blir til gjennomtenkte og
+          funksjonelle løsninger – fra smarte apper som forenkler hverdagen til
+          digitale plattformer som kobler mennesker og teknologi på en intuitiv
+          måte. Hvert prosjekt er et resultat av grundig research, strategisk
+          design og en lidenskap for innovasjon. Utforsk mitt arbeid og se
+          hvordan estetikk og funksjonalitet smelter sammen for å skape
+          inspirerende digitale opplevelser.
         </p>
 
         {/* Prosjektkort */}
@@ -173,43 +183,45 @@ const Work = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div
-                className="p-4 d-flex align-items-center justify-content-center position-relative"
-                style={{
-                  backgroundColor: "#101010",
-
-                  minHeight: "300px",
-                  overflow: "hidden",
-                }}
-              >
-                {/* Bilde */}
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  className="img-fluid position-absolute"
-                  style={{
-                    maxWidth: "80%",
-                    transition: "opacity 0.3s ease-in-out",
-                  }}
-                />
-
-                {/* Hover-overlay med beskrivelse */}
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <div
-                  className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
+                  className="p-4 d-flex align-items-center justify-content-center position-relative"
                   style={{
-                    backgroundColor: "rgba(0, 0, 0, 0.8)",
-                    width: "100%",
-                    height: "100%",
-                    opacity: 0,
-                    transition: "opacity 0.3s ease-in-out",
+                    backgroundColor: "#101010",
+
+                    minHeight: "300px",
+                    overflow: "hidden",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
                 >
-                  <p className="m-0">{project.description}</p>
+                  {/* Bilde */}
+                  <img
+                    src={project.img}
+                    alt={project.name}
+                    className="img-fluid position-absolute"
+                    style={{
+                      maxWidth: "80%",
+                      transition: "opacity 0.3s ease-in-out",
+                    }}
+                  />
+
+                  {/* Hover-overlay med beskrivelse */}
+                  <div
+                    className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
+                    style={{
+                      backgroundColor: "rgba(0, 0, 0, 0.8)",
+                      width: "100%",
+                      height: "100%",
+                      opacity: 0,
+                      transition: "opacity 0.3s ease-in-out",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
+                  >
+                    <p className="m-0">{project.description}</p>
+                  </div>
                 </div>
-              </div>
-              <p className="mt-3 text-white">{project.name}</p>
+                <p className="mt-3 text-white">{project.name}</p>
+              </a>
             </motion.div>
           ))}
         </div>
