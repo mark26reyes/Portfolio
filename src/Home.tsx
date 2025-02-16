@@ -103,9 +103,9 @@ const Home = () => {
             right: "-185%",
           }}
         >
-          <a
+          <Link
+            to="/contact"
             className="btn text-center text-white px-4"
-            href="#"
             style={{
               borderRadius: "0px",
               fontWeight: "lighter",
@@ -115,7 +115,7 @@ const Home = () => {
             }}
           >
             TA KONTAKT
-          </a>
+          </Link>
         </div>
       </nav>
 

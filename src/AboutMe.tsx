@@ -96,9 +96,9 @@ const AboutMe = () => {
           </li>
         </ul>
         <div style={{ position: "absolute", top: "-20%", right: "-185%" }}>
-          <a
+          <Link
+            to="/contact"
             className="btn text-center text-white px-4"
-            href="#"
             style={{
               borderRadius: "0px",
               fontWeight: "lighter",
@@ -108,7 +108,7 @@ const AboutMe = () => {
             }}
           >
             TA KONTAKT
-          </a>
+          </Link>
         </div>
       </nav>
 
