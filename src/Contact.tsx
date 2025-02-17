@@ -111,6 +111,40 @@ const AboutMe = () => {
           </Link>
         </div>
       </nav>
+      <div className="container">
+        <div
+          style={{
+            position: "absolute",
+            top: "20%",
+            left: "22%",
+            transform: "translateX(-50%)",
+            textAlign: "left",
+          }}
+        >
+          {/* Tekst med skygge */}
+          <h1
+            style={{
+              fontSize: "5rem",
+              fontWeight: "regular",
+              fontFamily: "Helvetica",
+            }}
+          >
+            TA KONTAKT
+          </h1>
+          <h2
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "lighter",
+              fontFamily: "Helvetica",
+              color: "gray",
+              textDecoration: "underline",
+              marginTop: "10%",
+            }}
+          >
+            mark26reyes@gmail.com
+          </h2>
+        </div>
+      </div>
     </div>
   );
 };
