@@ -135,10 +135,10 @@ const Home = () => {
           zIndex: 2,
           textAlign: "left",
           width: "50%",
-          fontFamily: "Helvetica",
+          fontFamily: "Proxima Nova",
           fontWeight: "lighter",
           fontSize: "0.9rem",
-          color: "gray",
+          color: "white",
         }}
       >
         <p>

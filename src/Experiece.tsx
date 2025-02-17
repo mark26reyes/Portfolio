@@ -154,7 +154,14 @@ const Experience = () => {
         <div className="row" style={{ marginTop: "20%" }}>
           {/* Erfaringsseksjon */}
           <div className="col-md-6">
-            <p style={{ fontSize: "1rem", width: "90%" }}>
+            <p
+              style={{
+                fontFamily: "Proxima Nova",
+                fontSize: "1rem",
+                width: "98%",
+                fontWeight: "lighter",
+              }}
+            >
               Gjennom tre år har jeg utviklet ferdigheter innen webutvikling,
               interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS,
               React, JavaScript og TypeScript for å skape dynamiske og
@@ -164,7 +171,12 @@ const Experience = () => {
               jeg lært viktige designprinsipper og gjennomført brukertesting for
               å sikre at løsningene fungerer optimalt for brukerne.
             </p>
-            <h4 className="mt-5">Sertifikater</h4>
+            <h4
+              className="mt-5"
+              style={{ fontFamily: "Helvetica", fontWeight: "regular" }}
+            >
+              SERTIFIKATER
+            </h4>
 
             <img
               src="/Portfolio/htmlcss_certificate.png"

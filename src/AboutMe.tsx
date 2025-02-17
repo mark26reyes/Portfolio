@@ -151,16 +151,16 @@ const AboutMe = () => {
           transform: "translateX(-50%)",
           fontSize: "1rem",
           lineHeight: "1.5",
-          fontFamily: "Helvetica",
+          fontFamily: "Proxima Nova",
           fontWeight: "lighter",
         }}
       >
         <p>
           Mitt navn er <strong>Mark Daniel Reyes</strong>, og jeg er en 23 år
-          gammel UX/UI-designer med en bachelorgrad i Interaktivt Design fra
-          Høyskolen Kristiania. Jeg har en lidenskap for å skape intuitive og
-          estetisk tiltalende digitale opplevelser som kombinerer funksjonalitet
-          og design.
+          gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt
+          Design fra Høyskolen Kristiania til sommer. Jeg har en lidenskap for å
+          skape intuitive og estetisk tiltalende digitale opplevelser som
+          kombinerer funksjonalitet og design.
         </p>
         <p>
           Gjennom studiene mine har jeg fått en solid forståelse for
@@ -180,7 +180,7 @@ const AboutMe = () => {
           designmetoder for å kunne utvikle meg videre som både designer og
           utvikler. Med en sterk interesse for designpsykologi og brukeradferd,
           streber jeg etter å skape løsninger som ikke bare ser bra ut, men som
-          også fungerer sømløst for brukeren.
+          også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt:)
         </p>
       </div>
 

@@ -167,8 +167,13 @@ const Work = () => {
           MITT ARBEID
         </h1>
         <p
-          className="text-white-50"
-          style={{ fontSize: "0.9rem", width: "75%" }}
+          className="text-white"
+          style={{
+            fontFamily: "Proxima Nova",
+            fontSize: "1rem",
+            width: "80%",
+            fontWeight: "lighter",
+          }}
         >
           Velkommen til mitt kreative univers! Jeg tror på design som ikke bare
           ser bra ut, men som også løser reelle utfordringer og skaper verdi for
@@ -182,7 +187,7 @@ const Work = () => {
         </p>
 
         {/* Prosjektkort */}
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center mt-4">
           {projects.map((project, index) => (
             <motion.div
               key={index}
