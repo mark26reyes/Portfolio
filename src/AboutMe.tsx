@@ -75,22 +75,22 @@ const AboutMe = () => {
       >
         <ul className="nav">
           <li className="nav-item">
-            <Link className="text-light nav-link" to="/home">
+            <Link className="text-light nav-link" to="/">
               HJEM
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-light nav-link" to="/aboutme">
+            <Link className="text-light nav-link" to="/AboutMe">
               OM MEG
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-light nav-link" to="/work">
+            <Link className="text-light nav-link" to="/Work">
               ARBEID
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="text-light nav-link" to="/experience">
+            <Link className="text-light nav-link" to="/Experience">
               ERFARING
             </Link>
           </li>
