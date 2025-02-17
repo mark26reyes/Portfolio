@@ -138,18 +138,80 @@ const AboutMe = () => {
           >
             TA KONTAKT
           </h1>
-          <h2
+          <a
+            href="mailto:mark26reyes@gmail.com"
             style={{
+              position: "absolute",
               fontSize: "2.5rem",
               fontWeight: "lighter",
               fontFamily: "Helvetica",
               color: "gray",
               textDecoration: "underline",
-              marginTop: "10%",
+              top: "150%",
+              cursor: "pointer",
             }}
           >
             mark26reyes@gmail.com
-          </h2>
+          </a>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "60%",
+            display: "flex",
+            alignItems: "center",
+            gap: "30px", // Mellomrom mellom ikonene
+          }}
+        >
+          {/* LinkedIn */}
+          <a
+            className="text-decoration-none"
+            href="https://www.linkedin.com/in/mark-daniel-reyes-865609278"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="LinkedIn"
+              style={{ width: "60px", height: "60px" }}
+            />
+            <span
+              style={{
+                fontFamily: "Helvetica",
+                fontSize: "2rem",
+                color: "white",
+                marginLeft: "10px",
+              }}
+            >
+              LinkedIn
+            </span>
+          </a>
+
+          {/* GitHub */}
+          <a
+            className="text-decoration-none"
+            href="https://github.com/mark26reyes"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+              alt="GitHub"
+              style={{ width: "60px", height: "60px", filter: "invert(1)" }}
+            />
+            <span
+              style={{
+                fontFamily: "Helvetica",
+                fontSize: "2rem",
+                color: "white",
+                marginLeft: "10px",
+              }}
+            >
+              GitHub
+            </span>
+          </a>
         </div>
       </div>
     </div>
