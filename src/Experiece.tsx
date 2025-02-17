@@ -117,7 +117,14 @@ const Experience = () => {
               fontSize: "0.9rem",
               border: "1px solid rgb(255, 255, 255)",
               padding: "15px 20px",
+              transition: "background-color 0.3s ease",
             }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "#151515")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "black")
+            }
           >
             TA KONTAKT
           </Link>
@@ -185,7 +192,7 @@ const Experience = () => {
                 </div>
                 <div className="progress" style={{ height: "8px" }}>
                   <div
-                    className="progress-bar bg-info"
+                    className="progress-bar bg-warning"
                     role="progressbar"
                     style={{ width: skill.level }}
                     aria-valuenow={parseInt(skill.level)}

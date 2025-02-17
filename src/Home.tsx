@@ -112,7 +112,14 @@ const Home = () => {
               fontSize: "0.9rem",
               border: "1px solid rgb(255, 255, 255)",
               padding: "15px 20px",
+              transition: "background-color 0.3s ease",
             }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "#151515")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "black")
+            }
           >
             TA KONTAKT
           </Link>

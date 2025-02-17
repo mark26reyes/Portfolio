@@ -140,7 +140,14 @@ const Work = () => {
               fontSize: "0.9rem",
               border: "1px solid rgb(255, 255, 255)",
               padding: "15px 20px",
+              transition: "background-color 0.3s ease",
             }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "#151515")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLElement).style.backgroundColor = "black")
+            }
           >
             TA KONTAKT
           </Link>
@@ -183,7 +190,12 @@ const Work = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-decoration-none"
+              >
                 <div
                   className="p-4 d-flex align-items-center justify-content-center position-relative"
                   style={{
