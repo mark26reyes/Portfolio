@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
+
 import Image from "./Image";
 import { motion } from "framer-motion";
 import { Autograf } from "./Image";
@@ -68,78 +69,168 @@ const Home = () => {
       </div>
 
       {/* Hovedinnhold */}
-      <div
-        className="position-absolute"
-        style={{
-          left: "5%",
-          top: "75%",
-          zIndex: 2,
-          textAlign: "left",
-          width: "50%",
-          fontFamily: "Proxima Nova",
-          fontWeight: "lighter",
-          fontSize: "0.9rem",
-          color: "white",
-        }}
-      >
+      <div className="text-container">
         <p>
           Mark Daniel Reyes, 23 år.
-          <span style={{ fontWeight: "Bold" }}>
-            {" "}
-            Bachelorgrad i Interaktivt Design{" "}
-          </span>
+          <span className="bold-text"> Bachelorgrad i Interaktivt Design </span>
           fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling
           hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine
           ferdigheter og bidra til brukervennlige og innovative digitale
           løsninger.
         </p>
       </div>
-      <div
-        className="position-absolute"
-        style={{ left: "4%", top: "27%", zIndex: 2, textAlign: "left" }}
-      >
-        <h1
-          style={{
-            lineHeight: "0.9",
-          }}
-        >
-          <span
-            className="text-white d-block position-relative"
-            style={{
-              fontSize: "12rem",
-              fontWeight: "100",
-              fontFamily: "neue-haas-grotesk-display, sans-serif",
-            }}
-          >
-            Min
-          </span>
-          <span
-            className="text-white"
-            style={{
-              fontSize: "12rem",
-              fontWeight: "100",
-              fontFamily: "neue-haas-grotesk-display, sans-serif",
-              opacity: 0.6,
-            }}
-          >
-            Portefølje
-          </span>
-        </h1>
+
+      {/* Overskrift */}
+      <div className="title-container">
+        <h1 className="title-main">Min</h1>
+        <h1 className="title-sub">Portefølje</h1>
       </div>
 
       {/* Bilde og autograf */}
-      <div
-        className="position-absolute"
-        style={{
-          left: "66%",
-          top: "-11%",
-          transform: "translateX(-50%)",
-          zIndex: 1,
-        }}
-      >
+      <div className="image-container">
         <Image />
         <Autograf />
       </div>
+
+      {/* Stilendringer for responsivt design */}
+      <style>
+        {`
+  /* Standardstil */
+  .text-container {
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    z-index: 2;
+    text-align: left;
+    width: 50%;
+    font-family: "Proxima Nova";
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+
+  .title-container {
+    position: absolute;
+    left: 4%;
+    top: 27%;
+    z-index: 2;
+    text-align: left;
+  }
+
+  .title-main {
+    font-weight: 100;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 12rem;
+    color: white;
+    line-height: 0.9;
+  }
+
+  .title-sub {
+    font-weight: 100;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    opacity: 0.6;
+    font-size: 12rem;
+    color: white;
+    line-height: 0.9;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .image-wrapper {
+    filter: brightness(27%);
+  }
+
+  .responsive-image {
+    width: 770px;
+    position: absolute;
+    right: 5%;
+    top: -80px;
+    z-index: 2;
+  }
+
+  .responsive-autograph {
+    position: absolute;
+    width: 250px;
+    right: 5%;
+    top: 450px;
+    z-index: 3;
+    opacity: 0.7;
+  }
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 440px) {
+    .text-container {
+      width: 90%;
+      left: 7%;
+      top: 33%;
+      font-size: 0.9rem;
+    }
+
+    .title-container {
+      left: 5%;
+      top: 15%;
+    }
+
+    .title-main, .title-sub {
+      font-size: 5rem;
+    }
+
+    .responsive-image {
+      width: 120%;
+      left: 70%;
+      transform: translateX(-50%);
+      top: 300px;
+    }
+
+    .responsive-autograph {
+      width: 150px;
+      left: 5%;
+      top: 80%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .text-container {
+      width: 60%;
+      left: 6%;
+      top: 33%;
+      font-size: 1.5rem;
+    }
+
+    .title-container {
+      left: 5%;
+      top: 15%;
+    }
+
+    .title-main, .title-sub {
+      font-size: 7rem;
+    }
+
+    .responsive-image {
+      width: 100%;
+      left: 75%;
+      transform: translateX(-50%);
+      top: 150px;
+    }
+
+    .responsive-autograph {
+      width: 300px;
+      left: 5%;
+      top: 70%;
+    }
+  }
+
+  `}
+      </style>
     </div>
   );
 };

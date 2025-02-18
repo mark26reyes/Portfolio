@@ -3,23 +3,11 @@ import { motion } from "framer-motion";
 
 const Image = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        overflow: "hidden",
-        position: "relative",
-        filter: "brightness(27%)", // Gjør bakgrunnen mørkere
-      }}
-    >
+    <div className="image-wrapper">
       <img
         src="/Portfolio/mark4k.png"
         alt="Mark"
-        style={{
-          width: "770px",
-          opacity: 1,
-          zIndex: 2,
-          position: "relative",
-        }}
+        className="responsive-image"
       />
     </div>
   );
@@ -31,14 +19,7 @@ const Autograf = () => {
       <motion.img
         src="/Portfolio/autograf_hvit.png"
         alt="Autograf"
-        className="position-absolute"
-        style={{
-          width: "250px",
-          top: "50%",
-          left: "73%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 3,
-        }}
+        className="responsive-autograph"
         initial={{ y: -10, opacity: 0 }} // Starter litt høyere og usynlig
         animate={{
           x: [-200, 0, 0], // Drift-effekt (opp og ned)
