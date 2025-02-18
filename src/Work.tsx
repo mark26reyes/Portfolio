@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
+import Navbar from "./NavBar";
 
 const Work = () => {
   const text = "MARK     DANIEL     REYES".split("");
@@ -92,67 +93,9 @@ const Work = () => {
       </header>
 
       {/* Navigasjonsmeny */}
-      <nav
-        style={{
-          position: "absolute",
-          top: "6%",
-          right: "50%",
-          fontFamily: "Helvetica",
-          fontWeight: "lighter",
-          fontSize: "0.9rem",
-        }}
-      >
-        <ul className="nav">
-          <li className="nav-item">
-            <Link className="text-light nav-link" to="/">
-              HJEM
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-light nav-link" to="/AboutMe">
-              OM MEG
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-light nav-link" to="/Work">
-              ARBEID
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="text-light nav-link" to="/Experience">
-              ERFARING
-            </Link>
-          </li>
-        </ul>
-        <div
-          style={{
-            position: "absolute",
-            top: "-20%",
-            right: "-185%",
-          }}
-        >
-          <Link
-            to="/contact"
-            className="btn text-center text-white px-4"
-            style={{
-              borderRadius: "0px",
-              fontWeight: "lighter",
-              fontSize: "0.9rem",
-              border: "1px solid rgb(255, 255, 255)",
-              padding: "15px 20px",
-              transition: "background-color 0.3s ease",
-            }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.backgroundColor = "#151515")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.backgroundColor = "black")
-            }
-          >
-            TA KONTAKT
-          </Link>
-        </div>
-      </nav>
+      <div>
+        <Navbar />
+      </div>
 
       {/* Arbeid-seksjonen */}
       <section className="container" style={{ marginTop: "11%", zIndex: 2 }}>
