@@ -166,7 +166,7 @@ const Home = () => {
     opacity: 0.7;
   }
 
-  /* RESPONSIVE DESIGN */
+  /* RESPONSIVE DESIGN FOR MOBIL */
   @media (max-width: 440px) {
     .text-container {
       width: 90%;
@@ -198,11 +198,12 @@ const Home = () => {
     }
   }
 
-  @media (max-width: 1024px) {
+    /* RESPONSIVE DESIGN FOR TABLETS */
+  @media (min-width: 441px) and (max-width: 1024px) {
     .text-container {
       width: 60%;
       left: 6%;
-      top: 33%;
+      top: 35%;
       font-size: 1.5rem;
     }
 
@@ -212,14 +213,13 @@ const Home = () => {
     }
 
     .title-main, .title-sub {
-      font-size: 7rem;
+      font-size: 8rem;
     }
 
     .responsive-image {
-      width: 100%;
-      left: 75%;
-      transform: translateX(-50%);
-      top: 150px;
+      width: 1000px;
+      right: -30%;
+      top: 50px;
     }
 
     .responsive-autograph {
@@ -228,6 +228,9 @@ const Home = () => {
       top: 70%;
     }
   }
+
+
+
 
   `}
       </style>

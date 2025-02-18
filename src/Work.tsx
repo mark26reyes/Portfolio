@@ -98,7 +98,10 @@ const Work = () => {
       </div>
 
       {/* Arbeid-seksjonen */}
-      <section className="container" style={{ marginTop: "11%", zIndex: 2 }}>
+      <section
+        className="container position-relative"
+        style={{ marginTop: "11%", zIndex: 2 }}
+      >
         <h1
           className="text-white"
           style={{
@@ -120,13 +123,8 @@ const Work = () => {
         >
           Velkommen til mitt kreative univers! Jeg tror på design som ikke bare
           ser bra ut, men som også løser reelle utfordringer og skaper verdi for
-          brukeren. Her kan du utforske hvordan idéer blir til gjennomtenkte og
-          funksjonelle løsninger – fra smarte apper som forenkler hverdagen til
-          digitale plattformer som kobler mennesker og teknologi på en intuitiv
-          måte. Hvert prosjekt er et resultat av grundig research, strategisk
-          design og en lidenskap for innovasjon. Utforsk mitt arbeid og se
-          hvordan estetikk og funksjonalitet smelter sammen for å skape
-          inspirerende digitale opplevelser.
+          brukeren. Utforsk mitt arbeid og se hvordan estetikk og funksjonalitet
+          smelter sammen for å skape inspirerende digitale opplevelser.
         </p>
 
         {/* Prosjektkort */}
@@ -148,7 +146,6 @@ const Work = () => {
                   className="p-4 d-flex align-items-center justify-content-center position-relative"
                   style={{
                     backgroundColor: "#101010",
-
                     minHeight: "300px",
                     overflow: "hidden",
                   }}
@@ -163,29 +160,57 @@ const Work = () => {
                       transition: "opacity 0.3s ease-in-out",
                     }}
                   />
-
-                  {/* Hover-overlay med beskrivelse */}
-                  <div
-                    className="position-absolute d-flex align-items-center justify-content-center text-white text-center p-3"
-                    style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.8)",
-                      width: "100%",
-                      height: "100%",
-                      opacity: 0,
-                      transition: "opacity 0.3s ease-in-out",
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = "0")}
-                  >
-                    <p className="m-0">{project.description}</p>
-                  </div>
                 </div>
-                <p className="mt-3 text-white">{project.name}</p>
+                <p className="mt-3 text-white text-center">{project.name}</p>
               </a>
             </motion.div>
           ))}
         </div>
       </section>
+
+      {/* RESPONSIV STYLING FOR MOBIL (DESKTOP UENDRET) */}
+      <style>
+        {`
+  /* MOBIL RESPONSIVITET */
+  @media (max-width: 440px) {
+    .container {
+      text-align: center;
+      top: 150px;    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      width: 90%;
+      font-size: 0.9rem;
+      text-align: left;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .col-sm-6 {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+    .p-4 {
+      min-height: 250px;
+    }
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  
+  `}
+      </style>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
 import Navbar from "./NavBar";
 
-const AboutMe = () => {
+const Contact = () => {
   const text = "MARK     DANIEL     REYES".split("");
 
   return (
@@ -64,104 +64,209 @@ const AboutMe = () => {
       <div>
         <Navbar />
       </div>
-      <div className="container">
-        <div
-          style={{
-            position: "absolute",
-            top: "20%",
-            left: "22%",
-            transform: "translateX(-50%)",
-            textAlign: "left",
-          }}
-        >
-          {/* Tekst med skygge */}
-          <h1
-            style={{
-              fontSize: "5rem",
-              fontWeight: "regular",
-              fontFamily: "Helvetica",
-            }}
-          >
-            TA KONTAKT
-          </h1>
-          <a
-            href="mailto:mark26reyes@gmail.com"
-            style={{
-              position: "absolute",
-              fontSize: "2.5rem",
-              fontWeight: "lighter",
-              fontFamily: "Helvetica",
-              color: "gray",
-              textDecoration: "underline",
-              top: "150%",
-              cursor: "pointer",
-            }}
-          >
-            mark26reyes@gmail.com
-          </a>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "60%",
-            display: "flex",
-            alignItems: "center",
-            gap: "30px", // Mellomrom mellom ikonene
-          }}
-        >
+
+      {/* Kontakt-informasjon */}
+      <div className="contact-container">
+        <h1 className="contact-title">TA KONTAKT</h1>
+        <a href="mailto:mark26reyes@gmail.com" className="contact-email">
+          mark26reyes@gmail.com
+        </a>
+
+        {/* Sosiale medier */}
+        <div className="social-links">
           {/* LinkedIn */}
           <a
-            className="text-decoration-none"
             href="https://www.linkedin.com/in/mark-daniel-reyes-865609278"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ display: "flex", alignItems: "center" }}
+            className="social-item"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
               alt="LinkedIn"
-              style={{ width: "60px", height: "60px" }}
+              className="social-icon"
             />
-            <span
-              style={{
-                fontFamily: "Helvetica",
-                fontSize: "2rem",
-                color: "white",
-                marginLeft: "10px",
-              }}
-            >
-              LinkedIn
-            </span>
+            <span>LinkedIn</span>
           </a>
 
           {/* GitHub */}
           <a
-            className="text-decoration-none"
             href="https://github.com/mark26reyes"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ display: "flex", alignItems: "center" }}
+            className="social-item"
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
               alt="GitHub"
-              style={{ width: "60px", height: "60px", filter: "invert(1)" }}
+              className="social-icon github-icon"
             />
-            <span
-              style={{
-                fontFamily: "Helvetica",
-                fontSize: "2rem",
-                color: "white",
-                marginLeft: "10px",
-              }}
-            >
-              GitHub
-            </span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
+
+      {/* RESPONSIV STYLING */}
+      <style>
+        {`
+  /* Standard desktop-styling */
+  .contact-container {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+
+  .contact-title {
+    font-size: 5rem;
+    font-weight: regular;
+    font-family: Helvetica;
+  }
+
+  .contact-email {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-family: Helvetica;
+    color: gray;
+    text-decoration: underline;
+    display: block;
+    margin-top: 30px;
+  }
+
+  .social-links {
+    position: absolute;
+    top: 130%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .social-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .github-icon {
+    filter: invert(1);
+  }
+
+  .social-item span {
+    font-family: Helvetica;
+    font-size: 2rem;
+    color: white;
+    margin-left: 10px;
+  }
+
+ /* MOBIL RESPONSIVITET */
+@media (max-width: 440px) {
+    .contact-container {
+        text-align: center;
+        width: 90%;
+        top: 20%; /* Flytter teksten ned */
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .contact-title {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-email {
+        font-size: 2rem;
+        margin-top: 15px;
+        display: block;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .social-links {
+        margin-top: 30px;
+        right: 12%;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-item span {
+        font-size: 1.3rem;
+        margin-left: 8px;
+    }
+}
+
+
+ /* TABLET RESPONSIVITET */
+@media (min-width: 441px) and (max-width: 1024px) {
+    .contact-container {
+        text-align: center;
+        width: 85%;
+        top: 25%; /* Flytter teksten lenger ned */
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-email {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        display: block;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .social-links {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .social-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-item span {
+        font-size: 1.6rem;
+        margin-left: 10px;
+    }
+}
+
+  `}
+      </style>
     </div>
   );
 };
 
-export default AboutMe;
+export default Contact;

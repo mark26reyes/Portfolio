@@ -68,41 +68,12 @@ const AboutMe = () => {
       </div>
 
       {/* OM MEG Overskrift */}
-      <div
-        style={{
-          position: "absolute",
-          top: "20%",
-          left: "16.5%",
-          transform: "translateX(-50%)",
-          textAlign: "left",
-        }}
-      >
-        {/* Tekst med skygge */}
-        <h1
-          style={{
-            fontSize: "5rem",
-            fontWeight: "regular",
-            fontFamily: "Helvetica",
-          }}
-        >
-          OM MEG
-        </h1>
+      <div className="about-title">
+        <h1>OM MEG</h1>
       </div>
 
       {/* Tekstblokk */}
-      <div
-        style={{
-          position: "absolute",
-          top: "35%",
-          left: "27.5%",
-          width: "45%",
-          transform: "translateX(-50%)",
-          fontSize: "1rem",
-          lineHeight: "1.5",
-          fontFamily: "Proxima Nova",
-          fontWeight: "lighter",
-        }}
-      >
+      <div className="about-text">
         <p>
           Mitt navn er <strong>Mark Daniel Reyes</strong>, og jeg er en 23 år
           gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt
@@ -128,56 +99,165 @@ const AboutMe = () => {
           designmetoder for å kunne utvikle meg videre som både designer og
           utvikler. Med en sterk interesse for designpsykologi og brukeradferd,
           streber jeg etter å skape løsninger som ikke bare ser bra ut, men som
-          også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt:)
+          også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt :)
         </p>
       </div>
 
       {/* Profilbilde */}
-      <div
-        className="position-absolute"
-        style={{
-          right: "23%",
-          top: "21%",
-          padding: "10px",
-          backgroundColor: "white",
-          zIndex: 2,
-        }}
-      >
+      <div className="profile-container">
         <SideProfile />
-        <p
-          className="text-dark mt-2 mb-0"
-          style={{
-            fontWeight: "regular",
-            fontSize: "1.5rem",
-            fontFamily: "Helvetica",
-          }}
-        >
-          Mark Daniel Reyes
-        </p>
+        <p className="profile-name">Mark Daniel Reyes</p>
       </div>
 
-      {/* Svart-hvitt bilde til høyre */}
-      <div
-        className="position-absolute"
-        style={{
-          right: "6%",
-          top: "15%",
-          filter: "grayscale(100%) brightness(30%)", // Gjør bildet mørkere
-          zIndex: 1,
-        }}
-      >
+      {/* Svart-hvitt bilder i bakgrunnen */}
+      <div className="table-image">
         <Table />
       </div>
-      <div
-        className="position-absolute"
-        style={{
-          right: "4%",
-          top: "45%",
-          filter: "grayscale(100%) brightness(30%)",
-        }}
-      >
+      <div className="sunset-image">
         <Sunset />
       </div>
+
+      {/* RESPONSIV CSS */}
+      <style>
+        {`
+  /* Standard desktop-styling */
+  .about-title {
+    position: absolute;
+    top: 20%;
+    left: 16.5%;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+
+  .about-title h1 {
+    font-size: 5rem;
+    font-weight: regular;
+    font-family: Helvetica;
+  }
+
+  .about-text {
+    position: absolute;
+    top: 35%;
+    left: 27.5%;
+    width: 45%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Proxima Nova";
+    font-weight: lighter;
+  }
+
+  .profile-container {
+    position: absolute;
+    right: 23%;
+    top: 21%;
+    padding: 10px;
+    background-color: white;
+    z-index: 2;
+  }
+
+  .profile-name {
+    color: black;
+    font-weight: regular;
+    font-size: 1.5rem;
+    font-family: Helvetica;
+  }
+
+  .table-image {
+    position: absolute;
+    right: 6%;
+    top: 15%;
+    filter: grayscale(100%) brightness(30%);
+    z-index: 1;
+  }
+
+  .sunset-image {
+    position: absolute;
+    right: 4%;
+    top: 45%;
+    filter: grayscale(100%) brightness(30%);
+  }
+
+  /* MOBIL RESPONSIVITET */
+  @media (max-width: 440px) {
+    .about-title {
+      left: 5%;
+      top: 15%;
+      transform: none;
+    }
+
+    .about-title h1 {
+      font-size: 3rem;
+    }
+
+    .about-text {
+      width: 90%;
+      left: 51%;
+      top: 23%;
+      font-size: 0.9rem;
+    }
+
+    .profile-container {
+      position: absolute;
+      width: 70%;
+      margin: 20px auto;
+      text-align: center;
+      top: 750px;
+      right: 24%;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .profile-name {
+      font-size: 1.2rem;
+    }
+
+    .table-image,
+    .sunset-image {
+      position: relative;
+      width: 50%;
+      top: 750px;
+      right: -45%;
+      filter: grayscale(100%) brightness(40%);
+    }
+  }
+
+  /* TABLET RESPONSIVITET */
+  @media (min-width: 441px) and (max-width: 1024px) {
+    .about-title {
+      left: 18%;
+      top: 15%;
+    }
+
+    .about-title h1 {
+      font-size: 4rem;
+    }
+
+    .about-text {
+      width: 85%;
+      left: 48%;
+      top: 23%;
+      font-size: 1.3rem;
+    }
+
+    .profile-container {
+      right: 30%;
+      top: 65%;
+    }
+
+    .table-image {
+      right: 10%;
+      top: 62%;
+    }
+
+    .sunset-image {
+      right: 5%;
+      top: 76%;
+    }
+  }
+
+  `}
+      </style>
     </div>
   );
 };
