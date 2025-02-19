@@ -72,38 +72,14 @@ const Experience = () => {
       <div>
         <Navbar />
       </div>
-      <div className="container">
-        <div
-          style={{
-            position: "absolute",
-            top: "20%",
-            left: "19%",
-            transform: "translateX(-50%)",
-            textAlign: "left",
-          }}
-        >
-          {/* Tekst med skygge */}
-          <h1
-            style={{
-              fontSize: "5rem",
-              fontWeight: "regular",
-              fontFamily: "Helvetica",
-            }}
-          >
-            ERFARING
-          </h1>
-        </div>
-        <div className="row" style={{ marginTop: "20%" }}>
+
+      <div className="container experience-content">
+        <h1 className="experience-title">ERFARING</h1>
+
+        <div className="row">
           {/* Erfaringsseksjon */}
           <div className="col-md-6">
-            <p
-              style={{
-                fontFamily: "Proxima Nova",
-                fontSize: "1rem",
-                width: "98%",
-                fontWeight: "lighter",
-              }}
-            >
+            <p className="experience-text">
               Gjennom tre år har jeg utviklet ferdigheter innen webutvikling,
               interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS,
               React, JavaScript og TypeScript for å skape dynamiske og
@@ -113,38 +89,33 @@ const Experience = () => {
               jeg lært viktige designprinsipper og gjennomført brukertesting for
               å sikre at løsningene fungerer optimalt for brukerne.
             </p>
-            <h4
-              className="mt-5"
-              style={{ fontFamily: "Helvetica", fontWeight: "regular" }}
-            >
-              SERTIFIKATER
-            </h4>
+            <h4 className="certificate-title">SERTIFIKATER</h4>
 
-            <img
-              src="/Portfolio/htmlcss_certificate.png"
-              alt="HTML & CSS Certificate"
-              style={{ width: "175px", marginRight: "20px" }}
-            />
-            <img
-              src="/Portfolio/react_certificate.png"
-              alt="React Certificate"
-              style={{ width: "200px" }}
-            />
+            <div className="certificates">
+              <img
+                src="/Portfolio/htmlcss_certificate.png"
+                alt="HTML & CSS Certificate"
+              />
+              <img
+                src="/Portfolio/react_certificate.png"
+                alt="React Certificate"
+              />
+            </div>
           </div>
 
           {/* Ferdighetsseksjon */}
-          <div className="col-md-6">
+          <div className="col-md-6 skills-container">
             {skills.map((skill, index) => (
-              <div key={index} className="mb-5">
+              <div key={index} className="skill-item">
                 <div className="d-flex align-items-center mb-1">
                   <img
                     src={skill.logo}
                     alt={skill.name}
-                    style={{ width: "30px", marginRight: "10px" }}
+                    className="skill-logo"
                   />
                   <span>{skill.name}</span>
                 </div>
-                <div className="progress" style={{ height: "8px" }}>
+                <div className="progress">
                   <div
                     className="progress-bar bg-warning"
                     role="progressbar"
@@ -159,6 +130,143 @@ const Experience = () => {
           </div>
         </div>
       </div>
+
+      {/* RESPONSIV STYLING */}
+      <style>
+        {`
+  /* STANDARD DESKTOP DESIGN (BEHOLDER ORIGINALEN) */
+  .experience-content {
+    text-align: left;
+    width: 100%;
+    margin-top: 18%;
+  }
+
+  .experience-title {
+    font-size: 5rem;
+    top: 20%;
+    left: 19%;
+    position: absolute;
+    transform: translateX(-50%);
+    font-family: Helvetica;
+  }
+
+  .experience-text {
+    font-size: 1rem;
+    width: 98%;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    font-family: Proxima Nova;
+  }
+
+  .certificates {
+    display: flex;
+    gap: 30px;
+  }
+
+  .certificates img {
+    width: 175px;
+  }
+
+  .skill-item {
+    margin-bottom: 30px;
+  }
+
+  .skill-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .progress {
+    height: 8px;
+  }
+
+  /* MOBILVERSJON (max 440px) */
+  @media (max-width: 440px) {
+    .experience-content {
+      text-align: center;
+      width: 90%;
+      margin-top: 50%;
+    }
+
+    .experience-title {
+      font-size: 4rem;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .experience-text {
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill-item {
+      width: 100%;
+      text-align: left;
+    }
+
+    .progress {
+      height: 6px;
+      width: 100%;
+    }
+
+    .certificates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .certificate-title {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+
+    .certificates img {
+      width: 80%;
+      margin-bottom: 15px;
+    }
+  }
+
+  /* TABLETVERSJON (441px - 1024px) */
+  @media (min-width: 441px) and (max-width: 1024px) {
+    .experience-title {
+      font-size: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .certificates img {
+      width: 45%;
+    }
+  }
+  `}
+      </style>
     </div>
   );
 };

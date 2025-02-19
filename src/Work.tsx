@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
@@ -41,16 +40,16 @@ const Work = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
+      className="bg-black min-vh-100 d-flex flex-column position-relative text-light"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        overflowX: "hidden",
       }}
     >
-      {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
           className="position-absolute"
@@ -92,18 +91,14 @@ const Work = () => {
         </motion.div>
       </header>
 
-      {/* Navigasjonsmeny */}
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
 
-      {/* Arbeid-seksjonen */}
       <section
         className="container position-relative"
         style={{ marginTop: "11%", zIndex: 2 }}
       >
         <h1
-          className="text-white"
+          className="text-white title"
           style={{
             fontFamily: "Helvetica",
             fontSize: "5rem",
@@ -127,7 +122,6 @@ const Work = () => {
           smelter sammen for å skape inspirerende digitale opplevelser.
         </p>
 
-        {/* Prosjektkort */}
         <div className="row justify-content-center mt-4">
           {projects.map((project, index) => (
             <motion.div
@@ -142,24 +136,15 @@ const Work = () => {
                 rel="noopener noreferrer"
                 className="text-decoration-none"
               >
-                <div
-                  className="p-4 d-flex align-items-center justify-content-center position-relative"
-                  style={{
-                    backgroundColor: "#101010",
-                    minHeight: "300px",
-                    overflow: "hidden",
-                  }}
-                >
-                  {/* Bilde */}
+                <div className="p-4 d-flex align-items-center justify-content-center position-relative project-card">
                   <img
                     src={project.img}
                     alt={project.name}
-                    className="img-fluid position-absolute"
-                    style={{
-                      maxWidth: "80%",
-                      transition: "opacity 0.3s ease-in-out",
-                    }}
+                    className="img-fluid position-absolute project-image"
                   />
+                  <div className="overlay">
+                    <p className="description-text">{project.description}</p>
+                  </div>
                 </div>
                 <p className="mt-3 text-white text-center">{project.name}</p>
               </a>
@@ -168,22 +153,54 @@ const Work = () => {
         </div>
       </section>
 
-      {/* RESPONSIV STYLING FOR MOBIL (DESKTOP UENDRET) */}
       <style>
         {`
-  /* MOBIL RESPONSIVITET */
+          .project-card {
+            background-color: #101010;
+            min-height: 300px;
+            overflow: hidden;
+            position: relative;
+          }
+          .project-image {
+            max-width: 80%;
+            transition: opacity 0.3s ease-in-out;
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            padding: 15px;
+          }
+          .project-card:hover .overlay {
+            opacity: 1;
+          }
+          .description-text {
+            color: white;
+            text-align: center;
+          }
+
+           /* MOBIL RESPONSIVITET */
   @media (max-width: 440px) {
     .container {
-      text-align: center;
-      top: 150px;    }
+      top: 135px;  
+      overflowY: auto;  }
 
     h1 {
-      font-size: 3rem;
+      font-size: 1rem;
+      text-align: center;
     }
 
     p {
       width: 90%;
-      font-size: 0.9rem;
+      font-size: 1rem;
       text-align: left;
       margin: auto;
     }
@@ -209,7 +226,8 @@ const Work = () => {
   }
 
   
-  `}
+  }
+        `}
       </style>
     </div>
   );

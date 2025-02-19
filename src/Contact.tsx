@@ -176,13 +176,13 @@ const Contact = () => {
     }
 
     .contact-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-bottom: 10px;
     }
 
     .contact-email {
         font-size: 2rem;
-        margin-top: 15px;
+        margin-top: 100px;
         display: block;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -225,7 +225,7 @@ const Contact = () => {
     }
 
     .contact-title {
-        font-size: 3.5rem;
+        font-size: 2rem;
         margin-bottom: 15px;
     }
 

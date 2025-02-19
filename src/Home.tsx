@@ -171,7 +171,7 @@ const Home = () => {
     .text-container {
       width: 90%;
       left: 7%;
-      top: 33%;
+      top: 35%;
       font-size: 0.9rem;
     }
 
@@ -185,10 +185,11 @@ const Home = () => {
     }
 
     .responsive-image {
-      width: 120%;
+      width: 115%;
       left: 70%;
       transform: translateX(-50%);
       top: 300px;
+      z-index: 5;
     }
 
     .responsive-autograph {

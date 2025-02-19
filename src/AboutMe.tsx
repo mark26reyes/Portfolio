@@ -11,13 +11,14 @@ const AboutMe = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
+      className="bg-black min-vh-100 d-flex flex-column position-relative text-light"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        overflowY: "auto",
       }}
     >
       {/* Logo med animasjon */}
@@ -179,48 +180,45 @@ const AboutMe = () => {
   }
 
   /* MOBIL RESPONSIVITET */
-  @media (max-width: 440px) {
-    .about-title {
-      left: 5%;
-      top: 15%;
-      transform: none;
-    }
-
-    .about-title h1 {
-      font-size: 3rem;
-    }
-
-    .about-text {
-      width: 90%;
-      left: 51%;
-      top: 23%;
-      font-size: 0.9rem;
-    }
-
-    .profile-container {
-      position: absolute;
-      width: 70%;
-      margin: 20px auto;
-      text-align: center;
-      top: 750px;
-      right: 24%;
-      background-color: white;
-      padding: 10px;
-    }
-
-    .profile-name {
-      font-size: 1.2rem;
-    }
-
-    .table-image,
-    .sunset-image {
-      position: relative;
-      width: 50%;
-      top: 750px;
-      right: -45%;
-      filter: grayscale(100%) brightness(40%);
-    }
+@media (max-width: 440px) {
+  .about-title {
+    left: 5%;
+    top: 12%;
+    transform: none;
   }
+
+  .about-title h1 {
+    font-size: 3rem;
+  }
+
+  .about-text {
+    width: 90%;
+    left: 50%;
+    top: 18%;
+    font-size: 0.9rem;
+  }
+
+  .profile-container {
+    position: relative; /* Endret fra absolute til relative */
+    width: 70%;
+    top: 750px;
+    left: 10%;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .table-image,
+  .sunset-image {
+    position: relative; /* Endret fra absolute til relative */
+    width: 50%;
+    margin: -60px auto;
+    top: 260px;
+    right: -20%;
+    filter: grayscale(100%) brightness(40%);
+    
+  }
+}
+
 
   /* TABLET RESPONSIVITET */
   @media (min-width: 441px) and (max-width: 1024px) {
