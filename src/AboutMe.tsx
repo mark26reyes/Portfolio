@@ -18,7 +18,6 @@ const AboutMe = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        overflowY: "auto",
         overflowX: "hidden",
       }}
     >
