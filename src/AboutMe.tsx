@@ -19,6 +19,7 @@ const AboutMe = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         overflowY: "auto",
+        overflowX: "hidden",
       }}
     >
       {/* Logo med animasjon */}
