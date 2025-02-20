@@ -94,7 +94,7 @@ const Work = () => {
       <Navbar />
 
       <section
-        className="container position-relative"
+        className="container position-relative work-content"
         style={{ marginTop: "11%", zIndex: 2 }}
       >
         <h1
@@ -192,6 +192,10 @@ const Work = () => {
     .container {
       top: 135px;  
       overflowY: auto;  }
+
+    .work-content{
+      overflowY: auto;
+    }
 
     h1 {
       font-size: 1rem;

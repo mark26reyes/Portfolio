@@ -63,59 +63,62 @@ const AboutMe = () => {
         </motion.div>
       </header>
 
-      {/* Navigasjonsmeny */}
-      <div>
-        <Navbar />
-      </div>
+      <div className="aboutme-content">
+        {/* Navigasjonsmeny */}
+        <div>
+          <Navbar />
+        </div>
 
-      {/* OM MEG Overskrift */}
-      <div className="about-title">
-        <h1>OM MEG</h1>
-      </div>
+        {/* OM MEG Overskrift */}
+        <div className="about-title">
+          <h1>OM MEG</h1>
+        </div>
 
-      {/* Tekstblokk */}
-      <div className="about-text">
-        <p>
-          Mitt navn er <strong>Mark Daniel Reyes</strong>, og jeg er en 23 år
-          gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt
-          Design fra Høyskolen Kristiania til sommer. Jeg har en lidenskap for å
-          skape intuitive og estetisk tiltalende digitale opplevelser som
-          kombinerer funksjonalitet og design.
-        </p>
-        <p>
-          Gjennom studiene mine har jeg fått en solid forståelse for
-          brukeropplevelse, interaksjonsdesign og visuell kommunikasjon. Jeg har
-          erfaring med verktøy som Figma, Adobe XD og andre designprogrammer, og
-          jeg jobber alltid med et brukerfokusert tankesett for å skape
-          løsninger som er både innovative og effektive.
-        </p>
-        <p>
-          I tillegg til UX/UI-design har jeg en sterk interesse for webutvikling
-          og ønsker å utvikle meg videre innen dette feltet. Jeg har erfaring
-          med HTML, CSS og JavaScript og bygger opp ferdighetene mine innenfor
-          moderne rammeverk som React.
-        </p>
-        <p>
-          Jeg er nysgjerrig av natur og drives av å lære nye teknologier og
-          designmetoder for å kunne utvikle meg videre som både designer og
-          utvikler. Med en sterk interesse for designpsykologi og brukeradferd,
-          streber jeg etter å skape løsninger som ikke bare ser bra ut, men som
-          også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt :)
-        </p>
-      </div>
+        {/* Tekstblokk */}
+        <div className="about-text">
+          <p>
+            Mitt navn er <strong>Mark Daniel Reyes</strong>, og jeg er en 23 år
+            gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt
+            Design fra Høyskolen Kristiania til sommer. Jeg har en lidenskap for
+            å skape intuitive og estetisk tiltalende digitale opplevelser som
+            kombinerer funksjonalitet og design.
+          </p>
+          <p>
+            Gjennom studiene mine har jeg fått en solid forståelse for
+            brukeropplevelse, interaksjonsdesign og visuell kommunikasjon. Jeg
+            har erfaring med verktøy som Figma, Adobe XD og andre
+            designprogrammer, og jeg jobber alltid med et brukerfokusert
+            tankesett for å skape løsninger som er både innovative og effektive.
+          </p>
+          <p>
+            I tillegg til UX/UI-design har jeg en sterk interesse for
+            webutvikling og ønsker å utvikle meg videre innen dette feltet. Jeg
+            har erfaring med HTML, CSS og JavaScript og bygger opp ferdighetene
+            mine innenfor moderne rammeverk som React.
+          </p>
+          <p>
+            Jeg er nysgjerrig av natur og drives av å lære nye teknologier og
+            designmetoder for å kunne utvikle meg videre som både designer og
+            utvikler. Med en sterk interesse for designpsykologi og
+            brukeradferd, streber jeg etter å skape løsninger som ikke bare ser
+            bra ut, men som også fungerer sømløst for brukeren. Ikke nøl med å
+            ta kontakt :)
+          </p>
+        </div>
 
-      {/* Profilbilde */}
-      <div className="profile-container">
-        <SideProfile />
-        <p className="profile-name">Mark Daniel Reyes</p>
-      </div>
+        {/* Profilbilde */}
+        <div className="profile-container">
+          <SideProfile />
+          <p className="profile-name">Mark Daniel Reyes</p>
+        </div>
 
-      {/* Svart-hvitt bilder i bakgrunnen */}
-      <div className="table-image">
-        <Table />
-      </div>
-      <div className="sunset-image">
-        <Sunset />
+        {/* Svart-hvitt bilder i bakgrunnen */}
+        <div className="table-image">
+          <Table />
+        </div>
+        <div className="sunset-image">
+          <Sunset />
+        </div>
       </div>
 
       {/* RESPONSIV CSS */}
@@ -187,7 +190,7 @@ const AboutMe = () => {
     transform: none;
   }
 
-  .aboutme {
+  .experience-content {
     overflowY: auto;
   }
 
@@ -231,7 +234,7 @@ const AboutMe = () => {
       top: 15%;
     }
 
-    .container {
+    .aboutme-content {
       overflowY: auto;
     }
 
