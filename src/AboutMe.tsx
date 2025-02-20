@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative text-light"
+      className="bg-black min-vh-100 d-flex flex-column position-relative text-light aboutme"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
@@ -187,6 +187,10 @@ const AboutMe = () => {
     transform: none;
   }
 
+  .aboutme {
+    overflowY: auto;
+  }
+
   .about-title h1 {
     font-size: 3rem;
   }
@@ -226,6 +230,11 @@ const AboutMe = () => {
       left: 18%;
       top: 15%;
     }
+
+    .container {
+      overflowY: auto;
+    }
+
 
     .about-title h1 {
       font-size: 4rem;

@@ -186,10 +186,9 @@ const Home = () => {
 
     .responsive-image {
       width: 115%;
-      left: 70%;
-      transform: translateX(-50%);
+      left: 10%;
       top: 300px;
-      z-index: 5;
+      z-index: 9999;
     }
 
     .responsive-autograph {

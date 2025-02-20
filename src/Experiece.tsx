@@ -186,6 +186,7 @@ const Experience = () => {
       text-align: center;
       width: 90%;
       margin-top: 50%;
+      overflowY: auto
     }
 
     .experience-title {
