@@ -150,7 +150,7 @@ const AboutMe = () => {
 
   .profile-container {
     position: absolute;
-    right: 22vw; /* Sørger for at bildet holder seg på riktig sted */
+    right: 20vw; /* Sørger for at bildet holder seg på riktig sted */
     top: 21%;
     padding: 10px;
     background-color: white;

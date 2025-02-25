@@ -1,6 +1,5 @@
-// Navbar.js
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
@@ -9,6 +8,7 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,6 +23,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const isActive = (path: string): boolean => location.pathname === path;
 
   return (
     <>
@@ -57,52 +59,30 @@ const Navbar = () => {
         >
           <ul
             className="nav flex-column mt-5"
-            style={{
-              fontSize: "1.5rem",
-              fontFamily: "Helvetica",
-            }}
+            style={{ fontSize: "1.5rem", fontFamily: "Helvetica" }}
           >
-            <li className="nav-item">
-              <Link className="text-light nav-link" to="/" onClick={toggleMenu}>
-                HJEM
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="text-light nav-link"
-                to="/AboutMe"
-                onClick={toggleMenu}
-              >
-                OM MEG
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="text-light nav-link"
-                to="/Work"
-                onClick={toggleMenu}
-              >
-                ARBEID
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="text-light nav-link"
-                to="/Experience"
-                onClick={toggleMenu}
-              >
-                ERFARING
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="text-light nav-link"
-                to="/Contact"
-                onClick={toggleMenu}
-              >
-                TA KONTAKT
-              </Link>
-            </li>
+            {["/", "/AboutMe", "/Work", "/Experience", "/Contact"].map(
+              (path, index) => (
+                <li className="nav-item" key={index}>
+                  <Link
+                    className="nav-link"
+                    to={path}
+                    onClick={toggleMenu}
+                    style={isActive(path) ? { color: "darkgray" } : {}}
+                  >
+                    {path === "/"
+                      ? "HJEM"
+                      : path === "/AboutMe"
+                        ? "OM MEG"
+                        : path === "/Work"
+                          ? "ARBEID"
+                          : path === "/Experience"
+                            ? "ERFARING"
+                            : "TA KONTAKT"}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </motion.nav>
       ) : (
@@ -121,26 +101,35 @@ const Navbar = () => {
               className="nav"
               style={{ fontSize: "1rem", fontFamily: "Helvetica" }}
             >
-              <li className="nav-item">
-                <Link className="text-light nav-link" to="/">
-                  HJEM
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="text-light nav-link" to="/AboutMe">
-                  OM MEG
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="text-light nav-link" to="/Work">
-                  ARBEID
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="text-light nav-link" to="/Experience">
-                  ERFARING
-                </Link>
-              </li>
+              {["/", "/AboutMe", "/Work", "/Experience"].map((path, index) => (
+                <li className="nav-item" key={index}>
+                  <Link
+                    className="nav-link"
+                    to={path}
+                    style={
+                      isActive(path)
+                        ? { color: "darkgray" }
+                        : { color: "white", transition: "color 0.3s ease" }
+                    }
+                    onMouseEnter={(e) => {
+                      (e.target as HTMLElement).style.color = "darkgray";
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isActive(path)) {
+                        (e.target as HTMLElement).style.color = "white";
+                      }
+                    }}
+                  >
+                    {path === "/"
+                      ? "HJEM"
+                      : path === "/AboutMe"
+                        ? "OM MEG"
+                        : path === "/Work"
+                          ? "ARBEID"
+                          : "ERFARING"}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -156,6 +145,19 @@ const Navbar = () => {
                 padding: "10px 15px",
                 right: "27%",
                 top: "2%",
+                backgroundColor: isActive("/Contact")
+                  ? "dimgray"
+                  : "transparent",
+                transition: "background-color 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLElement).style.backgroundColor = "dimgray";
+              }}
+              onMouseLeave={(e) => {
+                if (!isActive("/Contact")) {
+                  (e.target as HTMLElement).style.backgroundColor =
+                    "transparent";
+                }
               }}
             >
               TA KONTAKT
