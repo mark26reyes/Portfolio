@@ -81,7 +81,7 @@ const Navbar = () => {
                             : "TA KONTAKT"}
                   </Link>
                 </li>
-              )
+              ),
             )}
           </ul>
         </motion.nav>
