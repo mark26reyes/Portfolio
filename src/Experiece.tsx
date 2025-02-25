@@ -134,7 +134,7 @@ const Experience = () => {
       {/* RESPONSIV STYLING */}
       <style>
         {`
-  /* STANDARD DESKTOP DESIGN (BEHOLDER ORIGINALEN) */
+    /* STANDARD DESKTOP DESIGN */
   .experience-content {
     text-align: left;
     width: 100%;
@@ -144,31 +144,49 @@ const Experience = () => {
   .experience-title {
     font-size: 5rem;
     top: 20%;
-    left: 19%;
+    left: 5vw; /* Bruker vw for å sikre at tittelen holder seg på plass */
     position: absolute;
-    transform: translateX(-50%);
     font-family: Helvetica;
   }
 
   .experience-text {
     font-size: 1rem;
-    width: 98%;
+    width: 40vw; /* Sikrer konsistent bredde */
     font-weight: lighter;
     margin-bottom: 50px;
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
+    position: absolute;
+    top: 34%;
+    left: 5vw; /* Justert for større skjermer */
+  }
+
+  .certificate-title {
+  position: absolute;
+    top: 60%;
+    left: 5vw;
   }
 
   .certificates {
     display: flex;
     gap: 30px;
+    position: absolute;
+    top: 65%;
+    left: 5vw;
   }
 
   .certificates img {
     width: 175px;
   }
 
+  .skills-container {
+    position: absolute;
+    top: 30.5%;
+    right: 5vw; /* Justert for at ferdighetene holder seg på plass */
+    width: 45vw; /* Sørger for at innholdet holder seg i riktig posisjon */
+  }
+
   .skill-item {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
 
   .skill-logo {
@@ -186,12 +204,12 @@ const Experience = () => {
       text-align: center;
       width: 90%;
       margin-top: 50%;
-      overflowY: auto
+      overflow-y: auto;
     }
 
     .experience-title {
       font-size: 4rem;
-      top: 10%;
+      top: 11%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -200,18 +218,24 @@ const Experience = () => {
       font-size: 1rem;
       text-align: center;
       width: 100%;
+      position: relative;
+      top: 8%;
+      left: 0;
     }
 
     .skills-container {
+      position: relative;
+      width: 100%;
+      left: -1%;
+      top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 15px;
-      margin-top: 20px;
     }
 
     .skill-item {
-      width: 100%;
+      width: 90%;
       text-align: left;
     }
 
@@ -225,11 +249,17 @@ const Experience = () => {
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
+      position: relative;
+      top: 5%;
+      left: 0;
     }
 
     .certificate-title {
+      position: relative;
       font-size: 2rem;
-      margin-top: 50px;
+      margin-top: 10px;
+      left: 0;
+      top: 7%;
     }
 
     .certificates img {
@@ -246,7 +276,15 @@ const Experience = () => {
       transform: translateX(-50%);
     }
 
+    .experience-text {
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 23%;
+    }
+
     .skills-container {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -266,6 +304,7 @@ const Experience = () => {
       width: 45%;
     }
   }
+
   `}
       </style>
     </div>

@@ -95,7 +95,7 @@ const Work = () => {
 
       <section
         className="container position-relative work-content"
-        style={{ marginTop: "11%", zIndex: 2 }}
+        style={{ marginTop: "11%", zIndex: 2, left: "0vw" }}
       >
         <h1
           className="text-white title"

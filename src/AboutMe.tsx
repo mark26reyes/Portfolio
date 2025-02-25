@@ -124,13 +124,11 @@ const AboutMe = () => {
       {/* RESPONSIV CSS */}
       <style>
         {`
-  /* Standard desktop-styling */
+   /* Standard desktop-styling */
   .about-title {
     position: absolute;
     top: 20%;
-    left: 16.5%;
-    transform: translateX(-50%);
-    text-align: left;
+    left: 5vw; /* Bruker viewport width for konsistent plassering */
   }
 
   .about-title h1 {
@@ -142,9 +140,8 @@ const AboutMe = () => {
   .about-text {
     position: absolute;
     top: 35%;
-    left: 27.5%;
-    width: 45%;
-    transform: translateX(-50%);
+    left: 5vw; /* Justert for å passe på store skjermer */
+    width: 40vw; /* Låser bredden til viewport width */
     font-size: 1rem;
     line-height: 1.5;
     font-family: "Proxima Nova";
@@ -153,7 +150,7 @@ const AboutMe = () => {
 
   .profile-container {
     position: absolute;
-    right: 23%;
+    right: 22vw; /* Sørger for at bildet holder seg på riktig sted */
     top: 21%;
     padding: 10px;
     background-color: white;
@@ -169,7 +166,7 @@ const AboutMe = () => {
 
   .table-image {
     position: absolute;
-    right: 6%;
+    right: 6vw; /* Bruker vw for bedre skalering */
     top: 15%;
     filter: grayscale(100%) brightness(30%);
     z-index: 1;
@@ -177,67 +174,56 @@ const AboutMe = () => {
 
   .sunset-image {
     position: absolute;
-    right: 4%;
+    right: 3.5vw;
     top: 45%;
     filter: grayscale(100%) brightness(30%);
   }
 
   /* MOBIL RESPONSIVITET */
-@media (max-width: 440px) {
-  .about-title {
-    left: 5%;
-    top: 12%;
-    transform: none;
-  }
+  @media (max-width: 440px) {
+    .about-title {
+      left: 5vw;
+      top: 12%;
+    }
 
-  .experience-content {
-    overflowY: auto;
-  }
+    .about-title h1 {
+      font-size: 3rem;
+    }
 
-  .about-title h1 {
-    font-size: 3rem;
-  }
+    .about-text {
+      width: 90%;
+      left: 50%;
+      top: 18%;
+      font-size: 0.9rem;
+      transform: translateX(-50%);
+    }
 
-  .about-text {
-    width: 90%;
-    left: 50%;
-    top: 18%;
-    font-size: 0.9rem;
-  }
+    .profile-container {
+      position: relative;
+      width: 70%;
+      top: 750px;
+      left: 10%;
+      background-color: white;
+      padding: 10px;
+    }
 
-  .profile-container {
-    position: relative; /* Endret fra absolute til relative */
-    width: 70%;
-    top: 750px;
-    left: 10%;
-    background-color: white;
-    padding: 10px;
+    .table-image,
+    .sunset-image {
+      position: relative;
+      width: 50%;
+      margin: -60px auto;
+      top: 260px;
+      right: -20%;
+      filter: grayscale(100%) brightness(40%);
+    }
   }
-
-  .table-image,
-  .sunset-image {
-    position: relative; /* Endret fra absolute til relative */
-    width: 50%;
-    margin: -60px auto;
-    top: 260px;
-    right: -20%;
-    filter: grayscale(100%) brightness(40%);
-    
-  }
-}
-
 
   /* TABLET RESPONSIVITET */
   @media (min-width: 441px) and (max-width: 1024px) {
     .about-title {
-      left: 18%;
+      left: 18vw;
       top: 15%;
     }
-
-    .aboutme-content {
-      overflowY: auto;
-    }
-
 
     .about-title h1 {
       font-size: 4rem;
@@ -251,20 +237,21 @@ const AboutMe = () => {
     }
 
     .profile-container {
-      right: 30%;
+      right: 28vw;
       top: 65%;
     }
 
     .table-image {
-      right: 10%;
+      right: 10vw;
       top: 62%;
     }
 
     .sunset-image {
-      right: 5%;
+      right: 5vw;
       top: 76%;
     }
   }
+
 
   `}
       </style>
