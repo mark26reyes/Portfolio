@@ -33,8 +33,8 @@ const Work = () => {
       name: "Fristil",
       img: "/Portfolio/fristil.png",
       description:
-        "Fristil er et plateselskap som lar russegrupper velge artister, produsenter og vokalister for å lage sin russelåt. Nettsiden, utviklet i WIX Studio, viser artister, tidligere verk og nyheter og generelt om Fristil.",
-      url: "https://adrian43124.wixstudio.com/my-site-3",
+        "Pågående prosjekt, oppdateres ved endringer: Fristil er et plateselskap som lar russegrupper velge artister, produsenter og vokalister for å lage sin russelåt. Nettsiden, utviklet i WIX Studio, viser artister, tidligere verk og nyheter og generelt om Fristil.",
+      url: "https://editor.wix.com/html/editor/web/renderer/external_preview/document/1892ff93-aa34-4b35-ac78-6b37aab561d1?metaSiteId=40eb0fc3-c360-4f9b-8077-335767491125&dsOrigin=externalPreview&configName=externalPreview",
     },
   ];
 

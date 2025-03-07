@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
@@ -14,6 +14,10 @@ const Experience = () => {
     { name: "React", level: "70%", logo: "/Portfolio/react.png" },
     { name: "JavaScript", level: "70%", logo: "/Portfolio/javascript.png" },
   ];
+
+  const [selectedCertificate, setSelectedCertificate] = useState<string | null>(
+    null
+  );
 
   return (
     <div
@@ -92,14 +96,24 @@ const Experience = () => {
             <h4 className="certificate-title">SERTIFIKATER</h4>
 
             <div className="certificates">
-              <img
-                src="/Portfolio/htmlcss_certificate.png"
-                alt="HTML & CSS Certificate"
-              />
-              <img
-                src="/Portfolio/react_certificate.png"
-                alt="React Certificate"
-              />
+              {["/Portfolio/htmlcss_certificate.png"].map((cert, index) => (
+                <img
+                  key={index}
+                  src={cert}
+                  alt={`Certificate ${index + 1}`}
+                  className="certificate1"
+                  onClick={() => setSelectedCertificate(cert)}
+                />
+              ))}
+              {["/Portfolio/react_certificate.png"].map((cert, index) => (
+                <img
+                  key={index}
+                  src={cert}
+                  alt={`Certificate ${index + 1}`}
+                  className="certificate2"
+                  onClick={() => setSelectedCertificate(cert)}
+                />
+              ))}
             </div>
           </div>
 
@@ -130,6 +144,19 @@ const Experience = () => {
           </div>
         </div>
       </div>
+
+      {selectedCertificate && (
+        <div
+          className="certificate-modal"
+          onClick={() => setSelectedCertificate(null)}
+        >
+          <img
+            src={selectedCertificate}
+            alt="Selected Certificate"
+            className="certificate-full"
+          />
+        </div>
+      )}
 
       {/* RESPONSIV STYLING */}
       <style>
@@ -174,8 +201,14 @@ const Experience = () => {
     left: 5vw;
   }
 
-  .certificates img {
-    width: 175px;
+  .certificate1 {
+    width: 190px;
+    height: 200px
+  }
+
+  .certificate2 {
+    width: 275px;
+    height: 200px
   }
 
   .skills-container {
@@ -197,6 +230,24 @@ const Experience = () => {
   .progress {
     height: 8px;
   }
+
+  .certificate-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+          }
+          .certificate-full {
+            max-width: 80vw;
+            max-height: 80vh;
+            border-radius: 10px;
+          }
 
   /* MOBILVERSJON (max 440px) */
   @media (max-width: 440px) {

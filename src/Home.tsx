@@ -97,11 +97,12 @@ const Home = () => {
         {`
   /* Standardstil */
   .text-container {
-    position: absolute;
+     position: absolute;
     left: 5%;
-    top: 75%;
+    top: 75vh;
     z-index: 2;
     text-align: left;
+    
     width: 50%;
     font-family: "Proxima Nova";
     font-weight: lighter;
@@ -150,10 +151,10 @@ const Home = () => {
   }
 
   .responsive-image {
-    width: 770px;
+    width: 55vw;
     position: absolute;
-    right: 5%;
-    top: -80px;
+    right: 0%;
+    top: -100px;
     z-index: 2;
   }
 
@@ -161,7 +162,7 @@ const Home = () => {
     position: absolute;
     width: 250px;
     right: 5%;
-    top: 450px;
+    top: 60vh;
     z-index: 3;
     opacity: 0.7;
   }
