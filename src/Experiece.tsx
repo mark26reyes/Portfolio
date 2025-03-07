@@ -16,7 +16,7 @@ const Experience = () => {
   ];
 
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(
-    null
+    null,
   );
 
   return (
