@@ -97,21 +97,25 @@ const Experience = () => {
 
             <div className="certificates">
               {["/Portfolio/htmlcss_certificate.png"].map((cert, index) => (
-                <img
+                <motion.img
                   key={index}
                   src={cert}
                   alt={`Certificate ${index + 1}`}
                   className="certificate1"
                   onClick={() => setSelectedCertificate(cert)}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
                 />
               ))}
               {["/Portfolio/react_certificate.png"].map((cert, index) => (
-                <img
+                <motion.img
                   key={index}
                   src={cert}
                   alt={`Certificate ${index + 1}`}
                   className="certificate2"
                   onClick={() => setSelectedCertificate(cert)}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
                 />
               ))}
             </div>
