@@ -169,19 +169,19 @@ const Contact = () => {
     .contact-container {
         text-align: center;
         width: 90%;
-        top: 18%; /* Flytter teksten ned */
+        top: 16%; /* Flytter teksten ned */
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
     }
 
     .contact-title {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         margin-bottom: 10px;
     }
 
     .contact-email {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 80px;
         display: block;
         word-wrap: break-word;
@@ -190,7 +190,7 @@ const Contact = () => {
 
     .social-links {
         margin-top: 30px;
-        right: 12%;
+        right: 18%;
     }
 
     .social-item {
@@ -202,12 +202,12 @@ const Contact = () => {
     }
 
     .social-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .social-item span {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-left: 8px;
     }
 }

@@ -286,7 +286,8 @@ const Experience = () => {
       text-align: center;
       width: 100%;
       position: relative;
-      top: 6%;
+      margin-top: -260px; 
+      margin-bottom: 300px;
       left: 0;
       font-family: "Proxima Nova", sans-serif;
     }

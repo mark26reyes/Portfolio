@@ -170,11 +170,12 @@ const Home = () => {
   /* RESPONSIVE DESIGN FOR MOBIL */
   @media (max-width: 440px) {
     .text-container {
-      width: 90%;
+      width: 80%;
       left: 7%;
-      top: 35%;
+      top: 37vh;
       font-size: 0.9rem;
       font-family: "Proxima Nova", sans-serif;
+      margin-top: 20px;
     }
 
     .title-container {
