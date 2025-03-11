@@ -180,58 +180,65 @@ const AboutMe = () => {
   }
 
   /* MOBIL RESPONSIVITET */
- html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Hindrer horisontal scrolling */
-  overflow-y: auto; /* Sikrer at hele siden kan scrolles */
-  -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
-}
+   /* MOBIL RESPONSIVITET */
+  @media (max-width: 440px) {
+    html, body {
+      height: 100%;
+      overflow-x: hidden; /* Hindrer horisontal scrolling */
+      overflow-y: auto; /* Sikrer at hele siden kan scrolle */
+      -webkit-overflow-scrolling: touch; /* Gir bedre scrolling på iOS */
+    }
 
-.aboutme {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+    .aboutme {
+      min-height: auto; /* La innholdet bestemme høyden */
+      display: flex;
+      flex-direction: column;
+    }
 
-.about-title {
-  width: 100%;
-  top: 150px;
-}
+    .about-title {
+      width: 100%;
+      top: 175px;
+    }
 
-.about-title h1 {
-  font-size: 3rem;
-}
+    .about-title h1 {
+      font-size: 3rem;
+    }
 
-.about-text {
-  width: 90%;
-  font-size: 0.9rem;
-  position: relative;
-  top: 220px;
-}
+    .about-text {
+      width: 90%;
+      font-size: 0.9rem;
+      top: 250px;
+      position: relative;
+    }
 
-  .profile-container {
-    width: 80%;
-    background-color: white;
-    padding: 10px;
-    margin: 40px 0;
-    position: relative;
-    top:230px;
-    left:10px;
-    z-index: 2;
+    .profile-container {
+      width: 80%;
+      background-color: white;
+      padding: 10px;
+      position: relative;
+      z-index: 2;
+      top: 280px;
+      left: 5%;
+    }
+
+    /* Endring: Flytt bildene inn i naturlig flow */
+    .table-image,
+    .sunset-image {
+      width: 70%;
+      margin: 20px auto; /* Sentraliser bildene */
+      filter: grayscale(100%) brightness(40%);
+      position: relative; /* Fjerner absolute */
+      left: 15%;
+    }
+
+    .table-image {
+      top: -280px;
+    }
+
+    .sunset-image {
+      top: -420px;
+    }
   }
-
-  .table-image,
-  .sunset-image {
-    width: 100%;
-    left: 90%;
-    top: 70%;
-    transform: translateX(-50%);
-    filter: grayscale(100%) brightness(40%);
-    z-index: 1;
-  }
-
 
 
 
