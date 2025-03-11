@@ -40,7 +40,7 @@ const Work = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative text-light"
+      className="bg-black min-vh-100 d-flex flex-column position-relative text-light content"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
@@ -194,6 +194,10 @@ const Work = () => {
       touch-action: manipulation; /* Forhindrer at scrollen stopper */
     }
 
+    .content {
+      margin-top: -40px;
+    }
+
     .container {
       position: relative;
       overflow: visible !important; /* Sikrer at containeren ikke skaper egen scroll */
@@ -207,7 +211,7 @@ const Work = () => {
 
     .title {
       font-size: 3.5rem;
-      font-family: "Proxima Nova";
+      font-family: "Helvetica";
       text-align: center;
     }
 
@@ -216,6 +220,7 @@ const Work = () => {
       font-size: 1rem;
       text-align: center;
       margin: auto;
+      font-family: "Proxima Nova", sans-serif;
     }
 
     .row {

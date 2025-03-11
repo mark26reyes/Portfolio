@@ -174,6 +174,7 @@ const Home = () => {
       left: 7%;
       top: 35%;
       font-size: 0.9rem;
+      font-family: "Proxima Nova", sans-serif;
     }
 
     .title-container {

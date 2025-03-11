@@ -21,7 +21,7 @@ const Experience = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
+      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light content"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
@@ -262,6 +262,10 @@ const Experience = () => {
       -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
       touch-action: manipulation; /* Forhindrer at scrollen stopper */
     }
+    
+    .content {
+      margin-top: -40px;
+    }
 
     .experience-content {
       text-align: center;
@@ -284,6 +288,7 @@ const Experience = () => {
       position: relative;
       top: 6%;
       left: 0;
+      font-family: "Proxima Nova", sans-serif;
     }
 
     .skills-container {

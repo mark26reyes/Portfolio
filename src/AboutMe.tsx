@@ -188,11 +188,13 @@ const AboutMe = () => {
       -webkit-overflow-scrolling: touch; /* Gir bedre scrolling på iOS */
     }
 
+
     .aboutme {
       min-height: auto; /* La innholdet bestemme høyden */
       display: flex;
       flex-direction: column;
       text-align: center;
+      margin-top: -20px;
     }
 
     .about-title {
@@ -202,7 +204,7 @@ const AboutMe = () => {
     }
 
     .about-title h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     .about-text {
@@ -210,6 +212,7 @@ const AboutMe = () => {
       font-size: 0.9rem;
       top: 250px;
       position: relative;
+      font-family: "Proxima Nova", sans-serif;
     }
 
     .profile-container {
@@ -246,6 +249,7 @@ const AboutMe = () => {
 
   /* TABLET RESPONSIVITET */
   @media (min-width: 441px) and (max-width: 1024px) {
+
     .about-title {
       left: 18vw;
       top: 15%;

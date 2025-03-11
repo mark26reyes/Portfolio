@@ -68,7 +68,19 @@ const Navbar = () => {
                     className="nav-link"
                     to={path}
                     onClick={toggleMenu}
-                    style={isActive(path) ? { color: "darkgray" } : {}}
+                    style={{
+                      color: isActive(path) ? "darkgray" : "white",
+                      textDecoration: "none",
+                      transition: "color 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.target as HTMLElement).style.color = "darkgray";
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isActive(path)) {
+                        (e.target as HTMLElement).style.color = "white";
+                      }
+                    }}
                   >
                     {path === "/"
                       ? "HJEM"
@@ -165,6 +177,23 @@ const Navbar = () => {
           </div>
         </nav>
       )}
+
+      {/* 🛠️ Fix for blå tekst i hamburgermenyen */}
+      <style>
+        {`
+          /* Hindrer blå Bootstrap-farge */
+          .nav-link {
+            text-decoration: none !important;
+          }
+
+          /* Endrer farge ved hover */
+          .nav-link:hover,
+          .nav-link:focus,
+          .nav-link:active {
+            color: darkgray !important;
+          }
+        `}
+      </style>
     </>
   );
 };
