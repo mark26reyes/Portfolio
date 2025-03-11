@@ -170,11 +170,12 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
   /* RESPONSIVE DESIGN FOR MOBIL */
   @media (max-width: 440px) {
     .text-container {
-      width: 90%;
+      width: 80%;
       left: 7%;
-      top: 35%;
+      top: 37vh;
       font-size: 0.9rem;
       font-family: "Proxima Nova", sans-serif;
+      margin-top: 20px;
     }
 
     .title-container {
@@ -632,7 +633,8 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
       text-align: center;
       width: 100%;
       position: relative;
-      top: 6%;
+      margin-top: -260px; 
+      margin-bottom: 300px;
       left: 0;
       font-family: "Proxima Nova", sans-serif;
     }
@@ -787,19 +789,19 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
     .contact-container {
         text-align: center;
         width: 90%;
-        top: 18%; /* Flytter teksten ned */
+        top: 16%; /* Flytter teksten ned */
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
     }
 
     .contact-title {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         margin-bottom: 10px;
     }
 
     .contact-email {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 80px;
         display: block;
         word-wrap: break-word;
@@ -808,7 +810,7 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
 
     .social-links {
         margin-top: 30px;
-        right: 12%;
+        right: 18%;
     }
 
     .social-item {
@@ -820,12 +822,12 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
     }
 
     .social-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .social-item span {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-left: 8px;
     }
 }
