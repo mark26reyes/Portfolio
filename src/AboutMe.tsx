@@ -192,11 +192,13 @@ const AboutMe = () => {
       min-height: auto; /* La innholdet bestemme høyden */
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
 
     .about-title {
       width: 100%;
       top: 175px;
+      left: 0;
     }
 
     .about-title h1 {

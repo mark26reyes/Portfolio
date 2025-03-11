@@ -97,16 +97,7 @@ const Work = () => {
         className="container position-relative work-content"
         style={{ marginTop: "11%", zIndex: 2, left: "0vw" }}
       >
-        <h1
-          className="text-white title"
-          style={{
-            fontFamily: "Helvetica",
-            fontSize: "5rem",
-            fontWeight: "regular",
-          }}
-        >
-          MITT ARBEID
-        </h1>
+        <h1 className="text-white title">MITT ARBEID</h1>
         <p
           className="text-white"
           style={{
@@ -187,25 +178,39 @@ const Work = () => {
             text-align: center;
           }
 
-           /* MOBIL RESPONSIVITET */
-  @media (max-width: 440px) {
-    .container {
-      top: 135px;  
-      overflowY: auto;  }
+          .title {
+            font-size: 5.5rem;
+           
+            font-family: "Proxima Nova";
+          }
 
-    .work-content{
-      overflowY: auto;
+           /* MOBIL RESPONSIVITET */
+ @media (max-width: 440px) {
+    html, body {
+      height: 100%;
+      overflow-x: hidden; /* Hindrer horisontal scrolling */
+      overflow-y: auto; /* Sikrer at hele siden kan scrolle jevnt */
+      -webkit-overflow-scrolling: touch; /* Gir bedre scrolling på iOS */
     }
 
-    h1 {
-      font-size: 1rem;
+    .container {
+      position: relative; /* Sørger for at innholdet holder seg på plass */
+      top: 135px;
+    }
+
+    .work-content {
+      /* Fjernet overflow-y her for å unngå dobbel scrolling */
+    }
+
+    .title {
+      font-size: 3rem;
       text-align: center;
     }
 
     p {
       width: 90%;
       font-size: 1rem;
-      text-align: left;
+      text-align: center;
       margin: auto;
     }
 
@@ -227,7 +232,8 @@ const Work = () => {
     img {
       max-width: 90%;
     }
-  }
+}
+
 
   
   }
