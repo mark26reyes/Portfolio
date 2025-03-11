@@ -186,8 +186,16 @@ const AboutMe = () => {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
+
+    
   }
+
+
+  html, body {
+  height: 100%;
+  overflow-x: hidden; /* Hindrer horisontal scrolling */
+}
 
   .about-title {
     width: 100%;
