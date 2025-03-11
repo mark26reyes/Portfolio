@@ -468,7 +468,7 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
       font-size: 1rem;
       text-align: center;
       margin: auto;
-      font-family: "Proxima Nova", sans-serif;
+      font-family: "Proxima Nova", sans-serif !important;
     }
 
     .text {
@@ -476,7 +476,7 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
       font-size: 1rem;
       text-align: center;
       margin: auto;
-      font-family: "Proxima Nova", sans-serif;
+      font-family: "Proxima Nova", sans-serif !important;
     }
 
     .row {
