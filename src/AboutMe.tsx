@@ -180,38 +180,36 @@ const AboutMe = () => {
   }
 
   /* MOBIL RESPONSIVITET */
- @media (max-width: 440px) {
-  .aboutme {
-    overflow-y: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
-
-    
-  }
-
-
-  html, body {
+ html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden; /* Hindrer horisontal scrolling */
+  overflow-y: auto; /* Sikrer at hele siden kan scrolles */
+  -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
 }
 
-  .about-title {
-    width: 100%;
-    top: 150px;
-  }
+.aboutme {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .about-title h1 {
-    font-size: 3rem;
-  }
+.about-title {
+  width: 100%;
+  top: 150px;
+}
 
-  .about-text {
-    width: 90%;
-    font-size: 0.9rem;
-    position: relative;
-    top: 220px;
-  }
+.about-title h1 {
+  font-size: 3rem;
+}
+
+.about-text {
+  width: 90%;
+  font-size: 0.9rem;
+  position: relative;
+  top: 220px;
+}
 
   .profile-container {
     width: 80%;
@@ -226,24 +224,14 @@ const AboutMe = () => {
 
   .table-image,
   .sunset-image {
-    position: absolute;
-    width: 70%;
-    left: 50%;
+    width: 100%;
+    left: 90%;
+    top: 70%;
     transform: translateX(-50%);
     filter: grayscale(100%) brightness(40%);
     z-index: 1;
   }
 
-  .table-image {
-    top: 70%;
-    left: 70%;
-  }
-
-  .sunset-image {
-    top: 85%;
-    left: 70%;
-  }
-}
 
 
 
