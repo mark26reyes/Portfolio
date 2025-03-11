@@ -101,7 +101,7 @@ const Work = () => {
         <p
           className="text-white text"
           style={{
-            fontFamily: "Proxima Nova",
+            fontFamily: "Proxima Nova, sans-serif",
             fontSize: "1rem",
             width: "80%",
             fontWeight: "lighter",
