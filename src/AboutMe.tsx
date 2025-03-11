@@ -180,43 +180,64 @@ const AboutMe = () => {
   }
 
   /* MOBIL RESPONSIVITET */
-  @media (max-width: 440px) {
-    .about-title {
-      left: 5vw;
-      top: 12%;
-    }
-
-    .about-title h1 {
-      font-size: 3rem;
-    }
-
-    .about-text {
-      width: 90%;
-      left: 50%;
-      top: 18%;
-      font-size: 0.9rem;
-      transform: translateX(-50%);
-    }
-
-    .profile-container {
-      position: relative;
-      width: 70%;
-      top: 750px;
-      left: 10%;
-      background-color: white;
-      padding: 10px;
-    }
-
-    .table-image,
-    .sunset-image {
-      position: relative;
-      width: 50%;
-      margin: -60px auto;
-      top: 260px;
-      right: -20%;
-      filter: grayscale(100%) brightness(40%);
-    }
+ @media (max-width: 440px) {
+  .aboutme {
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+
+  .about-title {
+    width: 100%;
+    top: 150px;
+  }
+
+  .about-title h1 {
+    font-size: 3rem;
+  }
+
+  .about-text {
+    width: 90%;
+    font-size: 0.9rem;
+    position: relative;
+    top: 220px;
+  }
+
+  .profile-container {
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    margin: 40px 0;
+    position: relative;
+    top:230px;
+    left:10px;
+    z-index: 2;
+  }
+
+  .table-image,
+  .sunset-image {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(100%) brightness(40%);
+    z-index: 1;
+  }
+
+  .table-image {
+    top: 70%;
+    left: 70%;
+  }
+
+  .sunset-image {
+    top: 85%;
+    left: 70%;
+  }
+}
+
+
 
   /* TABLET RESPONSIVITET */
   @media (min-width: 441px) and (max-width: 1024px) {
