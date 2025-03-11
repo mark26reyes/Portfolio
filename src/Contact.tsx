@@ -169,7 +169,7 @@ const Contact = () => {
     .contact-container {
         text-align: center;
         width: 90%;
-        top: 20%; /* Flytter teksten ned */
+        top: 18%; /* Flytter teksten ned */
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
@@ -182,7 +182,7 @@ const Contact = () => {
 
     .contact-email {
         font-size: 2rem;
-        margin-top: 100px;
+        margin-top: 80px;
         display: block;
         word-wrap: break-word;
         overflow-wrap: break-word;

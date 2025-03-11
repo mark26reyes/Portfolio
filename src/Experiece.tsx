@@ -255,15 +255,23 @@ const Experience = () => {
 
   /* MOBILVERSJON (max 440px) */
   @media (max-width: 440px) {
+    html, body {
+      height: 100%;
+      overflow-x: hidden; /* Hindrer horisontal scrolling */
+      overflow-y: auto !important; /* Sikrer at hele siden kan scrolle */
+      -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
+      touch-action: manipulation; /* Forhindrer at scrollen stopper */
+    }
+
     .experience-content {
       text-align: center;
       width: 90%;
       margin-top: 50%;
-      overflow-y: auto;
+      overflow: visible !important; /* Fjern egen scroll */
     }
 
     .experience-title {
-      font-size: 4rem;
+      font-size: 3.5rem;
       top: 11%;
       left: 50%;
       transform: translateX(-50%);
@@ -274,7 +282,7 @@ const Experience = () => {
       text-align: center;
       width: 100%;
       position: relative;
-      top: 8%;
+      top: 6%;
       left: 0;
     }
 
@@ -307,8 +315,19 @@ const Experience = () => {
       position: relative;
       top: 5%;
       left: 0;
+      margin-bottom: 50px;
     }
 
+    .certificate1 {
+      width: 300px;
+      height: 300px;
+    }
+
+    .certificate2 {    
+      width: 300px;
+      height: 200px;
+    } 
+      
     .certificate-title {
       position: relative;
       font-size: 2rem;
@@ -316,12 +335,8 @@ const Experience = () => {
       left: 0;
       top: 7%;
     }
+}
 
-    .certificates img {
-      width: 80%;
-      margin-bottom: 15px;
-    }
-  }
 
   /* TABLETVERSJON (441px - 1024px) */
   @media (min-width: 441px) and (max-width: 1024px) {

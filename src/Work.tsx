@@ -99,7 +99,7 @@ const Work = () => {
       >
         <h1 className="text-white title">MITT ARBEID</h1>
         <p
-          className="text-white"
+          className="text-white text"
           style={{
             fontFamily: "Proxima Nova",
             fontSize: "1rem",
@@ -185,30 +185,34 @@ const Work = () => {
           }
 
            /* MOBIL RESPONSIVITET */
- @media (max-width: 440px) {
+         @media (max-width: 440px) {
     html, body {
       height: 100%;
       overflow-x: hidden; /* Hindrer horisontal scrolling */
-      overflow-y: auto; /* Sikrer at hele siden kan scrolle jevnt */
-      -webkit-overflow-scrolling: touch; /* Gir bedre scrolling på iOS */
+      overflow-y: auto !important; /* Sikrer at hele siden kan scrolle */
+      -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
+      touch-action: manipulation; /* Forhindrer at scrollen stopper */
     }
 
     .container {
-      position: relative; /* Sørger for at innholdet holder seg på plass */
-      top: 135px;
+      position: relative;
+      overflow: visible !important; /* Sikrer at containeren ikke skaper egen scroll */
+      padding-top: 145px;
     }
 
     .work-content {
-      /* Fjernet overflow-y her for å unngå dobbel scrolling */
+      position: relative;
+      overflow: visible !important; /* Hindrer egen scroll */
     }
 
     .title {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      font-family: "Proxima Nova";
       text-align: center;
     }
 
-    p {
-      width: 90%;
+    .text {
+      width: 100%;
       font-size: 1rem;
       text-align: center;
       margin: auto;
@@ -232,11 +236,19 @@ const Work = () => {
     img {
       max-width: 90%;
     }
+
+    /* 🔥 FJERNER DOBBEL SCROLL 🔥 */
+    .project-card {
+      overflow: visible !important; /* Sikrer at prosjektboksene ikke skaper ekstra scroll */
+    }
+
+    .project-image,
+    .overlay {
+      pointer-events: none; /* Sørger for at de ikke blokkerer scroll */
+    }
 }
 
 
-  
-  }
         `}
       </style>
     </div>
