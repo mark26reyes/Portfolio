@@ -180,7 +180,6 @@ const AboutMe = () => {
   }
 
   /* MOBIL RESPONSIVITET */
-   /* MOBIL RESPONSIVITET */
   @media (max-width: 440px) {
     html, body {
       height: 100%;
@@ -221,24 +220,25 @@ const AboutMe = () => {
       left: 5%;
     }
 
-    /* Endring: Flytt bildene inn i naturlig flow */
+    /* Juster bildene for å unngå tomrom */
     .table-image,
     .sunset-image {
       width: 70%;
-      margin: 20px auto; /* Sentraliser bildene */
+      margin: -150px auto 0 auto; /* Fjern tomrom under */
       filter: grayscale(100%) brightness(40%);
-      position: relative; /* Fjerner absolute */
+      position: relative;
       left: 15%;
     }
 
     .table-image {
-      top: -280px;
+      margin-top: -250px; /* Juster for å flytte det opp */
     }
 
     .sunset-image {
-      top: -420px;
+      margin-top: -150px; /* Juster for å fjerne tomrom */
     }
-  }
+}
+   
 
 
 
