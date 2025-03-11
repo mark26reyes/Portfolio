@@ -464,6 +464,13 @@ Please change the parent <Route path="${v}"> to <Route path="${v==="/"?"*":`${v}
       text-align: center;
     }
 
+    p {    
+      font-size: 1rem;
+      text-align: center;
+      margin: auto;
+      font-family: "Proxima Nova", sans-serif;
+    }
+
     .text {
       width: 100%;
       font-size: 1rem;
