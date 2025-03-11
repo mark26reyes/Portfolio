@@ -219,7 +219,7 @@ const Work = () => {
       font-size: 1rem;
       text-align: center;
       margin: auto;
-      font-family: "Proxima Nova", sans-serif;
+      font-family: "Proxima Nova", sans-serif !important;
     }
 
     .text {
@@ -227,7 +227,7 @@ const Work = () => {
       font-size: 1rem;
       text-align: center;
       margin: auto;
-      font-family: "Proxima Nova", sans-serif;
+      font-family: "Proxima Nova", sans-serif !important;
     }
 
     .row {
