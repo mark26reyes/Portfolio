@@ -97,6 +97,13 @@ const AboutMe = () => {
             mine innenfor moderne rammeverk som React.
           </p>
           <p>
+            Ved siden av design og utvikling, driver jeg også med friidrett, som
+            sprinter. Gjennom dette har jeg utviklet verdifulle egenskaper som{" "}
+            <strong>disiplin</strong>, <strong>målbevissthet</strong> og{" "}
+            <strong>arbeidsvilje</strong>, noe jeg tar med meg inn i
+            arbeidslivet og bruker aktivt i mine prosjekter.
+          </p>
+          <p>
             Jeg er nysgjerrig av natur og drives av å lære nye teknologier og
             designmetoder for å kunne utvikle meg videre som både designer og
             utvikler. Med en sterk interesse for designpsykologi og
@@ -151,7 +158,7 @@ const AboutMe = () => {
   .profile-container {
     position: absolute;
     right: 20vw; /* Sørger for at bildet holder seg på riktig sted */
-    top: 21%;
+    top: 30%;
     padding: 10px;
     background-color: white;
     z-index: 2;
@@ -167,7 +174,7 @@ const AboutMe = () => {
   .table-image {
     position: absolute;
     right: 6vw; /* Bruker vw for bedre skalering */
-    top: 15%;
+    top: 25%;
     filter: grayscale(100%) brightness(30%);
     z-index: 1;
   }
@@ -175,7 +182,7 @@ const AboutMe = () => {
   .sunset-image {
     position: absolute;
     right: 3.5vw;
-    top: 45%;
+    top: 55%;
     filter: grayscale(100%) brightness(30%);
   }
 

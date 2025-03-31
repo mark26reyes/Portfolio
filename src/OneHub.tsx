@@ -73,7 +73,7 @@ const OneHub = () => {
         onClick={() => navigate(-1)}
         style={{
           position: "absolute",
-          top: "13%",
+          top: "175px",
           left: "4%",
           border: "none",
           background: "none",

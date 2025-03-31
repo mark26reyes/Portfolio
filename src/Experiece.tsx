@@ -21,16 +21,18 @@ const Experience = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light content"
+      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        overflowX: "hidden",
+        marginTop: "-30px",
       }}
     >
-      {/* Logo med animasjon */}
+      {/* Logo */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
           className="position-absolute"
@@ -73,316 +75,248 @@ const Experience = () => {
       </header>
 
       {/* Navigasjonsmeny */}
-      <div>
+      <div className="navbar">
         <Navbar />
       </div>
 
-      <div className="container experience-content">
-        <h1 className="experience-title">ERFARING</h1>
+      {/* Innhold */}
+      <div>
+        <div className="container experience-content">
+          <div style={{ paddingTop: "100px" }}>
+            <h1 className="experience-title mb-4">ERFARING</h1>
 
-        <div className="row">
-          {/* Erfaringsseksjon */}
-          <div className="col-md-6">
-            <p className="experience-text">
-              Gjennom tre år har jeg utviklet ferdigheter innen webutvikling,
-              interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS,
-              React, JavaScript og TypeScript for å skape dynamiske og
-              brukervennlige løsninger. Design og brukeropplevelse har vært en
-              stor del av mitt arbeid, der jeg har brukt verktøy som Figma og
-              Adobe Illustrator for å skape intuitive grensesnitt. I tillegg har
-              jeg lært viktige designprinsipper og gjennomført brukertesting for
-              å sikre at løsningene fungerer optimalt for brukerne.
-            </p>
-            <h4 className="certificate-title">SERTIFIKATER</h4>
+            <div className="row">
+              {/* Venstre kolonne */}
+              <div className="col-lg-6 mb-5">
+                <p className="experience-text">
+                  Gjennom tre år har jeg utviklet ferdigheter innen
+                  webutvikling, interaksjonsdesign og brukertesting. Jeg har
+                  jobbet med HTML, CSS, React, JavaScript og TypeScript for å
+                  skape dynamiske og brukervennlige løsninger. Design og
+                  brukeropplevelse har vært en stor del av mitt arbeid, der jeg
+                  har brukt verktøy som Figma og Adobe Illustrator for å skape
+                  intuitive grensesnitt. I tillegg har jeg lært viktige
+                  designprinsipper og gjennomført brukertesting for å sikre at
+                  løsningene fungerer optimalt for brukerne.
+                </p>
 
-            <div className="certificates">
-              {["/Portfolio/htmlcss_certificate.png"].map((cert, index) => (
-                <motion.img
-                  key={index}
-                  src={cert}
-                  alt={`Certificate ${index + 1}`}
-                  className="certificate1"
-                  onClick={() => setSelectedCertificate(cert)}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                />
-              ))}
-              {["/Portfolio/react_certificate.png"].map((cert, index) => (
-                <motion.img
-                  key={index}
-                  src={cert}
-                  alt={`Certificate ${index + 1}`}
-                  className="certificate2"
-                  onClick={() => setSelectedCertificate(cert)}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                />
-              ))}
-            </div>
-          </div>
+                <h4 className="mt-5 experience-subtitle">ARBEIDSERFARING</h4>
 
-          {/* Ferdighetsseksjon */}
-          <div className="col-md-6 skills-container">
-            {skills.map((skill, index) => (
-              <div key={index} className="skill-item">
-                <div className="d-flex align-items-center mb-1">
-                  <img
-                    src={skill.logo}
-                    alt={skill.name}
-                    className="skill-logo"
-                  />
-                  <span>{skill.name}</span>
+                <div className="job mt-3">
+                  <h5>💼 Assisterende medarbeider – Floriss Hasle</h5>
+                  <p className="job-period">Juni 2017 – Nåværende</p>
+                  <ul>
+                    <li>Ansvar for henting og oppakning av nye varer</li>
+                    <li>
+                      Visuell utforming av butikkens produkter og utstillinger
+                    </li>
+                    <li>
+                      Utviklet forståelse for kundebehov og forbedret
+                      kundeopplevelse
+                    </li>
+                  </ul>
                 </div>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-warning"
-                    role="progressbar"
-                    style={{ width: skill.level }}
-                    aria-valuenow={parseInt(skill.level)}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  ></div>
+
+                <div className="job mt-4">
+                  <h5>📦 Lagermedarbeider – Bring Alfaset</h5>
+                  <p className="job-period">Nov. 2020 – Sept. 2022</p>
+                  <ul>
+                    <li>Sortering og logistikk av pakker</li>
+                    <li>Bidro til optimalisering av arbeidsflyt og sporing</li>
+                    <li>Lærte verdien av nøyaktighet i logistikkprosesser</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="/Portfolio/CV.pdf"
+                  className="btn btn-outline-light mt-4"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Last ned full CV (PDF)
+                </a>
+
+                <h4 className="mt-5 experience-subtitle">SERTIFIKATER</h4>
+                <div className="certificates mt-3 d-flex flex-wrap gap-4 justify-content-start">
+                  <motion.img
+                    src="/Portfolio/htmlcss_certificate.png"
+                    alt="HTML CSS Certificate"
+                    className="certificate1"
+                    onClick={() =>
+                      setSelectedCertificate(
+                        "/Portfolio/htmlcss_certificate.png",
+                      )
+                    }
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.img
+                    src="/Portfolio/react_certificate.png"
+                    alt="React Certificate"
+                    className="certificate2"
+                    onClick={() =>
+                      setSelectedCertificate("/Portfolio/react_certificate.png")
+                    }
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
               </div>
-            ))}
+
+              {/* Høyre kolonne – ferdigheter */}
+              <div className="col-lg-6">
+                {skills.map((skill, index) => (
+                  <div key={index} className="skill-item mb-5">
+                    <div className="d-flex align-items-center mb-2">
+                      <img
+                        src={skill.logo}
+                        alt={skill.name}
+                        className="skill-logo"
+                      />
+                      <span>{skill.name}</span>
+                    </div>
+                    <div className="progress">
+                      <div
+                        className="progress-bar bg-warning"
+                        role="progressbar"
+                        style={{ width: skill.level }}
+                        aria-valuenow={parseInt(skill.level)}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Sertifikat popup */}
+            {selectedCertificate && (
+              <div
+                className="certificate-modal"
+                onClick={() => setSelectedCertificate(null)}
+              >
+                <img
+                  src={selectedCertificate}
+                  alt="Selected Certificate"
+                  className="certificate-full"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
 
-      {selectedCertificate && (
-        <div
-          className="certificate-modal"
-          onClick={() => setSelectedCertificate(null)}
-        >
-          <img
-            src={selectedCertificate}
-            alt="Selected Certificate"
-            className="certificate-full"
-          />
-        </div>
-      )}
+      {/* STYLE */}
+      <style>{`
+        .navbar {
+          margin-top: 75px;
+        }
 
-      {/* RESPONSIV STYLING */}
-      <style>
-        {`
-    /* STANDARD DESKTOP DESIGN */
-  .experience-content {
-    text-align: left;
-    width: 100%;
-    margin-top: 18%;
-  }
+        .experience-title {
+          font-family: Helvetica;
+          font-size: 5rem;
+          text-align: left;
+        }
 
-  .experience-title {
-    font-size: 5rem;
-    top: 20%;
-    left: 5vw; /* Bruker vw for å sikre at tittelen holder seg på plass */
-    position: absolute;
-    font-family: Helvetica;
-  }
+        .experience-text {
+          font-size: 1rem;
+          font-family: "Proxima Nova", sans-serif;
+        }
 
-  .experience-text {
-    font-size: 1rem;
-    width: 40vw; /* Sikrer konsistent bredde */
-    font-weight: lighter;
-    margin-bottom: 50px;
-    font-family: "Proxima Nova";
-    position: absolute;
-    top: 34%;
-    left: 5vw; /* Justert for større skjermer */
-  }
+        .experience-subtitle {
+          font-size: 1.6rem;
+          color: white;
+          font-family: Helvetica;
+        }
 
-  .certificate-title {
-  position: absolute;
-    top: 60%;
-    left: 5vw;
-  }
+        .job h5 {
+          font-size: 1.2rem;
+          color: #ffc107;
+        }
 
-  .certificates {
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    top: 65%;
-    left: 5vw;
-  }
+        .job-period {
+          font-size: 0.9rem;
+          font-style: italic;
+          color: #ccc;
+        }
 
-  .certificate1 {
-    width: 190px;
-    height: 200px
-  }
+        .job ul {
+          padding-left: 20px;
+          font-size: 1rem;
+        }
 
-  .certificate2 {
-    width: 275px;
-    height: 200px
-  }
+        .skill-logo {
+          width: 30px;
+          margin-right: 10px;
+        }
 
-  .skills-container {
-    position: absolute;
-    top: 30.5%;
-    right: 5vw; /* Justert for at ferdighetene holder seg på plass */
-    width: 45vw; /* Sørger for at innholdet holder seg i riktig posisjon */
-  }
+        .certificate1 {
+          width: 275px;
+          height: 300px;
+        }
 
-  .skill-item {
-    margin-bottom: 70px;
-  }
+        .certificate2 {
+          width: 300px;
+          height: 200px;
+        }
 
-  .skill-logo {
-    width: 30px;
-    margin-right: 10px;
-  }
+        .certificate-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+        }
 
-  .progress {
-    height: 8px;
-  }
+        .certificate-full {
+          max-width: 80vw;
+          max-height: 80vh;
+          border-radius: 10px;
+        }
 
-  .certificate-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-          }
-          .certificate-full {
-            max-width: 80vw;
-            max-height: 80vh;
-            border-radius: 10px;
+        @media (max-width: 768px) {
+          .experience-title {
+            font-size: 3rem;
+            text-align: center;
           }
 
-  /* MOBILVERSJON (max 440px) */
-  @media (max-width: 440px) {
-    html, body {
-      height: 100%;
-      overflow-x: hidden; /* Hindrer horisontal scrolling */
-      overflow-y: auto !important; /* Sikrer at hele siden kan scrolle */
-      -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
-      touch-action: manipulation; /* Forhindrer at scrollen stopper */
-    }
-    
-    .content {
-      margin-top: -40px;
-    }
+          .experience-subtitle {
+            font-size: 1.3rem;
+            text-align: center;
+          }
 
-    .experience-content {
-      text-align: center;
-      width: 90%;
-      margin-top: 50%;
-      overflow: visible !important; /* Fjern egen scroll */
-    }
+          .experience-text {
+            text-align: center;
+            margin-bottom: 40px;
+          }
 
-    .experience-title {
-      font-size: 3.5rem;
-      top: 11%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+          .certificate1, .certificate2 {
+            width: 90%;
+            height: auto;
+          }
 
-    .experience-text {
-      font-size: 1rem;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      margin-top: -260px; 
-      margin-bottom: 300px;
-      left: 0;
-      font-family: "Proxima Nova", sans-serif;
-    }
+          .certificates {
+            justify-content: center !important;
+          }
 
-    .skills-container {
-      position: relative;
-      width: 100%;
-      left: -1%;
-      top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
+          .job h5 {
+            font-size: 1.1rem;
+            text-align: center;
+          }
 
-    .skill-item {
-      width: 90%;
-      text-align: left;
-    }
-
-    .progress {
-      height: 6px;
-      width: 100%;
-    }
-
-    .certificates {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 30px;
-      position: relative;
-      top: 5%;
-      left: 0;
-      margin-bottom: 50px;
-    }
-
-    .certificate1 {
-      width: 300px;
-      height: 300px;
-    }
-
-    .certificate2 {    
-      width: 300px;
-      height: 200px;
-    } 
-      
-    .certificate-title {
-      position: relative;
-      font-size: 2rem;
-      margin-top: 10px;
-      left: 0;
-      top: 7%;
-    }
-}
-
-
-  /* TABLETVERSJON (441px - 1024px) */
-  @media (min-width: 441px) and (max-width: 1024px) {
-    .experience-title {
-      font-size: 4rem;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .experience-text {
-      width: 85%;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 23%;
-    }
-
-    .skills-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-    .certificates {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .certificates img {
-      width: 45%;
-    }
-  }
-
-  `}
-      </style>
+          .job ul {
+            padding-left: 15px;
+            text-align: left;
+          }
+        }
+      `}</style>
     </div>
   );
 };
