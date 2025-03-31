@@ -235,7 +235,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
 
 
 
-  `))},LD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative text-light aboutme",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",{className:"aboutme-content"},v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"about-title"},v.createElement("h1",null,"OM MEG")),v.createElement("div",{className:"about-text"},v.createElement("p",null,"Mitt navn er ",v.createElement("strong",null,"Mark Daniel Reyes"),", og jeg er en 23 år gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt Design fra Høyskolen Kristiania til sommer. Jeg har en lidenskap for å skape intuitive og estetisk tiltalende digitale opplevelser som kombinerer funksjonalitet og design."),v.createElement("p",null,"Gjennom studiene mine har jeg fått en solid forståelse for brukeropplevelse, interaksjonsdesign og visuell kommunikasjon. Jeg har erfaring med verktøy som Figma, Adobe XD og andre designprogrammer, og jeg jobber alltid med et brukerfokusert tankesett for å skape løsninger som er både innovative og effektive."),v.createElement("p",null,"I tillegg til UX/UI-design har jeg en sterk interesse for webutvikling og ønsker å utvikle meg videre innen dette feltet. Jeg har erfaring med HTML, CSS og JavaScript og bygger opp ferdighetene mine innenfor moderne rammeverk som React."),v.createElement("p",null,"Jeg er nysgjerrig av natur og drives av å lære nye teknologier og designmetoder for å kunne utvikle meg videre som både designer og utvikler. Med en sterk interesse for designpsykologi og brukeradferd, streber jeg etter å skape løsninger som ikke bare ser bra ut, men som også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt :)")),v.createElement("div",{className:"profile-container"},v.createElement(_D,null),v.createElement("p",{className:"profile-name"},"Mark Daniel Reyes")),v.createElement("div",{className:"table-image"},v.createElement(xD,null)),v.createElement("div",{className:"sunset-image"},v.createElement(SD,null))),v.createElement("style",null,`
+  `))},LD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative text-light aboutme",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",{className:"aboutme-content"},v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"about-title"},v.createElement("h1",null,"OM MEG")),v.createElement("div",{className:"about-text"},v.createElement("p",null,"Mitt navn er ",v.createElement("strong",null,"Mark Daniel Reyes"),", og jeg er en 23 år gammel UX/UI-designer med en forventet bachelorgrad i Interaktivt Design fra Høyskolen Kristiania til sommer. Jeg har en lidenskap for å skape intuitive og estetisk tiltalende digitale opplevelser som kombinerer funksjonalitet og design."),v.createElement("p",null,"Gjennom studiene mine har jeg fått en solid forståelse for brukeropplevelse, interaksjonsdesign og visuell kommunikasjon. Jeg har erfaring med verktøy som Figma, Adobe XD og andre designprogrammer, og jeg jobber alltid med et brukerfokusert tankesett for å skape løsninger som er både innovative og effektive."),v.createElement("p",null,"I tillegg til UX/UI-design har jeg en sterk interesse for webutvikling og ønsker å utvikle meg videre innen dette feltet. Jeg har erfaring med HTML, CSS og JavaScript og bygger opp ferdighetene mine innenfor moderne rammeverk som React."),v.createElement("p",null,"Ved siden av design og utvikling, driver jeg også med friidrett, som sprinter. Gjennom dette har jeg utviklet verdifulle egenskaper som"," ",v.createElement("strong",null,"disiplin"),", ",v.createElement("strong",null,"målbevissthet")," og"," ",v.createElement("strong",null,"arbeidsvilje"),", noe jeg tar med meg inn i arbeidslivet og bruker aktivt i mine prosjekter."),v.createElement("p",null,"Jeg er nysgjerrig av natur og drives av å lære nye teknologier og designmetoder for å kunne utvikle meg videre som både designer og utvikler. Med en sterk interesse for designpsykologi og brukeradferd, streber jeg etter å skape løsninger som ikke bare ser bra ut, men som også fungerer sømløst for brukeren. Ikke nøl med å ta kontakt :)")),v.createElement("div",{className:"profile-container"},v.createElement(_D,null),v.createElement("p",{className:"profile-name"},"Mark Daniel Reyes")),v.createElement("div",{className:"table-image"},v.createElement(xD,null)),v.createElement("div",{className:"sunset-image"},v.createElement(SD,null))),v.createElement("style",null,`
    /* Standard desktop-styling */
   .about-title {
     position: absolute;
@@ -263,7 +263,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
   .profile-container {
     position: absolute;
     right: 20vw; /* Sørger for at bildet holder seg på riktig sted */
-    top: 21%;
+    top: 30%;
     padding: 10px;
     background-color: white;
     z-index: 2;
@@ -279,7 +279,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
   .table-image {
     position: absolute;
     right: 6vw; /* Bruker vw for bedre skalering */
-    top: 15%;
+    top: 25%;
     filter: grayscale(100%) brightness(30%);
     z-index: 1;
   }
@@ -287,7 +287,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
   .sunset-image {
     position: absolute;
     right: 3.5vw;
-    top: 45%;
+    top: 55%;
     filter: grayscale(100%) brightness(30%);
   }
 
@@ -506,224 +506,114 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
               pointer-events: none;
             }
           }
-        `))},OD=()=>{const e="MARK     DANIEL     REYES".split(""),t=[{name:"Figma",level:"100%",logo:"/Portfolio/figma.png"},{name:"UX (Brukertesting)",level:"80%",logo:"/Portfolio/ux.png"},{name:"HTML & CSS",level:"75%",logo:"/Portfolio/htmlcss.png"},{name:"React",level:"70%",logo:"/Portfolio/react.png"},{name:"JavaScript",level:"70%",logo:"/Portfolio/javascript.png"}],[n,r]=C.useState(null);return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light content",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((i,o)=>v.createElement(X.span,{key:o,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},i)))),v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"container experience-content"},v.createElement("h1",{className:"experience-title"},"ERFARING"),v.createElement("div",{className:"row"},v.createElement("div",{className:"col-md-6"},v.createElement("p",{className:"experience-text"},"Gjennom tre år har jeg utviklet ferdigheter innen webutvikling, interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS, React, JavaScript og TypeScript for å skape dynamiske og brukervennlige løsninger. Design og brukeropplevelse har vært en stor del av mitt arbeid, der jeg har brukt verktøy som Figma og Adobe Illustrator for å skape intuitive grensesnitt. I tillegg har jeg lært viktige designprinsipper og gjennomført brukertesting for å sikre at løsningene fungerer optimalt for brukerne."),v.createElement("h4",{className:"certificate-title"},"SERTIFIKATER"),v.createElement("div",{className:"certificates"},["/Portfolio/htmlcss_certificate.png"].map((i,o)=>v.createElement(X.img,{key:o,src:i,alt:`Certificate ${o+1}`,className:"certificate1",onClick:()=>r(i),whileHover:{scale:1.05},transition:{duration:.3}})),["/Portfolio/react_certificate.png"].map((i,o)=>v.createElement(X.img,{key:o,src:i,alt:`Certificate ${o+1}`,className:"certificate2",onClick:()=>r(i),whileHover:{scale:1.05},transition:{duration:.3}})))),v.createElement("div",{className:"col-md-6 skills-container"},t.map((i,o)=>v.createElement("div",{key:o,className:"skill-item"},v.createElement("div",{className:"d-flex align-items-center mb-1"},v.createElement("img",{src:i.logo,alt:i.name,className:"skill-logo"}),v.createElement("span",null,i.name)),v.createElement("div",{className:"progress"},v.createElement("div",{className:"progress-bar bg-warning",role:"progressbar",style:{width:i.level},"aria-valuenow":parseInt(i.level),"aria-valuemin":0,"aria-valuemax":100}))))))),n&&v.createElement("div",{className:"certificate-modal",onClick:()=>r(null)},v.createElement("img",{src:n,alt:"Selected Certificate",className:"certificate-full"})),v.createElement("style",null,`
-    /* STANDARD DESKTOP DESIGN */
-  .experience-content {
-    text-align: left;
-    width: 100%;
-    margin-top: 18%;
-  }
+        `))},OD=()=>{const e="MARK     DANIEL     REYES".split(""),t=[{name:"Figma",level:"100%",logo:"/Portfolio/figma.png"},{name:"UX (Brukertesting)",level:"80%",logo:"/Portfolio/ux.png"},{name:"HTML & CSS",level:"75%",logo:"/Portfolio/htmlcss.png"},{name:"React",level:"70%",logo:"/Portfolio/react.png"},{name:"JavaScript",level:"70%",logo:"/Portfolio/javascript.png"}],[n,r]=C.useState(null);return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",overflowX:"hidden",marginTop:"-30px"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((i,o)=>v.createElement(X.span,{key:o,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},i)))),v.createElement("div",{className:"navbar"},v.createElement(fn,null)),v.createElement("div",null,v.createElement("div",{className:"container experience-content"},v.createElement("div",{style:{paddingTop:"100px"}},v.createElement("h1",{className:"experience-title mb-4"},"ERFARING"),v.createElement("div",{className:"row"},v.createElement("div",{className:"col-lg-6 mb-5"},v.createElement("p",{className:"experience-text"},"Gjennom tre år har jeg utviklet ferdigheter innen webutvikling, interaksjonsdesign og brukertesting. Jeg har jobbet med HTML, CSS, React, JavaScript og TypeScript for å skape dynamiske og brukervennlige løsninger. Design og brukeropplevelse har vært en stor del av mitt arbeid, der jeg har brukt verktøy som Figma og Adobe Illustrator for å skape intuitive grensesnitt. I tillegg har jeg lært viktige designprinsipper og gjennomført brukertesting for å sikre at løsningene fungerer optimalt for brukerne."),v.createElement("h4",{className:"mt-5 experience-subtitle"},"ARBEIDSERFARING"),v.createElement("div",{className:"job mt-3"},v.createElement("h5",null,"💼 Assisterende medarbeider – Floriss Hasle"),v.createElement("p",{className:"job-period"},"Juni 2017 – Nåværende"),v.createElement("ul",null,v.createElement("li",null,"Ansvar for henting og oppakning av nye varer"),v.createElement("li",null,"Visuell utforming av butikkens produkter og utstillinger"),v.createElement("li",null,"Utviklet forståelse for kundebehov og forbedret kundeopplevelse"))),v.createElement("div",{className:"job mt-4"},v.createElement("h5",null,"📦 Lagermedarbeider – Bring Alfaset"),v.createElement("p",{className:"job-period"},"Nov. 2020 – Sept. 2022"),v.createElement("ul",null,v.createElement("li",null,"Sortering og logistikk av pakker"),v.createElement("li",null,"Bidro til optimalisering av arbeidsflyt og sporing"),v.createElement("li",null,"Lærte verdien av nøyaktighet i logistikkprosesser"))),v.createElement("a",{href:"/Portfolio/CV.pdf",className:"btn btn-outline-light mt-4",download:!0,target:"_blank",rel:"noopener noreferrer"},"Last ned full CV (PDF)"),v.createElement("h4",{className:"mt-5 experience-subtitle"},"SERTIFIKATER"),v.createElement("div",{className:"certificates mt-3 d-flex flex-wrap gap-4 justify-content-start"},v.createElement(X.img,{src:"/Portfolio/htmlcss_certificate.png",alt:"HTML CSS Certificate",className:"certificate1",onClick:()=>r("/Portfolio/htmlcss_certificate.png"),whileHover:{scale:1.05},transition:{duration:.3}}),v.createElement(X.img,{src:"/Portfolio/react_certificate.png",alt:"React Certificate",className:"certificate2",onClick:()=>r("/Portfolio/react_certificate.png"),whileHover:{scale:1.05},transition:{duration:.3}}))),v.createElement("div",{className:"col-lg-6"},t.map((i,o)=>v.createElement("div",{key:o,className:"skill-item mb-5"},v.createElement("div",{className:"d-flex align-items-center mb-2"},v.createElement("img",{src:i.logo,alt:i.name,className:"skill-logo"}),v.createElement("span",null,i.name)),v.createElement("div",{className:"progress"},v.createElement("div",{className:"progress-bar bg-warning",role:"progressbar",style:{width:i.level},"aria-valuenow":parseInt(i.level),"aria-valuemin":0,"aria-valuemax":100})))))),n&&v.createElement("div",{className:"certificate-modal",onClick:()=>r(null)},v.createElement("img",{src:n,alt:"Selected Certificate",className:"certificate-full"}))))),v.createElement("style",null,`
+        .navbar {
+          margin-top: 75px;
+        }
 
-  .experience-title {
-    font-size: 5rem;
-    top: 20%;
-    left: 5vw; /* Bruker vw for å sikre at tittelen holder seg på plass */
-    position: absolute;
-    font-family: Helvetica;
-  }
+        .experience-title {
+          font-family: Helvetica;
+          font-size: 5rem;
+          text-align: left;
+        }
 
-  .experience-text {
-    font-size: 1rem;
-    width: 40vw; /* Sikrer konsistent bredde */
-    font-weight: lighter;
-    margin-bottom: 50px;
-    font-family: "Proxima Nova";
-    position: absolute;
-    top: 34%;
-    left: 5vw; /* Justert for større skjermer */
-  }
+        .experience-text {
+          font-size: 1rem;
+          font-family: "Proxima Nova", sans-serif;
+        }
 
-  .certificate-title {
-  position: absolute;
-    top: 60%;
-    left: 5vw;
-  }
+        .experience-subtitle {
+          font-size: 1.6rem;
+          color: white;
+          font-family: Helvetica;
+        }
 
-  .certificates {
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    top: 65%;
-    left: 5vw;
-  }
+        .job h5 {
+          font-size: 1.2rem;
+          color: #ffc107;
+        }
 
-  .certificate1 {
-    width: 190px;
-    height: 200px
-  }
+        .job-period {
+          font-size: 0.9rem;
+          font-style: italic;
+          color: #ccc;
+        }
 
-  .certificate2 {
-    width: 275px;
-    height: 200px
-  }
+        .job ul {
+          padding-left: 20px;
+          font-size: 1rem;
+        }
 
-  .skills-container {
-    position: absolute;
-    top: 30.5%;
-    right: 5vw; /* Justert for at ferdighetene holder seg på plass */
-    width: 45vw; /* Sørger for at innholdet holder seg i riktig posisjon */
-  }
+        .skill-logo {
+          width: 30px;
+          margin-right: 10px;
+        }
 
-  .skill-item {
-    margin-bottom: 70px;
-  }
+        .certificate1 {
+          width: 275px;
+          height: 300px;
+        }
 
-  .skill-logo {
-    width: 30px;
-    margin-right: 10px;
-  }
+        .certificate2 {
+          width: 300px;
+          height: 200px;
+        }
 
-  .progress {
-    height: 8px;
-  }
+        .certificate-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999;
+        }
 
-  .certificate-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-          }
-          .certificate-full {
-            max-width: 80vw;
-            max-height: 80vh;
-            border-radius: 10px;
+        .certificate-full {
+          max-width: 80vw;
+          max-height: 80vh;
+          border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+          .experience-title {
+            font-size: 3rem;
+            text-align: center;
           }
 
-  /* MOBILVERSJON (max 440px) */
-  @media (max-width: 440px) {
-    html, body {
-      height: 100%;
-      overflow-x: hidden; /* Hindrer horisontal scrolling */
-      overflow-y: auto !important; /* Sikrer at hele siden kan scrolle */
-      -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
-      touch-action: manipulation; /* Forhindrer at scrollen stopper */
-    }
-    
-    .content {
-      margin-top: -40px;
-    }
+          .experience-subtitle {
+            font-size: 1.3rem;
+            text-align: center;
+          }
 
-    .experience-content {
-      text-align: center;
-      width: 90%;
-      margin-top: 50%;
-      overflow: visible !important; /* Fjern egen scroll */
-    }
+          .experience-text {
+            text-align: center;
+            margin-bottom: 40px;
+          }
 
-    .experience-title {
-      font-size: 3.5rem;
-      top: 11%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+          .certificate1, .certificate2 {
+            width: 90%;
+            height: auto;
+          }
 
-    .experience-text {
-      font-size: 1rem;
-      text-align: center;
-      width: 100%;
-      position: relative;
-      margin-top: -260px; 
-      margin-bottom: 300px;
-      left: 0;
-      font-family: "Proxima Nova", sans-serif;
-    }
+          .certificates {
+            justify-content: center !important;
+          }
 
-    .skills-container {
-      position: relative;
-      width: 100%;
-      left: -1%;
-      top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
+          .job h5 {
+            font-size: 1.1rem;
+            text-align: center;
+          }
 
-    .skill-item {
-      width: 90%;
-      text-align: left;
-    }
-
-    .progress {
-      height: 6px;
-      width: 100%;
-    }
-
-    .certificates {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 30px;
-      position: relative;
-      top: 5%;
-      left: 0;
-      margin-bottom: 50px;
-    }
-
-    .certificate1 {
-      width: 300px;
-      height: 300px;
-    }
-
-    .certificate2 {    
-      width: 300px;
-      height: 200px;
-    } 
-      
-    .certificate-title {
-      position: relative;
-      font-size: 2rem;
-      margin-top: 10px;
-      left: 0;
-      top: 7%;
-    }
-}
-
-
-  /* TABLETVERSJON (441px - 1024px) */
-  @media (min-width: 441px) and (max-width: 1024px) {
-    .experience-title {
-      font-size: 4rem;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .experience-text {
-      width: 85%;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 23%;
-    }
-
-    .skills-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-    .certificates {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .certificates img {
-      width: 45%;
-    }
-  }
-
-  `))},MD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light content",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"contact-container"},v.createElement("h1",{className:"contact-title"},"TA KONTAKT"),v.createElement("a",{href:"mailto:mark26reyes@gmail.com",className:"contact-email"},"mark26reyes@gmail.com"),v.createElement("div",{className:"social-links"},v.createElement("a",{href:"https://www.linkedin.com/in/mark-daniel-reyes-865609278",target:"_blank",rel:"noopener noreferrer",className:"social-item"},v.createElement("img",{src:"https://cdn-icons-png.flaticon.com/512/174/174857.png",alt:"LinkedIn",className:"social-icon"}),v.createElement("span",null,"LinkedIn")),v.createElement("a",{href:"https://github.com/mark26reyes",target:"_blank",rel:"noopener noreferrer",className:"social-item"},v.createElement("img",{src:"https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",alt:"GitHub",className:"social-icon github-icon"}),v.createElement("span",null,"GitHub")))),v.createElement("style",null,`
+          .job ul {
+            padding-left: 15px;
+            text-align: left;
+          }
+        }
+      `))},MD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light content",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"contact-container"},v.createElement("h1",{className:"contact-title"},"TA KONTAKT"),v.createElement("a",{href:"mailto:mark26reyes@gmail.com",className:"contact-email"},"mark26reyes@gmail.com"),v.createElement("div",{className:"social-links"},v.createElement("a",{href:"https://www.linkedin.com/in/mark-daniel-reyes-865609278",target:"_blank",rel:"noopener noreferrer",className:"social-item"},v.createElement("img",{src:"https://cdn-icons-png.flaticon.com/512/174/174857.png",alt:"LinkedIn",className:"social-icon"}),v.createElement("span",null,"LinkedIn")),v.createElement("a",{href:"https://github.com/mark26reyes",target:"_blank",rel:"noopener noreferrer",className:"social-item"},v.createElement("img",{src:"https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",alt:"GitHub",className:"social-icon github-icon"}),v.createElement("span",null,"GitHub")))),v.createElement("style",null,`
   /* Standard desktop-styling */
   .contact-container {
     position: absolute;
@@ -878,7 +768,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
     }
 }
 
-  `))},ID=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),className:"back-button position-absolute",style:{position:"absolute",top:"13%",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"MatSpar"),v.createElement("p",{className:"lead text-center mb-5 mt-4 text-white"},"En app for smart matplanlegging, budsjett og bærekraft."),v.createElement("img",{src:"/Portfolio/matspar.png",alt:"MatSpar skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",{style:{fontWeight:"lighter"}},"MatSpar ble utviklet som et gruppeprosjekt, med mål om å lage en app for studenter og familier som ønsker bedre kontroll over matbudsjettet og å redusere matsvinn. Jeg jobbet spesielt med innsiktsarbeid, struktur og prototyping i Figma."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 1:")," Innsikt via spørreundersøkelser, intervjuer og konkurrentanalyse."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 2:")," Idégenerering og low-fidelity skisser."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 3:")," Iterativ prototyping og interaksjonsdesign i Figma."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 4:")," Brukertesting og forbedring basert på reell feedback.")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",{style:{fontWeight:"lighter"}},"Vi brukte Lean UX som metode, med fokus på hypotesedrevne beslutninger, rask prototyping og kontinuerlig iterasjon. Alt design ble laget i Figma, og innsikt ble samlet inn gjennom fysiske spørreundersøkelser."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},"Viktigheten av tidlig problemforståelse og innsikt."),v.createElement("li",{style:{fontWeight:"lighter"}},"Iterasjon er nøkkelen til god brukeropplevelse."),v.createElement("li",{style:{fontWeight:"lighter"}},"Samarbeid og kommunikasjon gir bedre designvalg.")),v.createElement("a",{href:"https://www.figma.com/design/ObFSRwwNMJGFbuidoVTQcM/Eksamen-Int.-Design-H23?node-id=420-3691&t=ZVwTNP9kWrQR4nbR-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
+  `))},ID=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),className:"back-button position-absolute",style:{position:"absolute",top:"175px",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"MatSpar"),v.createElement("p",{className:"lead text-center mb-5 mt-4 text-white"},"En app for smart matplanlegging, budsjett og bærekraft."),v.createElement("img",{src:"/Portfolio/matspar.png",alt:"MatSpar skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",{style:{fontWeight:"lighter"}},"MatSpar ble utviklet som et gruppeprosjekt, med mål om å lage en app for studenter og familier som ønsker bedre kontroll over matbudsjettet og å redusere matsvinn. Jeg jobbet spesielt med innsiktsarbeid, struktur og prototyping i Figma."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 1:")," Innsikt via spørreundersøkelser, intervjuer og konkurrentanalyse."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 2:")," Idégenerering og low-fidelity skisser."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 3:")," Iterativ prototyping og interaksjonsdesign i Figma."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 4:")," Brukertesting og forbedring basert på reell feedback.")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",{style:{fontWeight:"lighter"}},"Vi brukte Lean UX som metode, med fokus på hypotesedrevne beslutninger, rask prototyping og kontinuerlig iterasjon. Alt design ble laget i Figma, og innsikt ble samlet inn gjennom fysiske spørreundersøkelser."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},"Viktigheten av tidlig problemforståelse og innsikt."),v.createElement("li",{style:{fontWeight:"lighter"}},"Iterasjon er nøkkelen til god brukeropplevelse."),v.createElement("li",{style:{fontWeight:"lighter"}},"Samarbeid og kommunikasjon gir bedre designvalg.")),v.createElement("a",{href:"https://www.figma.com/design/ObFSRwwNMJGFbuidoVTQcM/Eksamen-Int.-Design-H23?node-id=420-3691&t=ZVwTNP9kWrQR4nbR-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
     .back-button {
       position: absolute;
       top: 100px;
@@ -903,7 +793,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
         left: 15px;
       }
     }
-  `))},VD=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"13%",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"OneHub"),v.createElement("p",{className:"lead text-center mb-5 mt-4 text-white"},"En app som samler strømmetjenester og gjør det enklere å oppdage nytt innhold – inspirert av TikTok og sosiale medier."),v.createElement("img",{src:"/Portfolio/onehub.png",alt:"OneHub skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",{style:{fontWeight:"lighter"}},"OneHub ble utviklet for å løse utfordringen med fragmenterte strømmetjenester. Målet var å skape én plattform der brukere enkelt kan oppdage filmer og serier, med personlig tilpasning og sosial deling. Jeg jobbet med design og prototypeutvikling i Figma."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 1:")," Innsikt gjennom spørreundersøkelser og intervjuer med målgruppen."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 2:")," Idéutvikling med fokus på algoritmisk trailer-feed og personlig tilpasning."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 3:")," Prototyping av TikTok-lignende grensesnitt, først vertikalt – senere horisontalt for bedre tilpasning av videoformat."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 4:")," Brukertesting og forbedringer basert på tilbakemeldinger og gjennomførbarhetsanalyse.")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",{style:{fontWeight:"lighter"}},"Vi kombinerte Design Thinking (fra IDEO) med Lean UX. Design Thinking hjalp oss å identifisere brukerbehov, mens Lean UX ga oss raske iterasjoner med MVP-testing. Prototypen ble designet i Figma og testet med ekte brukere."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},"Brukere foretrekker horisontale trailere – bedre utnyttelse av skjermareal."),v.createElement("li",{style:{fontWeight:"lighter"}},"Sosiale delingsfunksjoner øker engasjement og oppdagelse."),v.createElement("li",{style:{fontWeight:"lighter"}},"Personlige anbefalinger og visuell enkelhet gir høyere brukeropplevelse.")),v.createElement("a",{href:"https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=KvNfpaKgDECucDZI-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
+  `))},VD=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"175px",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"OneHub"),v.createElement("p",{className:"lead text-center mb-5 mt-4 text-white"},"En app som samler strømmetjenester og gjør det enklere å oppdage nytt innhold – inspirert av TikTok og sosiale medier."),v.createElement("img",{src:"/Portfolio/onehub.png",alt:"OneHub skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",{style:{fontWeight:"lighter"}},"OneHub ble utviklet for å løse utfordringen med fragmenterte strømmetjenester. Målet var å skape én plattform der brukere enkelt kan oppdage filmer og serier, med personlig tilpasning og sosial deling. Jeg jobbet med design og prototypeutvikling i Figma."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 1:")," Innsikt gjennom spørreundersøkelser og intervjuer med målgruppen."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 2:")," Idéutvikling med fokus på algoritmisk trailer-feed og personlig tilpasning."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 3:")," Prototyping av TikTok-lignende grensesnitt, først vertikalt – senere horisontalt for bedre tilpasning av videoformat."),v.createElement("li",{style:{fontWeight:"lighter"}},v.createElement("strong",null,"Fase 4:")," Brukertesting og forbedringer basert på tilbakemeldinger og gjennomførbarhetsanalyse.")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",{style:{fontWeight:"lighter"}},"Vi kombinerte Design Thinking (fra IDEO) med Lean UX. Design Thinking hjalp oss å identifisere brukerbehov, mens Lean UX ga oss raske iterasjoner med MVP-testing. Prototypen ble designet i Figma og testet med ekte brukere."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",{style:{fontWeight:"lighter"}},"Brukere foretrekker horisontale trailere – bedre utnyttelse av skjermareal."),v.createElement("li",{style:{fontWeight:"lighter"}},"Sosiale delingsfunksjoner øker engasjement og oppdagelse."),v.createElement("li",{style:{fontWeight:"lighter"}},"Personlige anbefalinger og visuell enkelhet gir høyere brukeropplevelse.")),v.createElement("a",{href:"https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=KvNfpaKgDECucDZI-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
     .back-button {
       position: absolute;
       top: 100px;
@@ -928,7 +818,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
         left: 15px;
       }
     }
-  `))},$D=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"13%",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"Harmoni"),v.createElement("p",{className:"lead text-center mb-2 mt-4 text-white"},"En app for psykisk helse som tilbyr råd, støtte og verktøy for å håndtere hverdagen – designet med omtanke og trygghet."),v.createElement("img",{src:"/Portfolio/harmoni.png",alt:"Harmoni skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",null,"Harmoni ble utviklet som et høynivå-prototypeprosjekt med fokus på åpenhet rundt psykisk helse. Appen fungerer som en virtuell støttespiller og er tilpasset unge voksne med mildt til moderat psykisk ubehag. Jeg jobbet spesielt med design, innholdsstruktur og teststrategi."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",null,v.createElement("strong",null,"Fase 1:")," Konseptutvikling og konkurrentanalyse"),v.createElement("li",null,v.createElement("strong",null,"Fase 2:")," Miro-idémyldring og wireframes i Figma"),v.createElement("li",null,v.createElement("strong",null,"Fase 3:")," Visuell prototyping med universell utforming i fokus"),v.createElement("li",null,v.createElement("strong",null,"Fase 4:")," Brukertesting og iterasjon basert på feedback")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",null,"Vi benyttet Design Thinking og brukersentrert design med fokus på tilgjengelighet. Testing ble gjennomført med ulike brukerprofiler, og Figma ble brukt til prototyping. Designet ble justert i henhold til WCAG-retningslinjer og anbefalinger for universell utforming."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",null,"Skrollfunksjon må alltid forventes av brukeren"),v.createElement("li",null,"White space og visuell ro gir bedre opplevelse"),v.createElement("li",null,"Universell utforming forbedrer brukeropplevelse for alle"),v.createElement("li",null,"Støtte for “hjelp en venn” bør være lett tilgjengelig")),v.createElement("a",{href:"https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Design-Prosjekt?node-id=770-1244&t=0SxEfQNqFoWZPHeq-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
+  `))},$D=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"175px",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"Harmoni"),v.createElement("p",{className:"lead text-center mb-2 mt-4 text-white"},"En app for psykisk helse som tilbyr råd, støtte og verktøy for å håndtere hverdagen – designet med omtanke og trygghet."),v.createElement("img",{src:"/Portfolio/harmoni.png",alt:"Harmoni skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-4"},"📌 Kort om prosjektet"),v.createElement("p",null,"Harmoni ble utviklet som et høynivå-prototypeprosjekt med fokus på åpenhet rundt psykisk helse. Appen fungerer som en virtuell støttespiller og er tilpasset unge voksne med mildt til moderat psykisk ubehag. Jeg jobbet spesielt med design, innholdsstruktur og teststrategi."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",null,v.createElement("strong",null,"Fase 1:")," Konseptutvikling og konkurrentanalyse"),v.createElement("li",null,v.createElement("strong",null,"Fase 2:")," Miro-idémyldring og wireframes i Figma"),v.createElement("li",null,v.createElement("strong",null,"Fase 3:")," Visuell prototyping med universell utforming i fokus"),v.createElement("li",null,v.createElement("strong",null,"Fase 4:")," Brukertesting og iterasjon basert på feedback")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",null,"Vi benyttet Design Thinking og brukersentrert design med fokus på tilgjengelighet. Testing ble gjennomført med ulike brukerprofiler, og Figma ble brukt til prototyping. Designet ble justert i henhold til WCAG-retningslinjer og anbefalinger for universell utforming."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",null,"Skrollfunksjon må alltid forventes av brukeren"),v.createElement("li",null,"White space og visuell ro gir bedre opplevelse"),v.createElement("li",null,"Universell utforming forbedrer brukeropplevelse for alle"),v.createElement("li",null,"Støtte for “hjelp en venn” bør være lett tilgjengelig")),v.createElement("a",{href:"https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Design-Prosjekt?node-id=770-1244&t=0SxEfQNqFoWZPHeq-1",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se full prototype i Figma")),v.createElement("style",null,`
     .back-button {
       position: absolute;
       top: 100px;
@@ -953,7 +843,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
         left: 15px;
       }
     }
-  `))},FD=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"13%",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"Fristil"),v.createElement("p",{className:"lead text-center mb-1 mt-4 text-white"},"Et bachelorprosjekt utviklet for Fristil Records AS – en moderne og visuell nettside skreddersydd for ungdom og norske artister."),v.createElement("img",{src:"/Portfolio/fristil.png",alt:"Fristil skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-5"},"📌 Kort om prosjektet"),v.createElement("p",null,"Fristil er et pågående bachelorprosjekt i samarbeid med Fristil Records AS. Oppgaven går ut på å utvikle en moderne, engasjerende nettside som fungerer som et digitalt showcase – ikke en salgstrakt. Nettsiden skal presentere artistene, vise frem spillelister og synliggjøre selskapets identitet overfor ungdom i alderen 16–19 år."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",null,v.createElement("strong",null,"Fase 1:")," Spørreundersøkelse med målgruppen og innsiktsanalyse"),v.createElement("li",null,v.createElement("strong",null,"Fase 2:")," Wireframes og visuell prototype i Figma"),v.createElement("li",null,v.createElement("strong",null,"Fase 3:")," MVP-utvikling i Wix Studio"),v.createElement("li",null,v.createElement("strong",null,"Fase 4:")," Brukertesting og iterativ forbedring av navigasjon og layout")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",null,"Vi benyttet Lean UX og Kanban som rammeverk. Figma ble brukt til design, mens Wix Studio ble valgt som publiseringsverktøy for at Fristil enkelt kan videreutvikle løsningen selv. Plattformen er optimalisert for mobil, SEO og fremtidig fleksibilitet."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",null,"Nettsiden bør ikke konkurrere med sosiale medier, men støtte merkevarebygging"),v.createElement("li",null,"Mobilvennlighet og visuell appell er avgjørende for målgruppen"),v.createElement("li",null,"Wix Studio gir lav teknisk terskel for kunden og rask implementering for oss")),v.createElement("a",{href:"https://adrian43124.wixstudio.com/my-site?rc=test-site",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se live prototype i Wix")),v.createElement("style",null,`
+  `))},FD=()=>{const e="MARK     DANIEL     REYES".split(""),t=Wo();return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat",fontFamily:"Helvetica",overflowX:"hidden"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((n,r)=>v.createElement(X.span,{key:r,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},n)))),v.createElement(fn,null),v.createElement("button",{onClick:()=>t(-1),style:{position:"absolute",top:"175px",left:"4%",border:"none",background:"none",fontSize:"3rem",color:"white",cursor:"pointer",transition:"transform 0.2s ease"},onMouseEnter:n=>n.currentTarget.style.transform="scale(1.2)",onMouseLeave:n=>n.currentTarget.style.transform="scale(1)"},"↩︎"),v.createElement("section",{className:"container text-white",style:{paddingTop:"180px",paddingBottom:"60px"}},v.createElement("h1",{className:"display-4 fw-bold text-center"},"Fristil"),v.createElement("p",{className:"lead text-center mb-1 mt-4 text-white"},"Et bachelorprosjekt utviklet for Fristil Records AS – en moderne og visuell nettside skreddersydd for ungdom og norske artister."),v.createElement("img",{src:"/Portfolio/fristil.png",alt:"Fristil skjermbilde",className:"img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"}),v.createElement("h3",{className:"mt-5"},"📌 Kort om prosjektet"),v.createElement("p",null,"Fristil er et pågående bachelorprosjekt i samarbeid med Fristil Records AS. Oppgaven går ut på å utvikle en moderne, engasjerende nettside som fungerer som et digitalt showcase – ikke en salgstrakt. Nettsiden skal presentere artistene, vise frem spillelister og synliggjøre selskapets identitet overfor ungdom i alderen 16–19 år."),v.createElement("h3",{className:"mt-4"},"🧭 Designprosess"),v.createElement("ul",null,v.createElement("li",null,v.createElement("strong",null,"Fase 1:")," Spørreundersøkelse med målgruppen og innsiktsanalyse"),v.createElement("li",null,v.createElement("strong",null,"Fase 2:")," Wireframes og visuell prototype i Figma"),v.createElement("li",null,v.createElement("strong",null,"Fase 3:")," MVP-utvikling i Wix Studio"),v.createElement("li",null,v.createElement("strong",null,"Fase 4:")," Brukertesting og iterativ forbedring av navigasjon og layout")),v.createElement("h3",{className:"mt-4"},"🔧 Metodikk og verktøy"),v.createElement("p",null,"Vi benyttet Lean UX og Kanban som rammeverk. Figma ble brukt til design, mens Wix Studio ble valgt som publiseringsverktøy for at Fristil enkelt kan videreutvikle løsningen selv. Plattformen er optimalisert for mobil, SEO og fremtidig fleksibilitet."),v.createElement("h3",{className:"mt-4"},"🧠 Viktige lærdommer"),v.createElement("ul",null,v.createElement("li",null,"Nettsiden bør ikke konkurrere med sosiale medier, men støtte merkevarebygging"),v.createElement("li",null,"Mobilvennlighet og visuell appell er avgjørende for målgruppen"),v.createElement("li",null,"Wix Studio gir lav teknisk terskel for kunden og rask implementering for oss")),v.createElement("a",{href:"https://adrian43124.wixstudio.com/my-site?rc=test-site",target:"_blank",rel:"noopener noreferrer",className:"btn btn-outline-light mt-4"},"Se live prototype i Wix")),v.createElement("style",null,`
     .back-button {
       position: absolute;
       top: 100px;
