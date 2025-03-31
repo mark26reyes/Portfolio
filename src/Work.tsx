@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { motion } from "framer-motion";
 import Navbar from "./NavBar";
+import { Link } from "react-router-dom"; // VIKTIG
 
 const Work = () => {
   const text = "MARK     DANIEL     REYES".split("");
@@ -12,29 +13,33 @@ const Work = () => {
       name: "MatSpar",
       img: "/Portfolio/matspar.png",
       description:
-        "En app designet for studenter og familier som ønsker å planlegge måltider økonomisk og bærekraftig. Den hjelper med budsjettstyring, optimalisering av ingredienser og redusering av matsvinn.",
-      url: "https://www.figma.com/design/ObFSRwwNMJGFbuidoVTQcM/Eksamen-Int.-Design-H23?node-id=420-3691&t=ZVwTNP9kWrQR4nbR-1",
+        "En app designet for studenter og familier som ønsker å planlegge måltider økonomisk og bærekraftig.",
+      url: "/prosjekter/matspar",
+      internal: true,
     },
     {
       name: "OneHub",
       img: "/Portfolio/onehub.png",
       description:
         "En plattform som samler strømmetjenester og hjelper brukere med å oppdage nytt innhold. Med en rullbar trailer-feed inspirert av TikTok blir oppdagelsen av filmer og serier engasjerende og enkel.",
-      url: "https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=F0JbR9q81tT1orOz-1",
+      url: "/prosjekter/onehub",
+      internal: true,
     },
     {
       name: "Harmoni",
       img: "/Portfolio/harmoni.png",
       description:
         "En app som fungerer som en virtuell støttespiller for bedre psykisk helse. Den tilbyr ressurser og verktøy for å håndtere mental helse i hverdagen, som et supplement til profesjonell behandling.",
-      url: "https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Design-Prosjekt?node-id=770-1244&t=E7nKcxjfZsVGWHIo-1",
+      url: "/prosjekter/harmoni",
+      internal: true,
     },
     {
       name: "Fristil",
       img: "/Portfolio/fristil.png",
       description:
         "Pågående prosjekt, oppdateres ved endringer: Fristil er et plateselskap som lar russegrupper velge artister, produsenter og vokalister for å lage sin russelåt. Nettsiden, utviklet i WIX Studio, viser artister, tidligere verk og nyheter og generelt om Fristil.",
-      url: "https://editor.wix.com/html/editor/web/renderer/external_preview/document/1892ff93-aa34-4b35-ac78-6b37aab561d1?metaSiteId=40eb0fc3-c360-4f9b-8077-335767491125&dsOrigin=externalPreview&configName=externalPreview",
+      url: "/prosjekter/fristil",
+      internal: true,
     },
   ];
 
@@ -121,24 +126,40 @@ const Work = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none"
-              >
-                <div className="p-4 d-flex align-items-center justify-content-center position-relative project-card">
-                  <img
-                    src={project.img}
-                    alt={project.name}
-                    className="img-fluid position-absolute project-image"
-                  />
-                  <div className="overlay">
-                    <p className="description-text">{project.description}</p>
+              {project.internal ? (
+                <Link to={project.url} className="text-decoration-none">
+                  <div className="p-4 d-flex align-items-center justify-content-center position-relative project-card">
+                    <img
+                      src={project.img}
+                      alt={project.name}
+                      className="img-fluid position-absolute project-image"
+                    />
+                    <div className="overlay">
+                      <p className="description-text">{project.description}</p>
+                    </div>
                   </div>
-                </div>
-                <p className="mt-3 text-white text-center">{project.name}</p>
-              </a>
+                  <p className="mt-3 text-white text-center">{project.name}</p>
+                </Link>
+              ) : (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <div className="p-4 d-flex align-items-center justify-content-center position-relative project-card">
+                    <img
+                      src={project.img}
+                      alt={project.name}
+                      className="img-fluid position-absolute project-image"
+                    />
+                    <div className="overlay">
+                      <p className="description-text">{project.description}</p>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-white text-center">{project.name}</p>
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
@@ -180,87 +201,82 @@ const Work = () => {
 
           .title {
             font-size: 5.5rem;
-           
             font-family: "Proxima Nova";
           }
 
-           /* MOBIL RESPONSIVITET */
-         @media (max-width: 440px) {
-    html, body {
-      height: 100%;
-      overflow-x: hidden; /* Hindrer horisontal scrolling */
-      overflow-y: auto !important; /* Sikrer at hele siden kan scrolle */
-      -webkit-overflow-scrolling: touch; /* Bedre scrolling på iOS */
-      touch-action: manipulation; /* Forhindrer at scrollen stopper */
-    }
+          @media (max-width: 440px) {
+            html, body {
+              height: 100%;
+              overflow-x: hidden;
+              overflow-y: auto !important;
+              -webkit-overflow-scrolling: touch;
+              touch-action: manipulation;
+            }
 
-    .content {
-      margin-top: -40px;
-    }
+            .content {
+              margin-top: -40px;
+            }
 
-    .container {
-      position: relative;
-      overflow: visible !important; /* Sikrer at containeren ikke skaper egen scroll */
-      padding-top: 145px;
-    }
+            .container {
+              position: relative;
+              overflow: visible !important;
+              padding-top: 145px;
+            }
 
-    .work-content {
-      position: relative;
-      overflow: visible !important; /* Hindrer egen scroll */
-    }
+            .work-content {
+              position: relative;
+              overflow: visible !important;
+            }
 
-    .title {
-      font-size: 3.5rem;
-      font-family: "Helvetica";
-      text-align: center;
-    }
+            .title {
+              font-size: 3.5rem;
+              font-family: "Helvetica";
+              text-align: center;
+            }
 
-    p {    
-      font-size: 1rem;
-      text-align: center;
-      margin: auto;
-      font-family: "Proxima Nova", sans-serif !important;
-    }
+            p {
+              font-size: 1rem;
+              text-align: center;
+              margin: auto;
+              font-family: "Proxima Nova", sans-serif !important;
+            }
 
-    .text {
-      width: 100%;
-      font-size: 1rem;
-      text-align: center;
-      margin: auto;
-      font-family: "Proxima Nova", sans-serif !important;
-    }
+            .text {
+              width: 100%;
+              font-size: 1rem;
+              text-align: center;
+              margin: auto;
+              font-family: "Proxima Nova", sans-serif !important;
+            }
 
-    .row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+            .row {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
 
-    .col-sm-6 {
-      width: 90%;
-      margin-bottom: 20px;
-    }
+            .col-sm-6 {
+              width: 90%;
+              margin-bottom: 20px;
+            }
 
-    .p-4 {
-      min-height: 250px;
-    }
+            .p-4 {
+              min-height: 250px;
+            }
 
-    img {
-      max-width: 90%;
-    }
+            img {
+              max-width: 90%;
+            }
 
-    /* 🔥 FJERNER DOBBEL SCROLL 🔥 */
-    .project-card {
-      overflow: visible !important; /* Sikrer at prosjektboksene ikke skaper ekstra scroll */
-    }
+            .project-card {
+              overflow: visible !important;
+            }
 
-    .project-image,
-    .overlay {
-      pointer-events: none; /* Sørger for at de ikke blokkerer scroll */
-    }
-}
-
-
+            .project-image,
+            .overlay {
+              pointer-events: none;
+            }
+          }
         `}
       </style>
     </div>

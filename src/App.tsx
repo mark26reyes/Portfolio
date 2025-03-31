@@ -7,6 +7,10 @@ import Aboutme from "./Aboutme";
 import Work from "./Work";
 import Experience from "./Experiece";
 import Contact from "./Contact";
+import MatSpar from "./MatSpar";
+import OneHub from "./OneHub";
+import Harmoni from "./Harmoni";
+import Fristil from "./Fristil";
 
 const App = () => {
   return (
@@ -17,6 +21,10 @@ const App = () => {
         <Route path="/Work" element={<Work />} />
         <Route path="/Experience" element={<Experience />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/prosjekter/matspar" element={<MatSpar />} />
+        <Route path="/prosjekter/onehub" element={<OneHub />} />
+        <Route path="/prosjekter/harmoni" element={<Harmoni />} />
+        <Route path="/prosjekter/fristil" element={<Fristil />} />
       </Routes>
     </Router>
   );
