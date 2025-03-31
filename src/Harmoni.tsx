@@ -107,7 +107,7 @@ const Harmoni = () => {
         />
 
         <h3 className="mt-4">📌 Kort om prosjektet</h3>
-        <p>
+        <p style={{ fontWeight: "lighter" }}>
           Harmoni ble utviklet som et høynivå-prototypeprosjekt med fokus på
           åpenhet rundt psykisk helse. Appen fungerer som en virtuell
           støttespiller og er tilpasset unge voksne med mildt til moderat
@@ -117,24 +117,24 @@ const Harmoni = () => {
 
         <h3 className="mt-4">🧭 Designprosess</h3>
         <ul>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Konseptutvikling og konkurrentanalyse
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 2:</strong> Miro-idémyldring og wireframes i Figma
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 3:</strong> Visuell prototyping med universell
             utforming i fokus
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 4:</strong> Brukertesting og iterasjon basert på
             feedback
           </li>
         </ul>
 
         <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
-        <p>
+        <p style={{ fontWeight: "lighter" }}>
           Vi benyttet Design Thinking og brukersentrert design med fokus på
           tilgjengelighet. Testing ble gjennomført med ulike brukerprofiler, og
           Figma ble brukt til prototyping. Designet ble justert i henhold til
@@ -143,10 +143,18 @@ const Harmoni = () => {
 
         <h3 className="mt-4">🧠 Viktige lærdommer</h3>
         <ul>
-          <li>Skrollfunksjon må alltid forventes av brukeren</li>
-          <li>White space og visuell ro gir bedre opplevelse</li>
-          <li>Universell utforming forbedrer brukeropplevelse for alle</li>
-          <li>Støtte for “hjelp en venn” bør være lett tilgjengelig</li>
+          <li style={{ fontWeight: "lighter" }}>
+            Skrollfunksjon må alltid forventes av brukeren
+          </li>
+          <li style={{ fontWeight: "lighter" }}>
+            White space og visuell ro gir bedre opplevelse
+          </li>
+          <li style={{ fontWeight: "lighter" }}>
+            Universell utforming forbedrer brukeropplevelse for alle
+          </li>
+          <li style={{ fontWeight: "lighter" }}>
+            Støtte for “hjelp en venn” bør være lett tilgjengelig
+          </li>
         </ul>
 
         <a

@@ -88,7 +88,10 @@ const Experience = () => {
             <div className="row">
               {/* Venstre kolonne */}
               <div className="col-lg-6 mb-5">
-                <p className="experience-text">
+                <p
+                  className="experience-text"
+                  style={{ fontWeight: "lighter" }}
+                >
                   Gjennom tre år har jeg utviklet ferdigheter innen
                   webutvikling, interaksjonsdesign og brukertesting. Jeg har
                   jobbet med HTML, CSS, React, JavaScript og TypeScript for å
@@ -104,8 +107,10 @@ const Experience = () => {
 
                 <div className="job mt-3">
                   <h5>💼 Assisterende medarbeider – Floriss Hasle</h5>
-                  <p className="job-period">Juni 2017 – Nåværende</p>
-                  <ul>
+                  <p className="job-period" style={{ fontWeight: "lighter" }}>
+                    Juni 2017 – Nåværende
+                  </p>
+                  <ul style={{ fontWeight: "lighter" }}>
                     <li>Ansvar for henting og oppakning av nye varer</li>
                     <li>
                       Visuell utforming av butikkens produkter og utstillinger
@@ -119,8 +124,10 @@ const Experience = () => {
 
                 <div className="job mt-4">
                   <h5>📦 Lagermedarbeider – Bring Alfaset</h5>
-                  <p className="job-period">Nov. 2020 – Sept. 2022</p>
-                  <ul>
+                  <p className="job-period" style={{ fontWeight: "lighter" }}>
+                    Nov. 2020 – Sept. 2022
+                  </p>
+                  <ul style={{ fontWeight: "lighter" }}>
                     <li>Sortering og logistikk av pakker</li>
                     <li>Bidro til optimalisering av arbeidsflyt og sporing</li>
                     <li>Lærte verdien av nøyaktighet i logistikkprosesser</li>

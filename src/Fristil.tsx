@@ -107,7 +107,7 @@ const Fristil = () => {
         />
 
         <h3 className="mt-5">📌 Kort om prosjektet</h3>
-        <p>
+        <p style={{ fontWeight: "lighter" }}>
           Fristil er et pågående bachelorprosjekt i samarbeid med Fristil
           Records AS. Oppgaven går ut på å utvikle en moderne, engasjerende
           nettside som fungerer som et digitalt showcase – ikke en salgstrakt.
@@ -117,24 +117,24 @@ const Fristil = () => {
 
         <h3 className="mt-4">🧭 Designprosess</h3>
         <ul>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Spørreundersøkelse med målgruppen og
             innsiktsanalyse
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 2:</strong> Wireframes og visuell prototype i Figma
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 3:</strong> MVP-utvikling i Wix Studio
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 4:</strong> Brukertesting og iterativ forbedring av
             navigasjon og layout
           </li>
         </ul>
 
         <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
-        <p>
+        <p style={{ fontWeight: "lighter" }}>
           Vi benyttet Lean UX og Kanban som rammeverk. Figma ble brukt til
           design, mens Wix Studio ble valgt som publiseringsverktøy for at
           Fristil enkelt kan videreutvikle løsningen selv. Plattformen er
@@ -143,14 +143,14 @@ const Fristil = () => {
 
         <h3 className="mt-4">🧠 Viktige lærdommer</h3>
         <ul>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             Nettsiden bør ikke konkurrere med sosiale medier, men støtte
             merkevarebygging
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             Mobilvennlighet og visuell appell er avgjørende for målgruppen
           </li>
-          <li>
+          <li style={{ fontWeight: "lighter" }}>
             Wix Studio gir lav teknisk terskel for kunden og rask implementering
             for oss
           </li>
