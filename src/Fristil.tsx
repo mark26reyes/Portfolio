@@ -108,11 +108,11 @@ const Fristil = () => {
 
         <h3 className="mt-5">📌 Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
-          Fristil er et pågående bachelorprosjekt i samarbeid med Fristil
-          Records AS. Oppgaven går ut på å utvikle en moderne, engasjerende
-          nettside som fungerer som et digitalt showcase – ikke en salgstrakt.
-          Nettsiden skal presentere artistene, vise frem spillelister og
-          synliggjøre selskapets identitet overfor ungdom i alderen 16–19 år.
+          Fristil er et bachelorprosjekt i samarbeid med Fristil Records AS.
+          Oppgaven går ut på å utvikle en moderne, engasjerende nettside som
+          fungerer som et digitalt showcase – ikke en salgstrakt. Nettsiden skal
+          presentere artistene, vise frem spillelister og synliggjøre selskapets
+          identitet overfor ungdom i alderen 16–19 år.
         </p>
 
         <h3 className="mt-4">🧭 Designprosess</h3>
@@ -157,12 +157,12 @@ const Fristil = () => {
         </ul>
 
         <a
-          href="https://adrian43124.wixstudio.com/my-site?rc=test-site"
+          href="https://www.fristilrecords.no/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline-light mt-4"
         >
-          Se live prototype i Wix
+          Besøk nettsiden!
         </a>
       </section>
       <style>
