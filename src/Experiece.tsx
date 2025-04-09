@@ -21,18 +21,18 @@ const Experience = () => {
 
   return (
     <div
-      className="bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden text-light"
+      className="aboutme bg-black min-vh-100 d-flex flex-column position-relative text-light"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
+        backgroundAttachment: "fixed", // ← dette gjør bakgrunnen statisk
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         overflowX: "hidden",
-        marginTop: "-30px",
       }}
     >
-      {/* Logo */}
+      {/* Logo med animasjon */}
       <header style={{ position: "absolute", top: "5%", left: "5%" }}>
         <motion.div
           className="position-absolute"
@@ -74,151 +74,160 @@ const Experience = () => {
         </motion.div>
       </header>
 
-      {/* Navigasjonsmeny */}
+      {/* Navigasjon */}
       <div className="navbar">
+        {/* Navigasjonsmeny */}
         <Navbar />
       </div>
 
-      {/* Innhold */}
-      <div>
-        <div className="container experience-content">
-          <div style={{ paddingTop: "100px" }}>
-            <h1 className="experience-title mb-4">ERFARING</h1>
+      {/* INNHOLD */}
+      <div className="experience-content">
+        <div className="container mt-3">
+          <h1 className="experience-title mb-4">ERFARING</h1>
 
-            <div className="row">
-              {/* Venstre kolonne */}
-              <div className="col-lg-6 mb-5">
-                <p
-                  className="experience-text"
-                  style={{ fontWeight: "lighter" }}
-                >
-                  Gjennom tre år har jeg utviklet ferdigheter innen
-                  webutvikling, interaksjonsdesign og brukertesting. Jeg har
-                  jobbet med HTML, CSS, React, JavaScript og TypeScript for å
-                  skape dynamiske og brukervennlige løsninger. Design og
-                  brukeropplevelse har vært en stor del av mitt arbeid, der jeg
-                  har brukt verktøy som Figma og Adobe Illustrator for å skape
-                  intuitive grensesnitt. I tillegg har jeg lært viktige
-                  designprinsipper og gjennomført brukertesting for å sikre at
-                  løsningene fungerer optimalt for brukerne.
-                </p>
+          <div className="row">
+            {/* Venstre kolonne */}
+            <div className="col-lg-6 mb-5">
+              <p className="experience-text" style={{ fontWeight: "lighter" }}>
+                Gjennom tre år har jeg utviklet ferdigheter innen webutvikling,
+                interaksjonsdesign og brukertesting. Jeg har jobbet med HTML,
+                CSS, React, JavaScript og TypeScript for å skape dynamiske og
+                brukervennlige løsninger. Design og brukeropplevelse har vært en
+                stor del av mitt arbeid, der jeg har brukt verktøy som Figma og
+                Adobe Illustrator for å skape intuitive grensesnitt. I tillegg
+                har jeg lært viktige designprinsipper og gjennomført
+                brukertesting for å sikre at løsningene fungerer optimalt for
+                brukerne.
+              </p>
 
-                <h4 className="mt-5 experience-subtitle">ARBEIDSERFARING</h4>
+              <h4 className="mt-5 experience-subtitle">ARBEIDSERFARING</h4>
 
-                <div className="job mt-3">
-                  <h5>💼 Assisterende medarbeider – Floriss Hasle</h5>
-                  <p className="job-period" style={{ fontWeight: "lighter" }}>
-                    Juni 2017 – Nåværende
-                  </p>
-                  <ul style={{ fontWeight: "lighter" }}>
-                    <li>Ansvar for henting og oppakning av nye varer</li>
-                    <li>
-                      Visuell utforming av butikkens produkter og utstillinger
-                    </li>
-                    <li>
-                      Utviklet forståelse for kundebehov og forbedret
-                      kundeopplevelse
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="job mt-4">
-                  <h5>📦 Lagermedarbeider – Bring Alfaset</h5>
-                  <p className="job-period" style={{ fontWeight: "lighter" }}>
-                    Nov. 2020 – Sept. 2022
-                  </p>
-                  <ul style={{ fontWeight: "lighter" }}>
-                    <li>Sortering og logistikk av pakker</li>
-                    <li>Bidro til optimalisering av arbeidsflyt og sporing</li>
-                    <li>Lærte verdien av nøyaktighet i logistikkprosesser</li>
-                  </ul>
-                </div>
-
-                <a
-                  href="/Portfolio/CV.pdf"
-                  className="btn btn-outline-light mt-4"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Last ned full CV (PDF)
-                </a>
-
-                <h4 className="mt-5 experience-subtitle">SERTIFIKATER</h4>
-                <div className="certificates mt-3 d-flex flex-wrap gap-4 justify-content-start">
-                  <motion.img
-                    src="/Portfolio/htmlcss_certificate.png"
-                    alt="HTML CSS Certificate"
-                    className="certificate1"
-                    onClick={() =>
-                      setSelectedCertificate(
-                        "/Portfolio/htmlcss_certificate.png",
-                      )
-                    }
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  <motion.img
-                    src="/Portfolio/react_certificate.png"
-                    alt="React Certificate"
-                    className="certificate2"
-                    onClick={() =>
-                      setSelectedCertificate("/Portfolio/react_certificate.png")
-                    }
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </div>
+              <div className="job mt-3">
+                <h5>💼 Assisterende medarbeider – Floriss Hasle</h5>
+                <p className="job-period">Juni 2017 – Nåværende</p>
+                <ul>
+                  <li>Ansvar for henting og oppakning av nye varer</li>
+                  <li>
+                    Visuell utforming av butikkens produkter og utstillinger
+                  </li>
+                  <li>
+                    Utviklet forståelse for kundebehov og forbedret
+                    kundeopplevelse
+                  </li>
+                </ul>
               </div>
 
-              {/* Høyre kolonne – ferdigheter */}
-              <div className="col-lg-6">
-                {skills.map((skill, index) => (
-                  <div key={index} className="skill-item mb-5">
-                    <div className="d-flex align-items-center mb-2">
-                      <img
-                        src={skill.logo}
-                        alt={skill.name}
-                        className="skill-logo"
-                      />
-                      <span>{skill.name}</span>
-                    </div>
-                    <div className="progress">
-                      <div
-                        className="progress-bar bg-warning"
-                        role="progressbar"
-                        style={{ width: skill.level }}
-                        aria-valuenow={parseInt(skill.level)}
-                        aria-valuemin={0}
-                        aria-valuemax={100}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+              <div className="job mt-4">
+                <h5>📦 Lagermedarbeider – Bring Alfaset</h5>
+                <p className="job-period">Nov. 2020 – Sept. 2022</p>
+                <ul>
+                  <li>Sortering og logistikk av pakker</li>
+                  <li>Bidro til optimalisering av arbeidsflyt og sporing</li>
+                  <li>Lærte verdien av nøyaktighet i logistikkprosesser</li>
+                </ul>
+              </div>
+
+              <a
+                href="/Portfolio/CV.pdf"
+                className="btn btn-outline-light mt-4"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Last ned full CV (PDF)
+              </a>
+
+              <h4 className="mt-5 experience-subtitle">SERTIFIKATER</h4>
+              <div className="certificates mt-3 d-flex flex-wrap gap-4 justify-content-start">
+                <motion.img
+                  src="/Portfolio/htmlcss_certificate.png"
+                  alt="HTML CSS Certificate"
+                  className="certificate1"
+                  onClick={() =>
+                    setSelectedCertificate("/Portfolio/htmlcss_certificate.png")
+                  }
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.img
+                  src="/Portfolio/react_certificate.png"
+                  alt="React Certificate"
+                  className="certificate2"
+                  onClick={() =>
+                    setSelectedCertificate("/Portfolio/react_certificate.png")
+                  }
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                />
               </div>
             </div>
 
-            {/* Sertifikat popup */}
-            {selectedCertificate && (
-              <div
-                className="certificate-modal"
-                onClick={() => setSelectedCertificate(null)}
-              >
-                <img
-                  src={selectedCertificate}
-                  alt="Selected Certificate"
-                  className="certificate-full"
-                />
-              </div>
-            )}
+            {/* Høyre kolonne */}
+            <div className="col-lg-6">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-item mb-5">
+                  <div className="d-flex align-items-center mb-2">
+                    <img
+                      src={skill.logo}
+                      alt={skill.name}
+                      className="skill-logo"
+                    />
+                    <span>{skill.name}</span>
+                  </div>
+                  <div className="progress">
+                    <div
+                      className="progress-bar bg-warning"
+                      role="progressbar"
+                      style={{ width: skill.level }}
+                      aria-valuenow={parseInt(skill.level)}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Sertifikat popup */}
+          {selectedCertificate && (
+            <div
+              className="certificate-modal"
+              onClick={() => setSelectedCertificate(null)}
+            >
+              <img
+                src={selectedCertificate}
+                alt="Selected Certificate"
+                className="certificate-full"
+              />
+            </div>
+          )}
         </div>
       </div>
 
       {/* STYLE */}
       <style>{`
         .navbar {
-          margin-top: 75px;
+          position: absolute;
+          display: flex;
+          align-items: center; 
+          justify-content: space-between;
+          width: 100%;
+          top: 5.5%;
+          left: 0%;
+          font-weight: lighter;
+          z-index: 1050;
+        }
+
+        .aboutme {
+           margin-top: -30px;
+        }
+
+        .experience-content {
+          padding-top: 180px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-family: "Proxima Nova", sans-serif;
         }
 
         .experience-title {
@@ -229,7 +238,6 @@ const Experience = () => {
 
         .experience-text {
           font-size: 1rem;
-          font-family: "Proxima Nova", sans-serif;
         }
 
         .experience-subtitle {
@@ -289,9 +297,14 @@ const Experience = () => {
         }
 
         @media (max-width: 768px) {
+          .aboutme {
+           margin-top: -70px;
+          }
+
           .experience-title {
-            font-size: 3rem;
+            font-size: 3.5em;
             text-align: center;
+            margin-top: 40px;
           }
 
           .experience-subtitle {

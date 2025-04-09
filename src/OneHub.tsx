@@ -17,9 +17,9 @@ const OneHub = () => {
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",
         backgroundSize: "cover",
+        backgroundAttachment: "fixed", // ← dette gjør bakgrunnen statisk
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        fontFamily: "Helvetica",
         overflowX: "hidden",
       }}
     >
