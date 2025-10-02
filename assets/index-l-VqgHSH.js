@@ -94,7 +94,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
           .nav-link:active {
             color: darkgray !important;
           }
-        `))},DD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"text-container"},v.createElement("p",null,"Mark Daniel Reyes, 23 år.",v.createElement("span",{className:"bold-text"}," Bachelorgrad i Interaktivt Design "),"fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine ferdigheter og bidra til brukervennlige og innovative digitale løsninger.")),v.createElement("div",{className:"title-container"},v.createElement("h1",{className:"title-main"},"Min"),v.createElement("h1",{className:"title-sub"},"Portefølje")),v.createElement("div",{className:"image-container"},v.createElement(ED,null),v.createElement(wD,null)),v.createElement("style",null,`
+        `))},DD=()=>{const e="MARK     DANIEL     REYES".split("");return v.createElement("div",{className:"bg-black min-vh-100 d-flex flex-column position-relative overflow-hidden",style:{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Portfolio/minimalistic_bg.jpg')",backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}},v.createElement("header",{style:{position:"absolute",top:"5%",left:"5%"}},v.createElement(X.div,{className:"position-absolute",style:{top:"5px",left:"5px",width:"calc(100% + 5px)",height:"calc(100% + 5px)",border:"2px solid white"}}),v.createElement(X.div,{className:"text-light fw-bold text-uppercase position-relative",style:{padding:"10px 10px",fontSize:"14px",display:"flex",border:"2px solid white",backgroundColor:"black"},initial:"hidden",animate:"visible",variants:{visible:{transition:{staggerChildren:.08}}}},e.map((t,n)=>v.createElement(X.span,{key:n,style:{marginRight:"1.5px",fontFamily:"Helvetica"},variants:{hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.3}}}},t)))),v.createElement("div",null,v.createElement(fn,null)),v.createElement("div",{className:"text-container"},v.createElement("p",null,"Mark Daniel Reyes, 23 år.",v.createElement("span",{className:"bold-text"}," Bachelorgrad i Interaktivt Design "),"fra Høyskole Kristiania. Sterk interesse for UX/UI og webutvikling hvor jeg ser etter en mulighet hvor jeg kan videreutvikle mine ferdigheter og bidra til brukervennlige og innovative digitale løsninger.")),v.createElement("div",{className:"title-container"},v.createElement("h1",{className:"title-main"},"Interaksjons"),v.createElement("h1",{className:"title-sub"},"Designer")),v.createElement("div",{className:"image-container"},v.createElement(ED,null),v.createElement(wD,null)),v.createElement("style",null,`
   /* Standardstil */
   .text-container {
      position: absolute;
@@ -117,7 +117,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
   .title-container {
     position: absolute;
     left: 4%;
-    top: 27%;
+    top: 35%;
     z-index: 2;
     text-align: left;
   }
@@ -125,7 +125,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
   .title-main {
     font-weight: 100;
     font-family: "neue-haas-grotesk-display", sans-serif;
-    font-size: 12rem;
+    font-size: 9rem;
     color: white;
     line-height: 0.9;
   }
@@ -134,7 +134,7 @@ Please change the parent <Route path="${y}"> to <Route path="${y==="/"?"*":`${y}
     font-weight: 100;
     font-family: "neue-haas-grotesk-display", sans-serif;
     opacity: 0.6;
-    font-size: 12rem;
+    font-size: 9rem;
     color: white;
     line-height: 0.9;
   }
