@@ -82,8 +82,8 @@ const Home = () => {
 
       {/* Overskrift */}
       <div className="title-container">
-        <h1 className="title-main">Min</h1>
-        <h1 className="title-sub">Portefølje</h1>
+        <h1 className="title-main">Interaksjons</h1>
+        <h1 className="title-sub">Designer</h1>
       </div>
 
       {/* Bilde og autograf */}
@@ -117,7 +117,7 @@ const Home = () => {
   .title-container {
     position: absolute;
     left: 4%;
-    top: 27%;
+    top: 35%;
     z-index: 2;
     text-align: left;
   }
@@ -125,7 +125,7 @@ const Home = () => {
   .title-main {
     font-weight: 100;
     font-family: "neue-haas-grotesk-display", sans-serif;
-    font-size: 12rem;
+    font-size: 9rem;
     color: white;
     line-height: 0.9;
   }
@@ -134,7 +134,7 @@ const Home = () => {
     font-weight: 100;
     font-family: "neue-haas-grotesk-display", sans-serif;
     opacity: 0.6;
-    font-size: 12rem;
+    font-size: 9rem;
     color: white;
     line-height: 0.9;
   }
