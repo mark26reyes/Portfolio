@@ -165,6 +165,15 @@ const Harmoni = () => {
         >
           Se full prototype i Figma
         </a>
+        <br />
+        <a
+          href="/Portfolio/public/DPR5100 - Designprosjekt_ Semesteroppgave_2 (1).pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-light mt-4"
+        >
+          Les full rapport (PDF)
+        </a>
       </section>
 
       <style>

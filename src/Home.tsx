@@ -184,7 +184,7 @@ const Home = () => {
     }
 
     .title-main, .title-sub {
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     .responsive-image {

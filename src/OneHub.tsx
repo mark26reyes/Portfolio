@@ -101,13 +101,11 @@ const OneHub = () => {
           En app som samler strømmetjenester og gjør det enklere å oppdage nytt
           innhold – inspirert av TikTok og sosiale medier.
         </p>
-
         <img
           src="/Portfolio/onehub.png"
           alt="OneHub skjermbilde"
           className="img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"
         />
-
         <h3 className="mt-4">📌 Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
           OneHub ble utviklet for å løse utfordringen med fragmenterte
@@ -115,7 +113,6 @@ const OneHub = () => {
           kan oppdage filmer og serier, med personlig tilpasning og sosial
           deling. Jeg jobbet med design og prototypeutvikling i Figma.
         </p>
-
         <h3 className="mt-4">🧭 Designprosess</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
@@ -136,7 +133,6 @@ const OneHub = () => {
             tilbakemeldinger og gjennomførbarhetsanalyse.
           </li>
         </ul>
-
         <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
         <p style={{ fontWeight: "lighter" }}>
           Vi kombinerte Design Thinking (fra IDEO) med Lean UX. Design Thinking
@@ -144,7 +140,6 @@ const OneHub = () => {
           iterasjoner med MVP-testing. Prototypen ble designet i Figma og testet
           med ekte brukere.
         </p>
-
         <h3 className="mt-4">🧠 Viktige lærdommer</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
@@ -159,7 +154,6 @@ const OneHub = () => {
             brukeropplevelse.
           </li>
         </ul>
-
         <a
           href="https://www.figma.com/design/p4JxnaeXfreYq8qZu8DCTJ/OneHub?node-id=0-1&t=KvNfpaKgDECucDZI-1"
           target="_blank"
@@ -167,6 +161,15 @@ const OneHub = () => {
           className="btn btn-outline-light mt-4"
         >
           Se full prototype i Figma
+        </a>
+        <br />
+        <a
+          href="/Portfolio/public/Innovasjon og Prototyping Eksamen.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-light mt-4"
+        >
+          Les full rapport (PDF)
         </a>
       </section>
       <style>
