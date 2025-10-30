@@ -163,14 +163,14 @@ const OneHub = () => {
           Se full prototype i Figma
         </a>
         <br />
-        <a
+        {/* <a
           href="/Portfolio/public/Innovasjon og Prototyping Eksamen.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline-light mt-4"
         >
           Les full rapport (PDF)
-        </a>
+        </a> */}
       </section>
       <style>
         {`

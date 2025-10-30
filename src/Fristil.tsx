@@ -165,14 +165,14 @@ const Fristil = () => {
           Besøk nettsiden!
         </a>
         <br />
-        <a
+        {/* <a
           href="/Portfolio/public/Gruppe38-2025-Fristil Records AS.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline-light mt-4"
         >
           Les full rapport (PDF)
-        </a>
+        </a> */}
       </section>
       <style>
         {`
