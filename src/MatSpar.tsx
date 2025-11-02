@@ -109,7 +109,7 @@ const MatSpar = () => {
           className="img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"
         />
 
-        <h3 className="mt-4">📌 Kort om prosjektet</h3>
+        <h3 className="mt-4">Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
           MatSpar ble utviklet som et gruppeprosjekt, med mål om å lage en app
           for studenter og familier som ønsker bedre kontroll over matbudsjettet
@@ -117,7 +117,7 @@ const MatSpar = () => {
           struktur og prototyping i Figma.
         </p>
 
-        <h3 className="mt-4">🧭 Designprosess</h3>
+        <h3 className="mt-4">Designprosess</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Innsikt via spørreundersøkelser, intervjuer
@@ -136,7 +136,7 @@ const MatSpar = () => {
           </li>
         </ul>
 
-        <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
+        <h3 className="mt-4">Metodikk og verktøy</h3>
         <p style={{ fontWeight: "lighter" }}>
           Vi brukte Lean UX som metode, med fokus på hypotesedrevne
           beslutninger, rask prototyping og kontinuerlig iterasjon. Alt design
@@ -144,7 +144,7 @@ const MatSpar = () => {
           spørreundersøkelser.
         </p>
 
-        <h3 className="mt-4">🧠 Viktige lærdommer</h3>
+        <h3 className="mt-4">Viktige lærdommer</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             Viktigheten av tidlig problemforståelse og innsikt.

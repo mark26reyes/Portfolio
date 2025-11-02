@@ -106,14 +106,14 @@ const OneHub = () => {
           alt="OneHub skjermbilde"
           className="img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"
         />
-        <h3 className="mt-4">📌 Kort om prosjektet</h3>
+        <h3 className="mt-4">Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
           OneHub ble utviklet for å løse utfordringen med fragmenterte
           strømmetjenester. Målet var å skape én plattform der brukere enkelt
           kan oppdage filmer og serier, med personlig tilpasning og sosial
           deling. Jeg jobbet med design og prototypeutvikling i Figma.
         </p>
-        <h3 className="mt-4">🧭 Designprosess</h3>
+        <h3 className="mt-4">Designprosess</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Innsikt gjennom spørreundersøkelser og
@@ -133,14 +133,14 @@ const OneHub = () => {
             tilbakemeldinger og gjennomførbarhetsanalyse.
           </li>
         </ul>
-        <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
+        <h3 className="mt-4">Metodikk og verktøy</h3>
         <p style={{ fontWeight: "lighter" }}>
           Vi kombinerte Design Thinking (fra IDEO) med Lean UX. Design Thinking
           hjalp oss å identifisere brukerbehov, mens Lean UX ga oss raske
           iterasjoner med MVP-testing. Prototypen ble designet i Figma og testet
           med ekte brukere.
         </p>
-        <h3 className="mt-4">🧠 Viktige lærdommer</h3>
+        <h3 className="mt-4">Viktige lærdommer</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             Brukere foretrekker horisontale trailere – bedre utnyttelse av

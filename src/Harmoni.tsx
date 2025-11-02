@@ -106,7 +106,7 @@ const Harmoni = () => {
           className="img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"
         />
 
-        <h3 className="mt-4">📌 Kort om prosjektet</h3>
+        <h3 className="mt-4">Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
           Harmoni ble utviklet som et høynivå-prototypeprosjekt med fokus på
           åpenhet rundt psykisk helse. Appen fungerer som en virtuell
@@ -115,7 +115,7 @@ const Harmoni = () => {
           teststrategi.
         </p>
 
-        <h3 className="mt-4">🧭 Designprosess</h3>
+        <h3 className="mt-4">Designprosess</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Konseptutvikling og konkurrentanalyse
@@ -133,7 +133,7 @@ const Harmoni = () => {
           </li>
         </ul>
 
-        <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
+        <h3 className="mt-4">Metodikk og verktøy</h3>
         <p style={{ fontWeight: "lighter" }}>
           Vi benyttet Design Thinking og brukersentrert design med fokus på
           tilgjengelighet. Testing ble gjennomført med ulike brukerprofiler, og
@@ -141,7 +141,7 @@ const Harmoni = () => {
           WCAG-retningslinjer og anbefalinger for universell utforming.
         </p>
 
-        <h3 className="mt-4">🧠 Viktige lærdommer</h3>
+        <h3 className="mt-4">Viktige lærdommer</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             Skrollfunksjon må alltid forventes av brukeren

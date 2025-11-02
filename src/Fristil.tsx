@@ -106,7 +106,7 @@ const Fristil = () => {
           className="img-fluid rounded shadow w-25 justify-content-center d-block mx-auto"
         />
 
-        <h3 className="mt-5">📌 Kort om prosjektet</h3>
+        <h3 className="mt-5">Kort om prosjektet</h3>
         <p style={{ fontWeight: "lighter" }}>
           Fristil er et bachelorprosjekt i samarbeid med Fristil Records AS.
           Oppgaven går ut på å utvikle en moderne, engasjerende nettside som
@@ -115,7 +115,7 @@ const Fristil = () => {
           identitet overfor ungdom i alderen 16–19 år.
         </p>
 
-        <h3 className="mt-4">🧭 Designprosess</h3>
+        <h3 className="mt-4">Designprosess</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             <strong>Fase 1:</strong> Spørreundersøkelse med målgruppen og
@@ -133,7 +133,7 @@ const Fristil = () => {
           </li>
         </ul>
 
-        <h3 className="mt-4">🔧 Metodikk og verktøy</h3>
+        <h3 className="mt-4">Metodikk og verktøy</h3>
         <p style={{ fontWeight: "lighter" }}>
           Vi benyttet Lean UX og Kanban som rammeverk. Figma ble brukt til
           design, mens Wix Studio ble valgt som publiseringsverktøy for at
@@ -141,7 +141,7 @@ const Fristil = () => {
           optimalisert for mobil, SEO og fremtidig fleksibilitet.
         </p>
 
-        <h3 className="mt-4">🧠 Viktige lærdommer</h3>
+        <h3 className="mt-4">Viktige lærdommer</h3>
         <ul>
           <li style={{ fontWeight: "lighter" }}>
             Nettsiden bør ikke konkurrere med sosiale medier, men støtte
